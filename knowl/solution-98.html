@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<div class="solution solution-like">
+<h3 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.9.8.1</span><span class="period">.</span>
+</h3>Let's first find the average cost function, <span class="process-math">\(\overline{C}(x)\text{:}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html">
+\begin{align*}
+\overline{C}(x) \amp = \dfrac{C(x)}{x} \\
+\\
+\overline{C}(x) \amp = \dfrac{.001x^3 +3x +100}{x} \\
+\\
+\overline{C}(x) \amp = .001x^2 +3 + \dfrac{100}{x} \\
+\\
+\overline{C}(x) \amp = .001x^2 +3 + 100x^{-1} 
+\end{align*}
+</div>We are asked to minimize <span class="process-math">\(\overline{C}(x)\)</span> on the interval <span class="process-math">\((0,60]\)</span> (why is this the relevant interval?). We start by finding the critical numbers.  Since<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html">
+\begin{equation*}
+\overline{C}'(x) = .002x - 100x^{-2},
+\end{equation*}
+</div>we solve the following equation for <span class="process-math">\(x\text{:}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html">
+\begin{align*}
+.002x - 100x^{-2} \amp = 0 \\
+\\
+.002x - \dfrac{100}{x^{2}} \amp = 0 \\
+\\
+.002x \amp = \dfrac{100}{x^{2}} \\
+\\
+.002x^3 \amp = 100 \\
+\\
+x^3 \amp = 50,000 \\
+\\
+x \amp =  \sqrt[3]{50,000}  \\
+\\
+x \amp \approx 36.84  
+\end{align*}
+</div>Next we use the second derivative test to determine if <span class="process-math">\(x=36.84\)</span> produces a relative minimum value for <span class="process-math">\(\overline{C}(x)\text{.}\)</span> Since<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html">
+\begin{equation*}
+\overline{C}''(x) = .002+200x^{-3} = .002 + \dfrac{200}{x^3}
+\end{equation*}
+</div>we find that <span class="process-math">\(\overline{C}''(36.84) = .002 + \dfrac{200}{36.84^3} &gt; 0 \)</span> which means <span class="process-math">\(x = 36.84\)</span> gives a relative minimum value for <span class="process-math">\(\overline{C}(x)\text{.}\)</span> Since <span class="process-math">\(x = 36.84\)</span> is the only critical number in <span class="process-math">\((0,60]\text{,}\)</span> <a href="" class="xref" data-knowl="./knowl/crit-number-thm.html" title="Theorem 3.9.4: Critical Number Theorem">Theorem 3.9.4</a> tells us that the relative minimum will also be an absolute minimum. This means ADTF Distraibutors should produce 36,840 sets of wireless earbuds to minimize the average cost per set.  Their minimum annual average cost is $7,072 per thousand sets of wireless earbuds (or $7.07 per set). <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c40.png" class="contained"></div>
+</div>
+<span class="incontext"><a href="abs-ext.html#solution-98" class="internal">in-context</a></span>
+</body>
+</html>

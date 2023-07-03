@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The First Derivative Test</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Business Mathematics">
+<meta property="book:author" content="Alfred Dahma">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="bus-math.html"><span class="title">Business Mathematics:</span> <span class="subtitle">Applications Using Algebra and Calculus</span></a></h1>
+<p class="byline">Alfred Dahma</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="rel-ext.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="diff-calc.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="second-deriv.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="lines.html" class="internal"><span class="codenumber">1</span> <span class="title">Graphs of Equations and Lines</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="graphs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Graphs and Solutions of Equations</span></a></div></li>
+<li>
+<div class="toc-item"><a href="eq-of-lines.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Equations of Lines</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="eq-of-lines.html#standard" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Standard Form</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#slope" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Slope of Line</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#special-lines" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Special Lines</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#slope-intercept" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Slope-Intercept Form of a Line</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#point-slope" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Point-Slope Form of a Line</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="linear-models-applications.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Linear Models and Applicaitions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Polynomials.html" class="internal"><span class="codenumber">2</span> <span class="title">Polynomials</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="functions.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Functions</span></a></div></li>
+<li><div class="toc-item"><a href="graphs-functions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphs of Functions</span></a></div></li>
+<li><div class="toc-item"><a href="linear-functions.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Linear Functions and Applications</span></a></div></li>
+<li>
+<div class="toc-item"><a href="quadratics.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Quardratic Functions and Applications</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="quadratics.html#basics" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Basics About Quadratics</span></a></div></li>
+<li><div class="toc-item"><a href="quadratics.html#quardratic-applications" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Applications With Quadratics</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="general-polynomials.html" class="internal"><span class="codenumber">2.5</span> <span class="title">General Polynomials</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="diff-calc.html" class="internal"><span class="codenumber">3</span> <span class="title">Differential Calculus</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="limits.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Limits</span></a></div></li>
+<li><div class="toc-item"><a href="aroc.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Average Rate Of Change</span></a></div></li>
+<li><div class="toc-item"><a href="iroc-deriv.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Instantaneous Rate Of Change and the Derivative</span></a></div></li>
+<li><div class="toc-item"><a href="more-marg-analysis.html" class="internal"><span class="codenumber">3.4</span> <span class="title">More About Marginal Analysis</span></a></div></li>
+<li><div class="toc-item"><a href="sect-power-rule.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Derivatives Using The Power Rule</span></a></div></li>
+<li><div class="toc-item"><a href="rel-ext.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Relative or Local Extrema</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="first-deriv-test.html" class="internal"><span class="codenumber">3.7</span> <span class="title">The First Derivative Test</span></a></div></li>
+<li><div class="toc-item"><a href="second-deriv.html" class="internal"><span class="codenumber">3.8</span> <span class="title">The Second Derivative</span></a></div></li>
+<li><div class="toc-item"><a href="abs-ext.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Absolute Extrema</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="integration.html" class="internal"><span class="codenumber">4</span> <span class="title">Integral Calculus</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="antiderivs-indef-int.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Antiderivatives and Indefinite Integrals</span></a></div></li>
+<li><div class="toc-item"><a href="area-def-int.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Area And The Definite Integral</span></a></div></li>
+<li><div class="toc-item"><a href="sec-ftc.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div></li>
+<li><div class="toc-item"><a href="ftc-apps.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Applications of the Fundamental Theorem of Calculus</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-exp-log.html" class="internal"><span class="codenumber">5</span> <span class="title">Exponential and Logarithmic Models</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="basic-props.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Basic Properties</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="basic-props.html#subsect-exp" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="basic-props.html#subsect-log" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Logarithmic Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exponential-applications.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Applications Of Exponential Functions - Exponential Growth And Decay</span></a></div></li>
+<li>
+<div class="toc-item"><a href="interest-models.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Interest Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="interest-models.html#sub-imp-int" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#sub-compound-interest" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Compound Interest</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#sub-cont-comp" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Continuous Compounding</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#subsection-13" class="internal"><span class="codenumber">5.3.4</span> <span class="title">APR and APY</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-ordinary-annuities.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Ordinary Annuities</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="first-deriv-test"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.7</span> <span class="title">The First Derivative Test</span>
+</h2>
+<div class="para" id="p-115">To find the relative extreme values of a function <span class="process-math">\(f\)</span> we first need to find the critical numbers for <span class="process-math">\(f\)</span> (by solving <span class="process-math">\(f'(x) = 0\)</span>) and then determining if <span class="process-math">\(f'\)</span> changes sign (from positive to negative or vice versa) on either side of the critical number. This information is recorded in a <dfn class="terminology">sign chart</dfn> for the first derivative.</div>
+<div class="para" id="p-116">Let <span class="process-math">\(x=c\)</span> be a critical number of <span class="process-math">\(f\)</span> with <span class="process-math">\(f'(c) = 0\text{.}\)</span>  Below are the four possibilities for what a sign chart for <span class="process-math">\(f'\)</span> could look like around <span class="process-math">\(c\text{,}\)</span> with a corresponding graph for <span class="process-math">\(f\text{.}\)</span>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><img src="external/ch-3/c20.png" class="contained"></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/ch-3/c21.png" class="contained"></div>
+</div></div>
+<div class="para" id="p-117">The pictures above illustrate what happens in case the critical number <span class="process-math">\(x=c\)</span> produces a relative extreme value.  Below are illustrations for what happens when no relative extreme values exist at the critical number.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><img src="external/ch-3/c22.png" class="contained"></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/ch-3/c23.png" class="contained"></div>
+</div></div>
+<div class="para" id="p-118">Finding relative extreme values for a function using a sign chart for its derivative is what we will refer to as using <dfn class="terminology">the first derivative test</dfn>.</div>
+<article class="example example-like" id="example-44"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-44"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.1</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-44"><article class="example example-like">Let <span class="process-math">\(f(x) = \dfrac{1}{4}x^4 - \dfrac{4}{3}x^3 +2x^2 + 1\text{.}\)</span>  Find intervals where <span class="process-math">\(f\)</span> is increasing, decreasing, and find all relative extreme values of <span class="process-math">\(f\text{.}\)</span> <a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-73" id="solution-73"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-73"><div class="solution solution-like">We will use the first derivative test by making a sign chart for <span class="process-math">\(f'(x)\text{.}\)</span>  First we need the critical numbers of <span class="process-math">\(f\text{.}\)</span>  These numbers must be in the domain of <span class="process-math">\(f\text{,}\)</span> so first note that dom(<span class="process-math">\(f\)</span>) <span class="process-math">\(= (-\infty, \infty)\text{.}\)</span>  Next, we solve <span class="process-math">\(f'(x) = 0\text{.}\)</span> Note that <span class="process-math">\(f'(x) = x^3 - 4x^2+4x\text{.}\)</span>  So,<div class="displaymath process-math" id="md-25">
+\begin{align*}
+f'(x) \amp = 0 \\
+x^3 - 4x^2+4 \amp =0 \\
+x(x^2 -4x +4) \amp = 0 \\
+x(x-2)^2  \amp = 0 
+\end{align*}
+</div>We find two critical numbers: <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=2\text{.}\)</span> We can algebraically check the sign of the derivative, <span class="process-math">\(f'\text{,}\)</span> by picking test values in the appropriate intervals determined by the critical numbers: <ul class="disc">
+<li id="li-139"><div class="para" id="p-derived-li-139">In the interval <span class="process-math">\((-\infty, 0)\)</span> we can test with <span class="process-math">\(x = -1\text{:}\)</span><div class="displaymath process-math">
+\begin{equation*}
+f'(-1) = (-1)(-1-2)^2 &lt; 0
+\end{equation*}
+</div>
+</div></li>
+<li id="li-140"><div class="para" id="p-derived-li-140">In the interval <span class="process-math">\((0,2)\)</span> we can test with <span class="process-math">\(x = 1\text{:}\)</span><div class="displaymath process-math">
+\begin{equation*}
+f'(1) = (1)(1-2)^2 &gt; 0
+\end{equation*}
+</div>
+</div></li>
+<li id="li-141"><div class="para" id="p-derived-li-141">In the interval <span class="process-math">\((2, \infty)\)</span> we can test with <span class="process-math">\(x = 3\text{:}\)</span><div class="displaymath process-math">
+\begin{equation*}
+f'(3) = (3)(3-2)^2 &gt; 0
+\end{equation*}
+</div>
+</div></li>
+</ul> The signs of the derivative, <span class="process-math">\(f'\text{,}\)</span> tell us whether the function <span class="process-math">\(f\)</span> is increasing or decreasing, which we will indicate with up and down arrows respectively. The sign chart for <span class="process-math">\(f'\)</span> is below. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c24.png" class="contained"></div> Using our sign chart, we can now answer the questions. <ul class="disc">
+<li id="li-142"><div class="para" id="p-derived-li-142">
+<span class="process-math">\(f(x)\)</span> is increasing on the intervals <span class="process-math">\((0, 2)\)</span> and <span class="process-math">\((2,\infty)\text{.}\)</span>
+</div></li>
+<li id="li-143"><div class="para" id="p-derived-li-143">
+<span class="process-math">\(f(x)\)</span> is decreasing on the interval <span class="process-math">\((-\infty, 0)\text{.}\)</span>
+</div></li>
+<li id="li-144"><div class="para" id="p-derived-li-144">
+<span class="process-math">\(f(x)\)</span> has no relative maximum value.</div></li>
+<li id="li-145"><div class="para" id="p-derived-li-145">
+<span class="process-math">\(f(x)\)</span> has a relative minimum at <span class="process-math">\(x=0\text{.}\)</span>  The relative minimum value is <span class="process-math">\(f(0) = 1\text{.}\)</span>
+</div></li>
+</ul> Notice that even though there is no relative extreme value at <span class="process-math">\(x=2\text{,}\)</span> there is a "flat spot" there where <span class="process-math">\(f\)</span> has a horizontal tangent line. Following is the graph of <span class="process-math">\(f(x) = \dfrac{1}{4}x^4 - \dfrac{4}{3}x^3 +2x^2 + 1\)</span> <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c25.png" class="contained"></div>
+</div></div></article></div>
+<article class="example example-like" id="kruger"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-kruger"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.2</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-kruger"><article class="example example-like">Kruger Industrial Smoothing supplies hardware stores around the US with sanders, grinders, whetstones, and other smoothing tools. Kruger's revenue function, in hundreds of thousands of dollars, is given by<div class="displaymath process-math">
+\begin{equation*}
+R(t) = -t^3+21t^2-99t+564
+\end{equation*}
+</div>valid for <span class="process-math">\(1 \leq t \leq 15 \)</span> where <span class="process-math">\(t\)</span> is the number of years since 2004. Take a moment to identfiy the input and output variables and write a sentence to interpret each. <ol class="lower-alpha">
+<li id="li-146"><div class="para" id="p-derived-li-146">Write the domain of <span class="process-math">\(R(t)\)</span> in interval notaion and determine what years Kruger's revenue function is value. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-74" id="solution-74"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-74"><div class="solution solution-like">In interval notation, dom(<span class="process-math">\(R\)</span>) <span class="process-math">\(= [1,15]\text{,}\)</span> which means Kruger's revenue function is valued from 2005 through 2019.</div></div>
+</div></li>
+<li id="li-147"><div class="para" id="p-derived-li-147">Determine Kruger's revenue in 2009 and write a sentence to interpret. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-75" id="solution-75"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-75"><div class="solution solution-like">Since 2009 corresponds to <span class="process-math">\(t=5\)</span> and <span class="process-math">\(R(5)=469\text{,}\)</span> we see that Kruger's revenue in 2009 was $46,900,000.</div></div>
+</div></li>
+<li id="li-148"><div class="para" id="p-derived-li-148">Deternime Kruger's marginal revenue in 2012 and write a sentence to interpret its meaning. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-76" id="solution-76"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-76"><div class="solution solution-like">Since <span class="process-math">\(MR(t) = R'(t)= -3t^2 +42t-99\)</span> and 2012 corresponds to <span class="process-math">\(t=8\text{,}\)</span> we have that <span class="process-math">\(MR(8) = 45\text{.}\)</span> This means that in 2012 Kruger's revenue was increasing at an approximate rate of $4,500,000 per year. Meaning, Kruger expects to gernerate $4,500,000 more revenue in 2013 than in 2012.</div></div>
+</div></li>
+<li id="li-149"><div class="para" id="p-derived-li-149">Find the critical numbers of <span class="process-math">\(R(t)\)</span> and identify the corresponding years for these values. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-77" id="solution-77"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-77"><div class="solution solution-like">To find the critical numbers we solve <span class="process-math">\(R'(t)=MR(t) = 0\text{,}\)</span> keeping only those that are in the interval <span class="process-math">\([1,15]\text{.}\)</span><div class="displaymath process-math" id="md-26">
+\begin{align*}
+MR(t) \amp = 0 \\
+-3t^2 +42t-99 \amp = 0 \\
+-3(t^2-14t+33) \amp = 0 \\
+-3(t-3)(t-11) \amp = 0 
+\end{align*}
+</div>and find two critical values, <span class="process-math">\(t = 3\)</span> and <span class="process-math">\(t = 11\text{,}\)</span> both of which are in <span class="process-math">\([1,15]\text{.}\)</span> These critical values correspond to 2007 and 2015.</div></div>
+</div></li>
+<li id="li-150"><div class="para" id="p-derived-li-150">Make and interpret a sign chart for <span class="process-math">\(R'(t) = MR(t)\text{.}\)</span> <a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-78" id="solution-78"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-78"><div class="solution solution-like">
+<ul class="disc">
+<li id="li-151"><div class="para" id="p-derived-li-151">In the interval <span class="process-math">\([1, 3)\)</span> we can test with <span class="process-math">\(t = 2\text{:}\)</span><div class="displaymath process-math">
+\begin{equation*}
+MR(2) = -3(2-3)(2-11) &lt; 0
+\end{equation*}
+</div>
+</div></li>
+<li id="li-152"><div class="para" id="p-derived-li-152">In the interval <span class="process-math">\((3,11)\)</span> we can test with <span class="process-math">\(t = 10\text{:}\)</span><div class="displaymath process-math">
+\begin{equation*}
+MR(10) = -3(10-3)(10-11) &gt; 0
+\end{equation*}
+</div>
+</div></li>
+<li id="li-153"><div class="para" id="p-derived-li-153">In the interval <span class="process-math">\((11, 15]\)</span> we can test with <span class="process-math">\(t = 12\text{:}\)</span><div class="displaymath process-math">
+\begin{equation*}
+MR(12) = -3(12-3)(12-11) &lt; 0
+\end{equation*}
+</div>
+</div></li>
+</ul> The corresponding sign chart is below. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c26.png" class="contained"></div> From the sign chart we can see that: <ul class="disc">
+<li id="li-154"><div class="para" id="p-derived-li-154">Kruger's revenue decreased from 2005 (<span class="process-math">\(t=1\)</span>) to 2007 (<span class="process-math">\(t=3\)</span>) and then again from 2015 (<span class="process-math">\(t=11\)</span>) to 2019 (<span class="process-math">\(t=15\)</span>).</div></li>
+<li id="li-155"><div class="para" id="p-derived-li-155">Kruger's revenue increased from 2007 (<span class="process-math">\(t=3\)</span>) to 2015 (<span class="process-math">\(t=11\)</span>).</div></li>
+<li id="li-156"><div class="para" id="p-derived-li-156">Since <span class="process-math">\(R(3) = 429\text{,}\)</span> Kruger had a relaive minimum revenue of $42,900,000 in 2007.</div></li>
+<li id="li-157"><div class="para" id="p-derived-li-157">Since <span class="process-math">\(R(11) = 685\text{,}\)</span> Kruger had a relaive maximum revenue of $68,500,000 in 2015.</div></li>
+</ul>
+</div></div>
+</div></li>
+<li id="li-158"><div class="para" id="p-derived-li-158">Graphical exploration: Graph <span class="process-math">\(R(t)\)</span> and <span class="process-math">\(MR(t)\text{.}\)</span> Make sure you understand how your work above corresponds to these graphs. <a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-79" id="solution-79"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-79"><div class="solution solution-like">
+<span class="process-math">\(MR(t)\)</span> is the green dotted graph. Overserve that the sign chart is also included in the graph below. Notice how that the sign of <span class="process-math">\(MR(t)\)</span> corresponds to whether the graph is above or below the <span class="process-math">\(t\)</span>-axis, how the graph of <span class="process-math">\(R(t)\)</span> follows the blue and red arrows in the sign chart, and that the critical values are the intercepts for <span class="process-math">\(MR(t)\text{,}\)</span> as well as the location for the relative extreme values of <span class="process-math">\(R(t)\text{.}\)</span> <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c27.png" class="contained"></div>
+</div></div>
+</div></li>
+</ol></article></div>
+<article class="example example-like" id="example-46"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-46"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.3</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-46"><article class="example example-like">ADTF Distributors begins to manufacture a new smart product, the iOON. Let x give the number of iOONs produced in a given cycle. The total cost in dollars is given by the function<div class="displaymath process-math">
+\begin{equation*}
+C(x) = 32,400 + 800x+x^2.
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-159"><div class="para" id="p-derived-li-159">Find both the average cost and marginal cost functions. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-80" id="solution-80"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-80"><div class="solution solution-like">We start with the average cost function, <span class="process-math">\(\overline{C}(x)\text{.}\)</span><div class="displaymath process-math" id="md-27">
+\begin{align*}
+\overline{C}(x) \amp = \frac{C(x)}{x} \\
+\\
+\overline{C}(x) \amp = \frac{32,400 + 800x+x^2}{x} \\
+\\
+\overline{C}(x) \amp = 32,400x^{-1} + 800 + x  
+\end{align*}
+</div>Since <span class="process-math">\(MC(x) = C'(x)\text{,}\)</span> the marginal cost function is<div class="displaymath process-math">
+\begin{equation*}
+MC(x) = 800 + 2x.
+\end{equation*}
+</div>
+</div></div>
+</div></li>
+<li id="li-160"><div class="para" id="p-derived-li-160">Find and interpret the average cost and marginal cost when 2,000 iOONs are produced. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-81" id="solution-81"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-81"><div class="solution solution-like">Let's first calculate the average cost.<div class="displaymath process-math" id="md-28">
+\begin{align*}
+\overline{C}(2,000) \amp = \frac{C(2,000)}{2000} \\
+\\
+\overline{C}(2,000) \amp = \frac{5,632,400}{2,000} \\
+\\
+\overline{C}(2,000) \amp = 2,816.2 
+\end{align*}
+</div>Hence, the average cost when ADTF Distributors produces 2,000 iOONs is $2,816.2 per iOON. To find the margincal cost we evaluate the derivative of the cost function at <span class="process-math">\(x=2,000\text{.}\)</span><div class="displaymath process-math" id="md-29">
+\begin{align*}
+MC(2,000) \amp = 800 + 2(2,000) \\
+MC(2,000) \amp = 4,800 
+\end{align*}
+</div>This means that when <span class="process-math">\(x=2,000\)</span> iOONs are produced, ADTF Distributors' costs are increasing at an approximate rate of $4,800 per additioanl iOON. That is, the cost of the 2,001<span class="process-math">\(^\textrm{st}\)</span> iOON is approximately $4,800 more than the 2,000<span class="process-math">\(^\textrm{th}\)</span> iOON.</div></div>
+</div></li>
+<li id="li-161"><div class="para" id="p-derived-li-161">Use the first derivate test to minimize ADTF Distributors' average cost. <a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-82" id="solution-82"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-82"><div class="solution solution-like">We start by finding the critical values for <span class="process-math">\(\overline{C}(x)\text{.}\)</span> To do this we must solve <span class="process-math">\(\overline{C}'(x) = 0\text{.}\)</span> First observe that<div class="displaymath process-math">
+\begin{equation*}
+\overline{C}'(x) = 1 -32,400x^{-2} = \dfrac{x^2-32,400}{x^2}\text{.}
+\end{equation*}
+</div>So,<div class="displaymath process-math" id="md-30">
+\begin{align*}
+\overline{C}'(x) \amp = 0 \\
+\\
+\frac{x^2-32,400}{x^2} \amp = 0 \\
+\\
+x^2 - 32,400 \amp = 0 \\
+\\
+(x-180)(x+180) \amp = 0 
+\end{align*}
+</div>Since dom(<span class="process-math">\(\overline{C}(x)\)</span>)<span class="process-math">\(= (0, \infty)\text{,}\)</span> the only cirtical number we find is <span class="process-math">\(x=180\text{.}\)</span> Now we make a sign chart for <span class="process-math">\(\overline{C}'(x)\)</span> to confirm that <span class="process-math">\(x=180\)</span> minimizes average cost. <ul class="disc">
+<li id="li-162"><div class="para" id="p-derived-li-162">In the interval <span class="process-math">\((0, 180)\)</span> we can test with <span class="process-math">\(x = 1\text{:}\)</span><div class="displaymath process-math">
+\begin{equation*}
+\overline{C}'(1) = (1-180)(1+180) &lt; 0
+\end{equation*}
+</div>
+</div></li>
+<li id="li-163"><div class="para" id="p-derived-li-163">In the interval <span class="process-math">\((180, \infty)\)</span> we can test with <span class="process-math">\(x = 181\text{:}\)</span><div class="displaymath process-math">
+\begin{equation*}
+\overline{C}'(181) = (181-180)(181+180) &gt; 0
+\end{equation*}
+</div>
+</div></li>
+</ul> The sign chart for <span class="process-math">\(\overline{C}'(x)\)</span> is below. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c28.png" class="contained"></div> From our sign chart we conclude <ul class="disc">
+<li id="li-164"><div class="para" id="p-derived-li-164">ADTF Distributors' avaerage cost decreased on the interval <span class="process-math">\((0,180)\text{.}\)</span>
+</div></li>
+<li id="li-165"><div class="para" id="p-derived-li-165">ADTF Distributors' avaerage cost increased on the interval <span class="process-math">\((180,\infty)\text{.}\)</span>
+</div></li>
+<li id="li-166"><div class="para" id="p-derived-li-166">ADTF Distributors has a relative minimum average cost when they produce <span class="process-math">\(x=180\)</span> iOONs. Their minimum average cost is <span class="process-math">\(\overline{C}(180) = 1,160 \)</span> (dollars per iOON) per iOON.</div></li>
+</ul>
+</div></div>
+</div></li>
+</ol></article></div>
+<div class="para" id="p-119">We will return to this type of application after we discuss <em class="emphasis">absolute extreme values</em>.</div></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="rel-ext.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="second-deriv.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

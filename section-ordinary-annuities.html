@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ordinary Annuities</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Business Mathematics">
+<meta property="book:author" content="Alfred Dahma">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="bus-math.html"><span class="title">Business Mathematics:</span> <span class="subtitle">Applications Using Algebra and Calculus</span></a></h1>
+<p class="byline">Alfred Dahma</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="interest-models.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-exp-log.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="lines.html" class="internal"><span class="codenumber">1</span> <span class="title">Graphs of Equations and Lines</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="graphs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Graphs and Solutions of Equations</span></a></div></li>
+<li>
+<div class="toc-item"><a href="eq-of-lines.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Equations of Lines</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="eq-of-lines.html#standard" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Standard Form</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#slope" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Slope of Line</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#special-lines" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Special Lines</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#slope-intercept" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Slope-Intercept Form of a Line</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#point-slope" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Point-Slope Form of a Line</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="linear-models-applications.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Linear Models and Applicaitions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Polynomials.html" class="internal"><span class="codenumber">2</span> <span class="title">Polynomials</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="functions.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Functions</span></a></div></li>
+<li><div class="toc-item"><a href="graphs-functions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphs of Functions</span></a></div></li>
+<li><div class="toc-item"><a href="linear-functions.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Linear Functions and Applications</span></a></div></li>
+<li>
+<div class="toc-item"><a href="quadratics.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Quardratic Functions and Applications</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="quadratics.html#basics" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Basics About Quadratics</span></a></div></li>
+<li><div class="toc-item"><a href="quadratics.html#quardratic-applications" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Applications With Quadratics</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="general-polynomials.html" class="internal"><span class="codenumber">2.5</span> <span class="title">General Polynomials</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="diff-calc.html" class="internal"><span class="codenumber">3</span> <span class="title">Differential Calculus</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="limits.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Limits</span></a></div></li>
+<li><div class="toc-item"><a href="aroc.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Average Rate Of Change</span></a></div></li>
+<li><div class="toc-item"><a href="iroc-deriv.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Instantaneous Rate Of Change and the Derivative</span></a></div></li>
+<li><div class="toc-item"><a href="more-marg-analysis.html" class="internal"><span class="codenumber">3.4</span> <span class="title">More About Marginal Analysis</span></a></div></li>
+<li><div class="toc-item"><a href="sect-power-rule.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Derivatives Using The Power Rule</span></a></div></li>
+<li><div class="toc-item"><a href="rel-ext.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Relative or Local Extrema</span></a></div></li>
+<li><div class="toc-item"><a href="first-deriv-test.html" class="internal"><span class="codenumber">3.7</span> <span class="title">The First Derivative Test</span></a></div></li>
+<li><div class="toc-item"><a href="second-deriv.html" class="internal"><span class="codenumber">3.8</span> <span class="title">The Second Derivative</span></a></div></li>
+<li><div class="toc-item"><a href="abs-ext.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Absolute Extrema</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="integration.html" class="internal"><span class="codenumber">4</span> <span class="title">Integral Calculus</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="antiderivs-indef-int.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Antiderivatives and Indefinite Integrals</span></a></div></li>
+<li><div class="toc-item"><a href="area-def-int.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Area And The Definite Integral</span></a></div></li>
+<li><div class="toc-item"><a href="sec-ftc.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div></li>
+<li><div class="toc-item"><a href="ftc-apps.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Applications of the Fundamental Theorem of Calculus</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-exp-log.html" class="internal"><span class="codenumber">5</span> <span class="title">Exponential and Logarithmic Models</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="basic-props.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Basic Properties</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="basic-props.html#subsect-exp" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="basic-props.html#subsect-log" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Logarithmic Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exponential-applications.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Applications Of Exponential Functions - Exponential Growth And Decay</span></a></div></li>
+<li>
+<div class="toc-item"><a href="interest-models.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Interest Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="interest-models.html#sub-imp-int" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#sub-compound-interest" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Compound Interest</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#sub-cont-comp" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Continuous Compounding</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#subsection-13" class="internal"><span class="codenumber">5.3.4</span> <span class="title">APR and APY</span></a></div></li>
+</ul>
+</li>
+<li class="active"><div class="toc-item"><a href="section-ordinary-annuities.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Ordinary Annuities</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-ordinary-annuities"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.4</span> <span class="title">Ordinary Annuities</span>
+</h2>
+<div class="para" id="p-246">An <dfn class="terminology">annuity</dfn> is a sequence of <em class="emphasis">equal payments</em> made at <em class="emphasis">equal time periods</em> (unlike one-time deposits or payments like we previously considered).  An <dfn class="terminology">ordinary annuity</dfn> is an annuity in which the payments are made to the account at the <em class="emphasis">end of each period</em>.</div>
+<div class="para" id="p-247">Because annuities involve a sequence of payments, determining the future value of an annuity can involve adding a large number of terms together, which can be extremely tedious. Fortunately, using some algebra, we can find a nice formula to make our work much easier. So we begin with some albegra.</div>
+<div class="para logical" id="p-248">
+<div class="para">As a an example, consider the following equality. For any real number <span class="process-math">\(x\text{,}\)</span> we have,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x-1)(1+x+x^2+x^3+x^4) = x^5 - 1.
+\end{equation*}
+</div>
+<div class="para">When <span class="process-math">\(x \neq 1\)</span> this is equivalent to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1+x+x^2+x^3+x^4 = \dfrac{x^5-1}{x-1}
+\end{equation*}
+</div>
+<div class="para">Similarly</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1+x+x^2+x^3+x^4 + x^5 = \dfrac{x^6-1}{x-1}, \: \textrm{and} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1+x+x^2+x^3+x^4 + x^5 +x^6= \dfrac{x^7-1}{x-1} 
+\end{equation*}
+</div>
+<div class="para">and so on. What will be useful to us here, is that the sum on the left can be computed using division. In general, the following is true:</div>
+</div>
+<article class="fact theorem-like" id="fact-geometric-series"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span>
+</h3>For any natural number <span class="process-math">\(m\)</span> and real number <span class="process-math">\(x \neq 1\text{,}\)</span><div class="displaymath process-math">
+\begin{equation*}
+1 + x +x^2+x^3+x^4+\cdot + x^{m-1} = \dfrac{x^m-1}{x-1}.
+\end{equation*}
+</div></article><div class="para logical" id="p-249">
+<div class="para">Now, suppose we deposit $<span class="process-math">\(P\)</span> at the end of each period for <span class="process-math">\(m\)</span> total compounding periods at an interest rate of <span class="process-math">\(i\)</span> each period.  Note that <span class="process-math">\(i\)</span> is NOT necessarily the annual rate.  To compare with our previous work, if <span class="process-math">\(r\)</span> were the annual interest rate and there were <span class="process-math">\(n\)</span> compounding periods per year, then we would use <span class="process-math">\(i = \dfrac{r}{n}\)</span> as the interest rate per period. In other words, using our new notation, we can rewrite our compound interest model as follows. For principal <span class="process-math">\(P\text{,}\)</span> compounded <span class="process-math">\(n\)</span> times a year for <span class="process-math">\(t\)</span> years at an annual interest rate <span class="process-math">\(r\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P \left( 1+ \dfrac{r}{n} \right)^{nt} = P\left(1+ i \right)^{m}
+\end{equation*}
+</div>
+<div class="para">Now, using our compound interest model, with $<span class="process-math">\(P\)</span> deposited at the end of each period,</div>
+<ul class="disc">
+<li id="li-380"><div class="para" id="p-derived-li-380">Accumulated amount from deposit 1 = <span class="process-math">\(P(1+i)^{m-1}\)</span>
+</div></li>
+<li id="li-381"><div class="para" id="p-derived-li-381">Accumulated amount from deposit 2 = <span class="process-math">\(P(1+i)^{m-2}\)</span>
+</div></li>
+<li id="li-382"><div class="para" id="p-derived-li-382">Accumulated amount from deposit 3 = <span class="process-math">\(P(1+i)^{m-3}\)</span>
+</div></li>
+</ul>
+<div class="para"><span class="process-math">\(\vdots\)</span></div>
+<ul class="disc">
+<li id="li-383"><div class="para" id="p-derived-li-383">Accumulated amount from deposit m-3 = <span class="process-math">\(P(1+i)^{3}\)</span>
+</div></li>
+<li id="li-384"><div class="para" id="p-derived-li-384">Accumulated amount from deposit m-2 = <span class="process-math">\(P(1+i)^{2}\)</span>
+</div></li>
+<li id="li-385"><div class="para" id="p-derived-li-385">Accumulated amount from deposit m-1 = <span class="process-math">\(P(1+i)\)</span>
+</div></li>
+<li id="li-386"><div class="para" id="p-derived-li-386">Accumulated amount from deposit m = <span class="process-math">\(P\)</span>
+</div></li>
+</ul>
+</div>
+<div class="para logical" id="p-250">
+<div class="para">Let <span class="process-math">\(F\)</span> represent the future value of this ordinary annuity.  Then <span class="process-math">\(F\)</span> will equal the sum of all these accumulated amounts.  Therefore, if we let <span class="process-math">\(x=1+i\)</span> and use <a href="" class="xref" data-knowl="./knowl/fact-geometric-series.html" title="Fact 5.4.1">Fact 5.4.1</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-geometric-series.html" id="md-88">
+\begin{align*}
+F \amp = P + Px + Px^2 + Px^3 + \cdots + Px^{m-2} + Px^{m-1} \\
+\\
+F \amp = P(1+x+x^2+x^3 + \cdots x^{m-1}) \\
+\\
+F \amp =  P\left(\dfrac{x^m - 1}{x-1} \right) 
+\end{align*}
+</div>
+<div class="para">Substituting <span class="process-math">\(x = 1 + i\)</span> back into this expression gives the following ordinary annuity formula.</div>
+</div>
+<article class="fact theorem-like" id="ordinary-annuity-formula"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="period">.</span>
+</h3>Suppose $<span class="process-math">\(P\)</span> is deposited (or paid) at the end of each of <span class="process-math">\(m\)</span> total periods at an interest rate of <span class="process-math">\(i\)</span> per period. Then the future value, <span class="process-math">\(F\text{,}\)</span> of this ordinary annuity is <ul class="disc"><li id="ordinary-annuity-future"><div class="para" id="p-derived-ordinary-annuity-future"><div class="displaymath process-math">
+\begin{equation*}
+F = P\left(\dfrac{(1+i)^m - 1}{i} \right)
+\end{equation*}
+</div></div></li></ul> Under these same conditions, we can rewrite the above formula in terms of <span class="process-math">\(P\)</span> to determine the periodic payments needed to reach a future value, <span class="process-math">\(F\text{.}\)</span> The payments would be determined by <ul class="disc"><li id="sinking-fund"><div class="para" id="p-derived-sinking-fund"><div class="displaymath process-math">
+\begin{equation*}
+P = F\left(\dfrac{i}{(1+i)^m - 1} \right).
+\end{equation*}
+</div></div></li></ul> This expression is often referred to as a <dfn class="terminology">sinking fund</dfn> formula.</article><article class="example example-like" id="example-89"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-89"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.3</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-89"><article class="example example-like">Suppose $200 is deposited into an account at the end of each year at 4% compounded annually.  How much will be in the account in 5 years? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-175" id="solution-175"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-175"><div class="solution solution-like">We use the future value formula for an ordinary annuity (<a href="" class="xref" data-knowl="./knowl/ordinary-annuity-future.html" title="Item">Item </a>) given in <a href="" class="xref" data-knowl="./knowl/ordinary-annuity-formula.html" title="Fact 5.4.2">Fact 5.4.2</a> with <span class="process-math">\(P=200\text{,}\)</span> <span class="process-math">\(i = .04\text{,}\)</span> and <span class="process-math">\(m=5\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/ordinary-annuity-future.html ./knowl/ordinary-annuity-formula.html" id="md-89">
+\begin{align*}
+F \amp = P\left(\dfrac{(1+i)^m - 1}{i} \right)\\
+\\
+F \amp = 200\left(\dfrac{(1+.04)^5 - 1}{.04} \right) \\
+\\
+F \amp \approx 1083.26  
+\end{align*}
+</div>In 5 years the account will grow to $1,083.26</div></div></article></div>
+<article class="example example-like" id="example-90"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-90"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.4</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-90"><article class="example example-like">ADTF Distributors needs $250,000 to purchase equipemnt for their new distribution center which will be open in 3 and half years. If ADTF Distributors earns 6% compounded monthly, how much does ADTF Distributors need to deposit at the end of each month to have $250,000 in the account at the end of 3 and a half years? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-176" id="solution-176"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-176"><div class="solution solution-like">We use the sinking fund formula (<a href="" class="xref" data-knowl="./knowl/sinking-fund.html" title="Item">Item </a>) given in <a href="" class="xref" data-knowl="./knowl/ordinary-annuity-formula.html" title="Fact 5.4.2">Fact 5.4.2</a> with <span class="process-math">\(F=250,000\text{,}\)</span> <span class="process-math">\(i = \dfrac{.06}{12} = .005\text{,}\)</span> and <span class="process-math">\(m=3.5 \cdot 12 = 42\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/sinking-fund.html ./knowl/ordinary-annuity-formula.html" id="md-90">
+\begin{align*}
+P \amp = F\left(\dfrac{i}{(1+i)^m - 1} \right)\\
+\\
+P \amp = 250,000\left(\dfrac{.005}{(1+.005)^{42} - 1} \right) \\
+\\
+P \amp \approx 5,364.05  
+\end{align*}
+</div>ADTF Distributors need to deposit $5,364.05 at the end of each month for 42 months to have $250,000 for equipment at the end of 3 and a half years.</div></div></article></div>
+<article class="example example-like" id="example-91"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-91"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.5</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-91"><article class="example example-like">To build their new distribution center, ADTF Distributors had to borrow $5 million. They recently issued bonds to raise money to help pay back the $5 million they borrowed. The bonds have a face value of $5 million and are due and payable in 12 years.  Assuming they earn 7.4% quarterly on their deposits, how much should ADTF Distributors deposit at the end of each quarter in order to retire the bond issue at the end of year 12. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-177" id="solution-177"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-177"><div class="solution solution-like">We use the sinking fund formula (<a href="" class="xref" data-knowl="./knowl/sinking-fund.html" title="Item">Item </a>) given in <a href="" class="xref" data-knowl="./knowl/ordinary-annuity-formula.html" title="Fact 5.4.2">Fact 5.4.2</a> with <span class="process-math">\(F=5,000,000\text{,}\)</span> <span class="process-math">\(i = \dfrac{.074}{4} = .0185\text{,}\)</span> and <span class="process-math">\(m=12 \cdot 4 = 48\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/sinking-fund.html ./knowl/ordinary-annuity-formula.html" id="md-91">
+\begin{align*}
+P \amp = F\left(\dfrac{i}{(1+i)^m - 1} \right)\\
+\\
+P \amp = 5,000,000\left(\dfrac{.0185}{(1+.0185)^{48} - 1} \right) \\
+\\
+P \amp \approx 65,573.78  
+\end{align*}
+</div>ADTF Distributors needs to deposit $65,573.78 at the end of each quarter for 48 quarters to retire the bond issue at the end of year 12.</div></div></article></div>
+<article class="example example-like" id="example-92"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-92"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.6</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-92"><article class="example example-like">Cindy opens a money market at her bank that offers an annual rate of 1.11% compounded monthly.  She contributes $950 a month. <ol class="lower-alpha">
+<li id="li-389"><div class="para" id="p-derived-li-389">How much will Cindy have in the money market at the end of year 10 years? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-178" id="solution-178"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-178"><div class="solution solution-like">We use the future value formula for an ordinary annuity (<a href="" class="xref" data-knowl="./knowl/ordinary-annuity-future.html" title="Item">Item </a>) given in <a href="" class="xref" data-knowl="./knowl/ordinary-annuity-formula.html" title="Fact 5.4.2">Fact 5.4.2</a> with <span class="process-math">\(P=950\text{,}\)</span> <span class="process-math">\(i = \dfrac{.011}{12}\text{,}\)</span> and <span class="process-math">\(m=10 \cdot 12 = 120\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/ordinary-annuity-future.html ./knowl/ordinary-annuity-formula.html" id="md-92">
+\begin{align*}
+F \amp = P\left(\dfrac{(1+i)^m - 1}{i} \right)\\
+\\
+F \amp = 950\left(\dfrac{\left(1+\dfrac{.011}{12}\right)^{120} - 1}{\dfrac{.011}{12}} \right) \\
+\\
+F \amp \approx 120,508.87  
+\end{align*}
+</div>By the end of year 10, Cindy will have $120,508.87.</div></div>
+</div></li>
+<li id="li-390"><div class="para" id="p-derived-li-390">After the 10 years is up, Cindy decides to invest the amount from her money market annuity into another account with annual interest rate 1.24% compounded monthly.  If she continues to make her monthly deposits of $950, how much will she have in her account in another 5 years? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-179" id="solution-179"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-179"><div class="solution solution-like">We need to do this in two steps: <ul class="disc">
+<li id="li-391"><div class="para" id="p-derived-li-391">First, we use the compound interest formula <a href="" class="xref" data-knowl="./knowl/compound-future.html" title="Item 1">Item 1</a> to determine the future value of $120,508.87.  With <span class="process-math">\(P=120,508.87\text{,}\)</span> <span class="process-math">\(r=.0124\text{,}\)</span> and <span class="process-math">\(n=12\text{,}\)</span> the model we use is<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html">
+\begin{equation*}
+A(t) = 120,508.87\left(1+\dfrac{.0124}{12}\right)^{12t}
+\end{equation*}
+</div>Evaluating at <span class="process-math">\(t=5\)</span> gives<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html" id="md-93">
+\begin{align*}
+A(5) \amp = 120,508.87\left(1+\dfrac{.0124}{12}\right)^{12 \cdot 5} \\
+A(5) \amp \approx 128,212.80 
+\end{align*}
+</div>The amount from Cindy's previous account will grow to $128,212.80 in another 5 years.</div></li>
+<li id="li-392"><div class="para" id="p-derived-li-392">Next we calculate the amount that will be generated by Cindy's continued deposits using the ordinary annuity formula (<a href="" class="xref" data-knowl="./knowl/ordinary-annuity-future.html" title="Item">Item </a> given in <a href="" class="xref" data-knowl="./knowl/ordinary-annuity-formula.html" title="Fact 5.4.2">Fact 5.4.2</a>) with <span class="process-math">\(P=950\text{,}\)</span> <span class="process-math">\(i = \dfrac{.0124}{12}\text{,}\)</span> and <span class="process-math">\(m=5 \cdot 12 = 60\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/ordinary-annuity-future.html ./knowl/ordinary-annuity-formula.html" id="md-94">
+\begin{align*}
+F \amp = P\left(\dfrac{(1+i)^m - 1}{i} \right)\\
+\\
+F \amp = 950\left(\dfrac{\left(1+\dfrac{.024}{12}\right)^{60} - 1}{\dfrac{.0124}{12}} \right) \\
+\\
+F \amp \approx 58,772.78 
+\end{align*}
+</div>The amount generated from Cindy's continued deposits is $58,772.78</div></li>
+</ul> <div class="para" id="p-252"></div> Finally, we add the two dollar amounts above to find the final value in Cindy's account:<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/ordinary-annuity-future.html ./knowl/ordinary-annuity-formula.html">
+\begin{equation*}
+$128,212.80 + $58,772.78 = $186,985.58
+\end{equation*}
+</div>
+</div></div>
+</div></li>
+</ol></article></div>
+<div class="para logical" id="p-253">
+<div class="para">Let's now look at the <em class="emphasis">present value of an ordinary annuity</em>. The question is, how much should be invested presently at a periodic interest rate of <span class="process-math">\(i\)</span> to ensure a payment of $<span class="process-math">\(P\)</span> can be made from the account at the end of each of <span class="process-math">\(m\)</span> periods. To ensure $<span class="process-math">\(P\)</span> is in the account for the first payment (here, we are viewing <span class="process-math">\(P\)</span> as the future value; in other words <span class="process-math">\(P\)</span> is playing the role of <span class="process-math">\(F\)</span> in <a href="" class="xref" data-knowl="./knowl/compound-present.html" title="Item 3">Item 3</a>),</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+\dfrac{P}{(1+i)}
+\end{equation*}
+</div>
+<div class="para">must be depsoited presently. To ensure the second payment of $<span class="process-math">\(P\)</span> (again, <span class="process-math">\(P\)</span> is the future value) is in the account by the end of the second period</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+\dfrac{P}{(1+i)^2}
+\end{equation*}
+</div>
+<div class="para">must be depsoited presently. To ensure the third payment of $<span class="process-math">\(P\)</span> (again, <span class="process-math">\(P\)</span> is the future value) is in the account by the end of the third period</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+\dfrac{P}{(1+i)^3}
+\end{equation*}
+</div>
+<div class="para">must be depsoited presently. This pattern continues up to and including the final payment, for which</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+\dfrac{P}{(1+i)^m}
+\end{equation*}
+</div>
+<div class="para">must be depsoited presently to ensure the last payment can be made from the account. What we need to deposit, then, to ensure <span class="process-math">\(m\)</span> periodic payments of <span class="process-math">\(P\)</span> (at the end of each period), is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+\dfrac{P}{(1+i)} + \dfrac{P}{(1+i)^2} + \dfrac{P}{(1+i)^3} + \cdots +  \dfrac{P}{(1+i)^m}.
+\end{equation*}
+</div>
+<div class="para">Lertting <span class="process-math">\(x=1+i\)</span> and factoring a <span class="process-math">\(\dfrac{P}{x}\)</span> from each term, the present value, <span class="process-math">\(PV\text{,}\)</span> of this ordinary annuity has the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+PV = \dfrac{P}{x} \left( 1 + \dfrac{1}{x} + \left(\dfrac{1}{x}\right)^2 + \cdots + \left(\dfrac{1}{x}\right)^{m-1} \right)
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(P\)</span> is the periodic pay-out amount. Using <a href="" class="xref" data-knowl="./knowl/fact-geometric-series.html" title="Fact 5.4.1">Fact 5.4.1</a> this can be rewritten as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+PV = \dfrac{P}{x} \left( \dfrac{ 1 - \left( \frac{1}{x}\right)^m }{1-\frac{1}{x}}\right) = P\left(\dfrac{1-x^{-m}}{x-1}\right).
+\end{equation*}
+</div>
+<div class="para">Substituting <span class="process-math">\(1+i\)</span> back in for <span class="process-math">\(x\)</span> gives the following:</div>
+</div>
+<article class="fact theorem-like" id="payout-annuity-formula"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.4.7</span><span class="period">.</span>
+</h3>Suppose $<span class="process-math">\(P\)</span> is paid (or deposited) at the end of each of <span class="process-math">\(m\)</span> total periods at an interest rate of <span class="process-math">\(i\)</span> per period. Then the present value, <span class="process-math">\(PV\text{,}\)</span> of this ordinary annuity is <ul class="disc"><li id="annuity-present-value"><div class="para" id="p-derived-annuity-present-value"><div class="displaymath process-math">
+\begin{equation*}
+PV = P\left(\dfrac{1-(1+i)^{-m}}{i} \right)
+\end{equation*}
+</div></div></li></ul> Under these same conditions, we can rewrite the above formula in terms of <span class="process-math">\(P\)</span> to determine the periodic payments associated with an ordinary annuity with present value, <span class="process-math">\(PV\text{.}\)</span> The payments would be determined by <ul class="disc"><li id="amortization"><div class="para" id="p-derived-amortization"><div class="displaymath process-math">
+\begin{equation*}
+P = PV \left(\dfrac{i}{1-(1+i)^{-m}} \right).
+\end{equation*}
+</div></div></li></ul></article><div class="para" id="p-254">
+<dfn class="terminology">Loan amortization</dfn> is the process of paying off the interest and principal balance on a loan with regular payments over time. If the payments are made at the end of the period, then the payment formula, <a href="" class="xref" data-knowl="./knowl/amortization.html" title="Item">Item </a>, for <span class="process-math">\(P\)</span> above will provide the payment amount needed to pay off a loan of $<span class="process-math">\(PV\)</span> at periodic interest rate <span class="process-math">\(i\)</span> over <span class="process-math">\(m\)</span> periods. Also observe that if both sides of the expression  for <span class="process-math">\(PV\)</span> above (<a href="" class="xref" data-knowl="./knowl/annuity-present-value.html" title="Item">Item </a>) are multiplied by <span class="process-math">\((1+i)^m\)</span> to find the future value <span class="process-math">\(F\)</span> of the loan under compound interest, we arrive back at the future value formula,<a href="" class="xref" data-knowl="./knowl/ordinary-annuity-future.html" title="Item">Item </a>, for an oridinary annuity.</div>
+<div class="para" id="p-255">In general, <dfn class="terminology">equity</dfn> is defined to be <em class="emphasis">total assets</em> minus <em class="emphasis">total liabilities</em>. For a homeowner or property owener, <dfn class="terminology">equity</dfn> would be the (market) value of the home or property less the amount still owed. To calculate the amount still owed (the outstanding debt), we view the remaining payments left on the laon as an ordinary annuity, and find its present value. This amount would be the amount still owed on the loan. Consider the following example.</div>
+<div class="para" id="p-256">H.E. Pennypacker, a wealthy American industrialist, is looking to purchase a sliver mine in the mountains of Peru. In need of loan, Pennypacker finances the entire value of the mine and borrows $500,000,000 from Varnsen Savings and Loan. The terms of the loan stipulate that Pennypacker pay  an annual interest rate of 2.25%  compounded monthly for 10 years.</div>
+<div class="para logical" id="p-257">
+<div class="para">Let's determine Pennypacker's monthly payments to Varnsen Savings and Loan. We can think of this two ways:</div>
+<ol class="decimal">
+<li id="li-395"><div class="para" id="p-derived-li-395">We can view $500,000,000 as the present value of an ordinary annuity formed by Pennypacker's sequence of payments.. In this case, using <a href="" class="xref" data-knowl="./knowl/amortization.html" title="Item">Item </a> to find the amortization payments,<div class="displaymath process-math" data-contains-math-knowls="./knowl/amortization.html">
+\begin{equation*}
+P = 500,000,000 \left( \dfrac{\frac{.0225}{12}}{1-\left(1+\dfrac{.0225}{12}\right)^{-120}}\right) \approx 4,656,868.59
+\end{equation*}
+</div>so that Pennypacker's monthly payments are $4,656,868.59.</div></li>
+<li id="li-396"><div class="para" id="p-derived-li-396">Using the compound interest model<div class="displaymath process-math" data-contains-math-knowls="./knowl/sinking-fund.html">
+\begin{equation*}
+A(t) = 500,000,000\left(1+\frac{.0225}{12}\right)^{12t}   
+\end{equation*}
+</div>we find the future value of the loan to be<div class="displaymath process-math" data-contains-math-knowls="./knowl/sinking-fund.html">
+\begin{equation*}
+F = A(10) = 500,000,000\left(1+\frac{.0225}{12}\right)^{12 \cdot 10} \approx 626,029,455.95, 
+\end{equation*}
+</div>or $626,029,455.95. Viewing this as the future value of an ordinary annuity and using <a href="" class="xref" data-knowl="./knowl/sinking-fund.html" title="Item">Item </a> to find the payments,<div class="displaymath process-math" data-contains-math-knowls="./knowl/sinking-fund.html">
+\begin{equation*}
+P = 626,029,455.95 \left( \frac{ \frac{.0225}{12} }{ \left(1+\frac{.0225}{12}\right)^{120} - 1} \right)  \approx 4,656,868.59,
+\end{equation*}
+</div>and again we find Pennypacker's payments are $4,656,868.59.</div></li>
+</ol>
+<div class="para">So, if Pennypacker pays the loan in 120 monthly payments of $4,656,868.59, he will end up paying</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/amortization.html ./knowl/sinking-fund.html">
+\begin{equation*}
+4,656,868.59(120) - 500,000,000 = 58,824,230.92
+\end{equation*}
+</div>
+<div class="para">or $58,824,230.92 in interest.</div>
+</div>
+<div class="para logical" id="p-258">
+<div class="para">Suppose that Pennypacker wants to pay off his loan halfway through the term, with 60 payments remaining. How much does Pennypacker owe Varnsen Savings and Loan? To determine the amount owed, we find the present value of the annuity defined by these 60 remaining payments using <a href="" class="xref" data-knowl="./knowl/annuity-present-value.html" title="Item">Item </a>:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/annuity-present-value.html">
+\begin{equation*}
+PV = 4,656,868.59 \left(\frac{1-\left(1+\frac{.0225}{12}\right)^{-60}}{ \frac{.0225}{12}}\right)
+\approx 264,034,561.60
+\end{equation*}
+</div>
+<div class="para">If Pennypacker wants to pay off the laon at the end of the fifth year (after 60 payments), he owes Varnsen Savings and Loan $264,034,561.60. In this case, Pennypacker paid</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/annuity-present-value.html">
+\begin{equation*}
+(4,656,868.59(60)+264,034,561.60)- 500,000,000 = 43,446,677.06
+\end{equation*}
+</div>
+<div class="para">or $43,446,677.06 in interest.</div>
+</div>
+<div class="para logical" id="p-259">
+<div class="para">We can also use the present value, <span class="process-math">\(PV\text{,}\)</span> above to calculate Pennypacker's equity after the fifth year of the laon. Assuming that the value of the silver mine remained constant, Pennypacker's equity after his 60th payment is</div>
+<div class="displaymath process-math" id="md-95">
+\begin{align*}
+\textrm{Equity} \: \amp = \: \textrm{Value} \: - \: \textrm{Amount Owed} \\
+\textrm{Equity} \: \amp =  500,000,000  - 264,034,561.60 \\
+\textrm{Equity} \: \amp =  235,965,438.40 
+\end{align*}
+</div>
+<div class="para">Pennypacker's equity after the fifth year of the laon is $235,965,438.40 or about 47%.</div>
+</div></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="interest-models.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

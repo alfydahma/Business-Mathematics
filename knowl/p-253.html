@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">Let's now look at the <em class="emphasis">present value of an ordinary annuity</em>. The question is, how much should be invested presently at a periodic interest rate of <span class="process-math">\(i\)</span> to ensure a payment of $<span class="process-math">\(P\)</span> can be made from the account at the end of each of <span class="process-math">\(m\)</span> periods. To ensure $<span class="process-math">\(P\)</span> is in the account for the first payment (here, we are viewing <span class="process-math">\(P\)</span> as the future value; in other words <span class="process-math">\(P\)</span> is playing the role of <span class="process-math">\(F\)</span> in <a href="" class="xref" data-knowl="./knowl/compound-present.html" title="Item 3">Item 3</a>),</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+\dfrac{P}{(1+i)}
+\end{equation*}
+</div>
+<div class="para">must be depsoited presently. To ensure the second payment of $<span class="process-math">\(P\)</span> (again, <span class="process-math">\(P\)</span> is the future value) is in the account by the end of the second period</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+\dfrac{P}{(1+i)^2}
+\end{equation*}
+</div>
+<div class="para">must be depsoited presently. To ensure the third payment of $<span class="process-math">\(P\)</span> (again, <span class="process-math">\(P\)</span> is the future value) is in the account by the end of the third period</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+\dfrac{P}{(1+i)^3}
+\end{equation*}
+</div>
+<div class="para">must be depsoited presently. This pattern continues up to and including the final payment, for which</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+\dfrac{P}{(1+i)^m}
+\end{equation*}
+</div>
+<div class="para">must be depsoited presently to ensure the last payment can be made from the account. What we need to deposit, then, to ensure <span class="process-math">\(m\)</span> periodic payments of <span class="process-math">\(P\)</span> (at the end of each period), is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+\dfrac{P}{(1+i)} + \dfrac{P}{(1+i)^2} + \dfrac{P}{(1+i)^3} + \cdots +  \dfrac{P}{(1+i)^m}.
+\end{equation*}
+</div>
+<div class="para">Lertting <span class="process-math">\(x=1+i\)</span> and factoring a <span class="process-math">\(\dfrac{P}{x}\)</span> from each term, the present value, <span class="process-math">\(PV\text{,}\)</span> of this ordinary annuity has the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+PV = \dfrac{P}{x} \left( 1 + \dfrac{1}{x} + \left(\dfrac{1}{x}\right)^2 + \cdots + \left(\dfrac{1}{x}\right)^{m-1} \right)
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(P\)</span> is the periodic pay-out amount. Using <a href="" class="xref" data-knowl="./knowl/fact-geometric-series.html" title="Fact 5.4.1">Fact 5.4.1</a> this can be rewritten as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html ./knowl/fact-geometric-series.html">
+\begin{equation*}
+PV = \dfrac{P}{x} \left( \dfrac{ 1 - \left( \frac{1}{x}\right)^m }{1-\frac{1}{x}}\right) = P\left(\dfrac{1-x^{-m}}{x-1}\right).
+\end{equation*}
+</div>
+<div class="para">Substituting <span class="process-math">\(1+i\)</span> back in for <span class="process-math">\(x\)</span> gives the following:</div>
+</div>
+<span class="incontext"><a href="section-ordinary-annuities.html#p-253" class="internal">in-context</a></span>
+</body>
+</html>

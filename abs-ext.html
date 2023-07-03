@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Absolute Extrema</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Business Mathematics">
+<meta property="book:author" content="Alfred Dahma">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="bus-math.html"><span class="title">Business Mathematics:</span> <span class="subtitle">Applications Using Algebra and Calculus</span></a></h1>
+<p class="byline">Alfred Dahma</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="second-deriv.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="diff-calc.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="integration.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="lines.html" class="internal"><span class="codenumber">1</span> <span class="title">Graphs of Equations and Lines</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="graphs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Graphs and Solutions of Equations</span></a></div></li>
+<li>
+<div class="toc-item"><a href="eq-of-lines.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Equations of Lines</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="eq-of-lines.html#standard" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Standard Form</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#slope" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Slope of Line</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#special-lines" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Special Lines</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#slope-intercept" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Slope-Intercept Form of a Line</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#point-slope" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Point-Slope Form of a Line</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="linear-models-applications.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Linear Models and Applicaitions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Polynomials.html" class="internal"><span class="codenumber">2</span> <span class="title">Polynomials</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="functions.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Functions</span></a></div></li>
+<li><div class="toc-item"><a href="graphs-functions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphs of Functions</span></a></div></li>
+<li><div class="toc-item"><a href="linear-functions.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Linear Functions and Applications</span></a></div></li>
+<li>
+<div class="toc-item"><a href="quadratics.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Quardratic Functions and Applications</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="quadratics.html#basics" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Basics About Quadratics</span></a></div></li>
+<li><div class="toc-item"><a href="quadratics.html#quardratic-applications" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Applications With Quadratics</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="general-polynomials.html" class="internal"><span class="codenumber">2.5</span> <span class="title">General Polynomials</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="diff-calc.html" class="internal"><span class="codenumber">3</span> <span class="title">Differential Calculus</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="limits.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Limits</span></a></div></li>
+<li><div class="toc-item"><a href="aroc.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Average Rate Of Change</span></a></div></li>
+<li><div class="toc-item"><a href="iroc-deriv.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Instantaneous Rate Of Change and the Derivative</span></a></div></li>
+<li><div class="toc-item"><a href="more-marg-analysis.html" class="internal"><span class="codenumber">3.4</span> <span class="title">More About Marginal Analysis</span></a></div></li>
+<li><div class="toc-item"><a href="sect-power-rule.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Derivatives Using The Power Rule</span></a></div></li>
+<li><div class="toc-item"><a href="rel-ext.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Relative or Local Extrema</span></a></div></li>
+<li><div class="toc-item"><a href="first-deriv-test.html" class="internal"><span class="codenumber">3.7</span> <span class="title">The First Derivative Test</span></a></div></li>
+<li><div class="toc-item"><a href="second-deriv.html" class="internal"><span class="codenumber">3.8</span> <span class="title">The Second Derivative</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="abs-ext.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Absolute Extrema</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="integration.html" class="internal"><span class="codenumber">4</span> <span class="title">Integral Calculus</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="antiderivs-indef-int.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Antiderivatives and Indefinite Integrals</span></a></div></li>
+<li><div class="toc-item"><a href="area-def-int.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Area And The Definite Integral</span></a></div></li>
+<li><div class="toc-item"><a href="sec-ftc.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div></li>
+<li><div class="toc-item"><a href="ftc-apps.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Applications of the Fundamental Theorem of Calculus</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-exp-log.html" class="internal"><span class="codenumber">5</span> <span class="title">Exponential and Logarithmic Models</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="basic-props.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Basic Properties</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="basic-props.html#subsect-exp" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="basic-props.html#subsect-log" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Logarithmic Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exponential-applications.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Applications Of Exponential Functions - Exponential Growth And Decay</span></a></div></li>
+<li>
+<div class="toc-item"><a href="interest-models.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Interest Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="interest-models.html#sub-imp-int" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#sub-compound-interest" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Compound Interest</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#sub-cont-comp" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Continuous Compounding</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#subsection-13" class="internal"><span class="codenumber">5.3.4</span> <span class="title">APR and APY</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-ordinary-annuities.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Ordinary Annuities</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="abs-ext"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.9</span> <span class="title">Absolute Extrema</span>
+</h2>
+<div class="para" id="p-129">In most optimization problems, one is interested in finding the <em class="emphasis">absolute</em>, as opposed to <em class="emphasis">relative</em>, extreme values of a function. So now we will be looking for more than "peaks" and "valleys" on the graph of function.  What we want to determine is the absolute largest and absolute smallest output values of a function, if they exist.</div>
+<article class="definition definition-like" id="definition-16"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.9.1</span><span class="period">.</span>
+</h3>Let <span class="process-math">\(f(x)\)</span> be a function with <span class="process-math">\(c\)</span> in its domain. Then <span class="process-math">\(f(c)\)</span> is the <dfn class="terminology">absolute maximum</dfn> value of <span class="process-math">\(f\)</span> if <span class="process-math">\(f(c) \geq f(x)\)</span> for every <span class="process-math">\(x\)</span> in the domain of <span class="process-math">\(f\text{.}\)</span>  Similarly, <span class="process-math">\(f(c)\)</span> is the <dfn class="terminology">absolute minimum</dfn> value of <span class="process-math">\(f\)</span> if <span class="process-math">\(f(c) \leq f(x)\)</span> for every <span class="process-math">\(x\)</span> in the domain of <span class="process-math">\(f\text{.}\)</span></article><div class="para" id="p-130">See the graph below for a comparison of relative and absolute extreme values of <span class="process-math">\(f\text{.}\)</span>
+</div>
+<div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c34.png" class="contained"></div>
+<div class="para" id="p-131">Notice that <span class="process-math">\(f\)</span> in the above graph does indeed have a largest (<span class="process-math">\(f(a)\)</span>) and smallest (<span class="process-math">\(f(c_1)\)</span>) output value. It is those values we are interested in finding.  Observe that the absolute maximum occurred at an endpoint of the graph, and not a "peak," so to speak.  In other words, we have an absolute maximum value of <span class="process-math">\(f\)</span> that is NOT a relative maximum value of <span class="process-math">\(f\)</span> (relative extreme values cannot occur at endpoints).  On the other hand, <span class="process-math">\(f(c_1)\)</span> is both an absolute and relative minimum.  Notice that in this case, the absolute minimum value of <span class="process-math">\(f\)</span> occurred at a critical number inside the interval <span class="process-math">\([a,b]\text{.}\)</span>
+</div>
+<div class="para" id="p-132">Not every function will have an absolute maximum and/or absolute minimum value (for instance, think of <span class="process-math">\(f(x) = x^3\)</span> on the entire real line).  The following theorem tells us when we can be certain these absolute extreme values exist.</div>
+<article class="theorem theorem-like" id="evt"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.9.2</span><span class="period">.</span><span class="space"> </span><span class="title">Extreme Value Theorem.</span>
+</h3>A continuous function on a closed, bounded interval will have an absolute maximum value and an absolute minimum value on that interval.</article><div class="para" id="p-133">In <a href="" class="xref" data-knowl="./knowl/evt.html" title="Theorem 3.9.2: Extreme Value Theorem">Theorem 3.9.2</a> "continuous function" means that the function has no jumps or holes in its graph. All polynomials are continuous everywhere.  "Closed, bounded interval" means the interval contains its endpoints and both endpoints are finite values.  In other words, intervals of the form <span class="process-math">\([a,b]\text{,}\)</span> where <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are both real numbers, <span class="process-math">\(a &lt; b\text{.}\)</span>  The above theorem tells us that every polynomial will have absolute extreme values on every closed and bounded interval.</div>
+<div class="para" id="p-134">Below are some pictures illustrating why it is necessary that <span class="process-math">\(f\)</span> be continuous and the interval be closed and bounded for <span class="process-math">\(f\)</span> to be guaranteed to have absolute extreme values.</div>
+<div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c35.png" class="contained"></div>
+<div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c36.png" class="contained"></div>
+<div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c37.png" class="contained"></div>
+<div class="para" id="p-135">The Extreme Value Theorem tells us when we can expect a function to have absolute extreme values. Below are a couple useful results that will help us find them.</div>
+<article class="fact theorem-like" id="fact-abs-ext"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">3.9.3</span><span class="period">.</span>
+</h3>If <span class="process-math">\(f\)</span> is continuous on <span class="process-math">\([a,b]\)</span> and <span class="process-math">\(f(c)\)</span> is an absolute extreme value, then <span class="process-math">\(c=a\text{,}\)</span> <span class="process-math">\(c=b\text{,}\)</span> or <span class="process-math">\(c\)</span> is a critical number between <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> (see the first graph above).</article><div class="para" id="p-136">This fact tells us that under the assumptions of <a href="" class="xref" data-knowl="./knowl/evt.html" title="Theorem 3.9.2: Extreme Value Theorem">Theorem 3.9.2</a>, the absolute extreme values can only occur at critical numbers or endpoints of intervals.</div>
+<article class="theorem theorem-like" id="crit-number-thm"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.9.4</span><span class="period">.</span><span class="space"> </span><span class="title">Critical Number Theorem.</span>
+</h3>Let <span class="process-math">\(I\)</span> be ANY interval and suppose <span class="process-math">\(f\)</span> has exactly one critical number in <span class="process-math">\(I\text{.}\)</span> <ul class="disc">
+<li id="li-202"><div class="para" id="p-derived-li-202">If <span class="process-math">\(f(c)\)</span> is a relative maximum, then <span class="process-math">\(f(c)\)</span> is an absolute maximum.</div></li>
+<li id="li-203"><div class="para" id="p-derived-li-203">If <span class="process-math">\(f(c)\)</span> is a relative minimum, then <span class="process-math">\(f(c)\)</span> is an absolute minimum.</div></li>
+</ul></article><article class="example example-like" id="example-50"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-50"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.5</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-50"><article class="example example-like">Find the absolute extreme values of <span class="process-math">\(f(x) = 3x^2 -12x +5\)</span> on <span class="process-math">\([0,3]\text{.}\)</span> <a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-90" id="solution-90"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-90"><div class="solution solution-like">
+<span class="process-math">\(f\)</span> is a polynomial defined on the closed bounded interval <span class="process-math">\([0,3]\text{,}\)</span> so must have absolute extreme values by <a href="" class="xref" data-knowl="./knowl/evt.html" title="Theorem 3.9.2: Extreme Value Theorem">Theorem 3.9.2</a>.  To find them, we first get the critical numbers of <span class="process-math">\(f\text{.}\)</span> Since <span class="process-math">\(f'(x) = 6x -12\text{,}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/evt.html ./knowl/fact-abs-ext.html" id="md-34">
+\begin{align*}
+f'(x) \amp = 0 \\
+6x - 12 \amp = 0 
+\end{align*}
+</div>which gives <span class="process-math">\(x=2\)</span> as the only critical value.  By <a href="" class="xref" data-knowl="./knowl/fact-abs-ext.html" title="Fact 3.9.3">Fact 3.9.3</a>, all we need to do to find the absolute extreme values is evaluate <span class="process-math">\(f\)</span> at the critical number, the endpoints of the interval, and compare: <ul class="disc">
+<li id="li-204"><div class="para" id="p-derived-li-204"><span class="process-math">\(\displaystyle f(0) = 3(0)^2 -12(0) + 5 =5\)</span></div></li>
+<li id="li-205"><div class="para" id="p-derived-li-205"><span class="process-math">\(\displaystyle f(2) = 3(2)^2 -12(2) + 5= -7\)</span></div></li>
+<li id="li-206"><div class="para" id="p-derived-li-206"><span class="process-math">\(\displaystyle f(3) = 3(3)^2 -12(3) + 5= -7= -4 \)</span></div></li>
+</ul> So, <span class="process-math">\(f(0) = 5\)</span> is the absolute maximum and <span class="process-math">\(f(2) = -7\)</span> is the absolute minimum.  Below is the graph. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c38.png" class="contained"></div>
+</div></div></article></div>
+<article class="example example-like" id="example-51"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-51"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.6</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-51"><article class="example example-like">VL Consultants is a national organization that contracts with colleges and universities around the US to help them develop open educational resources for specialty courses.  Their annual revenue in hundreds of thousands of dollars between the years 2015 and 2023 is given by the model<div class="displaymath process-math" data-contains-math-knowls="./knowl/evt.html ./knowl/fact-abs-ext.html">
+\begin{equation*}
+R(t) = \dfrac{1}{4}t^4 -\dfrac{14}{3}t^3 +24t^2 + 25
+\end{equation*}
+</div>where <span class="process-math">\(t=0\)</span> corresponds to the year 2013. Round all output values to two decimal places. <ol class="lower-alpha">
+<li id="li-207"><div class="para" id="p-derived-li-207">Write the domain of <span class="process-math">\(R(t)\)</span> using interval notation. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-91" id="solution-91"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-91"><div class="solution solution-like">Since the model is valid between the years 2015 and 2023 and <span class="process-math">\(t=0\)</span> corresponds to the year 2013, dom(<span class="process-math">\(R\)</span>)<span class="process-math">\(= [2,10] \)</span>
+</div></div>
+</div></li>
+<li id="li-208"><div class="para" id="p-derived-li-208">Find and interpret VL Consultants' marginal revenue in 2017. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-92" id="solution-92"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-92"><div class="solution solution-like">Since 2017  corresponds to <span class="process-math">\(t=4\text{,}\)</span> we need to find and interpret <span class="process-math">\(MR(4)\text{.}\)</span> Taking the derivative of <span class="process-math">\(R(t)\text{,}\)</span> the marginal revenue function is<div class="displaymath process-math">
+\begin{equation*}
+MR(t) = t^3-14t^2+48t.
+\end{equation*}
+</div>Evaluating, we have <span class="process-math">\(MR(4) = 32\text{,}\)</span> which means that in 2017, VL Consultants' revenue was increasing at an approximate rate of $3,200,000 per year. That is, VL Consultants expects to genreate an additional $3,200,000 in 2018 as comparted to 2017.</div></div>
+</div></li>
+<li id="li-209"><div class="para" id="p-derived-li-209">Find the critical values for <span class="process-math">\(R(t)\)</span> and identify the years to which they correspond. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-93" id="solution-93"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-93"><div class="solution solution-like">We solve the following for <span class="process-math">\(t\text{:}\)</span><div class="displaymath process-math" id="md-35">
+\begin{align*}
+MR(t) \amp = 0 \\
+t^3-14t^2+48t \amp = 0 \\
+t(t^2-14t+48) \amp = 0 \\
+t(t-6)(t-8) \amp = 0 
+\end{align*}
+</div>which has three solutions, <span class="process-math">\(t = 0, 6, 8\text{.}\)</span> Since <span class="process-math">\(t=0\)</span> is not in the domain (see part (a)), we find two critical numbers: <span class="process-math">\(t = 6, 8\)</span> which correspond the years 2019 and 2021 respectively.</div></div>
+</div></li>
+<li id="li-210"><div class="para" id="p-derived-li-210">Find the and interpret the relative extreme values of <span class="process-math">\(R(t)\text{.}\)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-94" id="solution-94"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-94"><div class="solution solution-like">We use the second derivative test:<div class="displaymath process-math" id="md-36">
+\begin{align*}
+MR(t) \amp = t^3-14t^2+48t \\
+R''(t) \amp = 3t^2 -28t + 48 
+\end{align*}
+</div>Evaluating at the critical numbers, we have <ul class="disc">
+<li id="li-211"><div class="para" id="p-derived-li-211">
+<span class="process-math">\(R''(6) = -12 &lt; 0 \)</span> which means <span class="process-math">\(t=6\)</span> gives a relative maximum value for <span class="process-math">\(R(t)\text{.}\)</span>
+</div></li>
+<li id="li-212"><div class="para" id="p-derived-li-212">
+<span class="process-math">\(R''(8) = 16 &gt; 0\)</span> which means <span class="process-math">\(t=8\)</span> gives a relative minimum value for <span class="process-math">\(R(t)\text{.}\)</span>
+</div></li>
+</ul> Since  <span class="process-math">\(R(6)= 205\)</span> and <span class="process-math">\(R(8)= 195.67 \)</span> we see that <ul class="disc">
+<li id="li-213"><div class="para" id="p-derived-li-213">VL Consultants had a relative maximum revenue in 2019 (<span class="process-math">\(t=6\)</span>) of $20,500,000</div></li>
+<li id="li-214"><div class="para" id="p-derived-li-214">VL Consultants had a relative minimum revenue in 2021 (<span class="process-math">\(t=8\)</span>) of $19,567,000</div></li>
+</ul>
+</div></div>
+</div></li>
+<li id="li-215"><div class="para" id="p-derived-li-215">Find the and interpret the absolute extreme values of <span class="process-math">\(R(t)\text{.}\)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-95" id="solution-95"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-95"><div class="solution solution-like">First observe that <span class="process-math">\(R(t)\)</span> is a continuous function (it's a polynomial) defined on the closed and bounded interval <span class="process-math">\([2,10]\text{.}\)</span> So, by <a href="" class="xref" data-knowl="./knowl/evt.html" title="Theorem 3.9.2: Extreme Value Theorem">Theorem 3.9.2</a> <span class="process-math">\(R(t)\)</span> must achieve its absolute extreme values. To find them, we use  <a href="" class="xref" data-knowl="./knowl/fact-abs-ext.html" title="Fact 3.9.3">Fact 3.9.3</a>. That is, we evaluate <span class="process-math">\(R(t)\)</span> at the critical numbers (which was done in the previous part) and endpoints of the interval. <ul class="disc">
+<li id="li-216"><div class="para" id="p-derived-li-216"><span class="process-math">\(\displaystyle R(2) = 87.67\)</span></div></li>
+<li id="li-217"><div class="para" id="p-derived-li-217"><span class="process-math">\(\displaystyle R(6) = 205 \)</span></div></li>
+<li id="li-218"><div class="para" id="p-derived-li-218"><span class="process-math">\(\displaystyle R(8) = 195.67 \)</span></div></li>
+<li id="li-219"><div class="para" id="p-derived-li-219"><span class="process-math">\(\displaystyle R(10) = 258.33\)</span></div></li>
+</ul> Comparing these values, we see that <span class="process-math">\(R(t)\)</span> has an absolute minimum value of 87.67 at <span class="process-math">\(t=2\)</span> and an absolute maximum value of 258.33 at <span class="process-math">\(t=10\text{.}\)</span> In the context of this model, this means <ul class="disc">
+<li id="li-220"><div class="para" id="p-derived-li-220">VL Consultatns had an absolute minimum revenue of $8,767,000 in 2015 (<span class="process-math">\(t=2\)</span>).</div></li>
+<li id="li-221"><div class="para" id="p-derived-li-221">VL Consultatns had an absolute maximum revenue of 25,833,000 in 2023 (<span class="process-math">\(t=10\)</span>).</div></li>
+</ul> Notice that both absolute extreme values occured at the endpoints, NOT the critical numbers.</div></div>
+</div></li>
+<li id="li-222"><div class="para" id="p-derived-li-222">Graphical exploration. Graph <span class="process-math">\(R(t)\)</span> and <span class="process-math">\(MR(t)\)</span> labeling all points that correspond to extreme values and critical numbers. Make sure you understand how the graphs relate to your work above. <a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-96" id="solution-96"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-96"><div class="solution solution-like"><div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c39.png" class="contained"></div></div></div>
+</div></li>
+</ol></article></div>
+<article class="example example-like" id="example-52"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-52"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.7</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-52"><article class="example example-like">Fawlty Towers is a quaint, 300 unit hotel on the English Riviera located in the seaside town of Torquay. The hotel has full occupancy when they charge $80 a room. Management has discovered that there will be <span class="process-math">\(d\)</span> vacant rooms when the hotel increases their charge by <span class="process-math">\(d\)</span> dollars.  Each occupied room costs $22 to maintain. What price should Fawlty Towers charge to maximize profit? What is the maximuum profit?  Write a sentence interpreting your answer. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-97" id="solution-97"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-97"><div class="solution solution-like">We are asked to find the absolute maximum value of Fawlty Towers' profit function, <span class="process-math">\(P\text{.}\)</span> We begin by determing the price, <span class="process-math">\(p\text{,}\)</span> and quantity, <span class="process-math">\(q\text{,}\)</span> models for room rentals. Using <span class="process-math">\(d=\)</span> <em class="emphasis">price increase (in dollars)</em> as the input variable we are given <ul class="disc">
+<li id="li-223"><div class="para" id="p-derived-li-223">
+<span class="process-math">\(p(d) = 80 + d\text{,}\)</span> and</div></li>
+<li id="li-224"><div class="para" id="p-derived-li-224"><span class="process-math">\(\displaystyle q(d) = 300-d\)</span></div></li>
+</ul> Recalling that revenue = (price)(quantity), the revenue function, <span class="process-math">\(R\text{,}\)</span> is<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html" id="md-37">
+\begin{align*}
+R(d) \amp = (p(d))(q(d)) \\
+R(d) \amp = (80 + d)(300-d) \\
+R(d) \amp = -d^2 + 220d +24,000. 
+\end{align*}
+</div>Next recall that cost = (cost per unit)(number of units) + (fixed costs). Since we are not given any fixed costs, the cost model,<span class="process-math">\(C\text{,}\)</span> is<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html" id="md-38">
+\begin{align*}
+C(d) \amp = 22(q(d)) + 0 \\
+C(d) \amp = 22(300-d) \\
+C(d) \amp = -22d +6,600. 
+\end{align*}
+</div>With revenue and cost determined,<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html" id="md-39">
+\begin{align*}
+P(d) \amp = R(d) - C(d) \\
+P(d) \amp = (-d^2 + 220d +24,000) - (-22d +6,600) \\
+P(d) \amp = -d^2 + 242d + 17,400. 
+\end{align*}
+</div>Finally, we determine that absolute maximum value of <span class="process-math">\(P(d)\)</span> on the interval <span class="process-math">\([0,300]\text{.}\)</span> As usual, we need the critical value of <span class="process-math">\(P(d)\text{.}\)</span> We solve<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html" id="md-40">
+\begin{align*}
+P'(d) \amp = 0\\
+-2d + 242 \amp = 0
+\end{align*}
+</div>so that <span class="process-math">\(d=121\)</span> is the only critical number of <span class="process-math">\(P(d)\text{.}\)</span> Since <span class="process-math">\(P''(121) = -2 &lt; 0\text{,}\)</span> the second derivative test tells us that <span class="process-math">\(d=121\)</span> gives a relative maximum. Since <span class="process-math">\(d=121\)</span> is the only critical number in <span class="process-math">\([0,300]\text{,}\)</span> <a href="" class="xref" data-knowl="./knowl/crit-number-thm.html" title="Theorem 3.9.4: Critical Number Theorem">Theorem 3.9.4</a> tells us that the relative maximum will also be an absolute maximum. Evaluating at <span class="process-math">\(d=121\text{,}\)</span> we find <span class="process-math">\(p(121) = 201\)</span> and <span class="process-math">\(P(121) = 32,041\text{.}\)</span> Hence Fawlty Towers should charge $201 for a room to obtain a maximum profit of $32,041.</div></div></article></div>
+<article class="example example-like" id="example-53"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-53"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.8</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-53"><article class="example example-like">ADTF Distributors' annual cost in thousands of dollars for manufacturing <span class="process-math">\(x\)</span> thousand sets of wireless earbuds is given by<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html">
+\begin{equation*}
+C(x) = .001x^3 +3x +100,
+\end{equation*}
+</div>and no more than 60,000 earbuds can be produced in a year.  How many sets of wireless earbuds should ADTF Distributors manufacture in order to minimize their average cost per set?  What is the minimum average cost? <a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-98" id="solution-98"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-98"><div class="solution solution-like">Let's first find the average cost function, <span class="process-math">\(\overline{C}(x)\text{:}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html" id="md-41">
+\begin{align*}
+\overline{C}(x) \amp = \dfrac{C(x)}{x} \\
+\\
+\overline{C}(x) \amp = \dfrac{.001x^3 +3x +100}{x} \\
+\\
+\overline{C}(x) \amp = .001x^2 +3 + \dfrac{100}{x} \\
+\\
+\overline{C}(x) \amp = .001x^2 +3 + 100x^{-1} 
+\end{align*}
+</div>We are asked to minimize <span class="process-math">\(\overline{C}(x)\)</span> on the interval <span class="process-math">\((0,60]\)</span> (why is this the relevant interval?). We start by finding the critical numbers.  Since<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html">
+\begin{equation*}
+\overline{C}'(x) = .002x - 100x^{-2},
+\end{equation*}
+</div>we solve the following equation for <span class="process-math">\(x\text{:}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html" id="md-42">
+\begin{align*}
+.002x - 100x^{-2} \amp = 0 \\
+\\
+.002x - \dfrac{100}{x^{2}} \amp = 0 \\
+\\
+.002x \amp = \dfrac{100}{x^{2}} \\
+\\
+.002x^3 \amp = 100 \\
+\\
+x^3 \amp = 50,000 \\
+\\
+x \amp =  \sqrt[3]{50,000}  \\
+\\
+x \amp \approx 36.84  
+\end{align*}
+</div>Next we use the second derivative test to determine if <span class="process-math">\(x=36.84\)</span> produces a relative minimum value for <span class="process-math">\(\overline{C}(x)\text{.}\)</span> Since<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html">
+\begin{equation*}
+\overline{C}''(x) = .002+200x^{-3} = .002 + \dfrac{200}{x^3}
+\end{equation*}
+</div>we find that <span class="process-math">\(\overline{C}''(36.84) = .002 + \dfrac{200}{36.84^3} &gt; 0 \)</span> which means <span class="process-math">\(x = 36.84\)</span> gives a relative minimum value for <span class="process-math">\(\overline{C}(x)\text{.}\)</span> Since <span class="process-math">\(x = 36.84\)</span> is the only critical number in <span class="process-math">\((0,60]\text{,}\)</span> <a href="" class="xref" data-knowl="./knowl/crit-number-thm.html" title="Theorem 3.9.4: Critical Number Theorem">Theorem 3.9.4</a> tells us that the relative minimum will also be an absolute minimum. This means ADTF Distraibutors should produce 36,840 sets of wireless earbuds to minimize the average cost per set.  Their minimum annual average cost is $7,072 per thousand sets of wireless earbuds (or $7.07 per set). <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c40.png" class="contained"></div>
+</div></div></article></div></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="second-deriv.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="integration.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

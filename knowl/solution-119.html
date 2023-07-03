@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<div class="solution solution-like">
+<h3 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">a.1</span><span class="period">.</span>
+</h3>Let <span class="process-math">\(S(n)\)</span> be the function that gives DDX's subscribers (in hundreds) <span class="process-math">\(n\)</span> months after the fee was increased (that is, <span class="process-math">\(S'(n)=s(n)\)</span>). We are asked to find <span class="process-math">\(S(7) - S(0)\text{.}\)</span> Notice that since a loss of subscribers is expected, we should expect <span class="process-math">\(S(7) - S(0) \leq 0\text{.}\)</span> Using <a href="" class="xref" data-knowl="./knowl/thm-ftc.html" title="Theorem 4.3.1: The Fundamental Theorem of Calculus (FTC)">Theorem 4.3.1</a>,<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm-ftc.html">
+\begin{align*}
+S(7) - S(0) \amp =  \int_{n=0}^{7} s(n) \, dn\\
+\\
+\amp = \int_{n=0}^{7} (-10n-9)  \, dn\\
+\\
+\amp = \left(-5n^2 - 9n\right)\Biggr|_{t=0}^{7} \\
+\\
+\amp = -308 
+\end{align*}
+</div>which is less than 0, indicating a loss of subscribers as expected. As a result of increasing their monthly subscription fee from $3.25 to $6.75, DDX lost 30,800 subscribers in the first 7 months. Below is the graph which relates the value of the definite integral to the area between <span class="process-math">\(s(n)\)</span> and <span class="process-math">\([0,7]\text{.}\)</span> <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c58.png" class="contained"></div>
+</div>
+<span class="incontext"><a href="ftc-apps.html#solution-119" class="internal">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Interest Models</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Business Mathematics">
+<meta property="book:author" content="Alfred Dahma">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="bus-math.html"><span class="title">Business Mathematics:</span> <span class="subtitle">Applications Using Algebra and Calculus</span></a></h1>
+<p class="byline">Alfred Dahma</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="exponential-applications.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-exp-log.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="section-ordinary-annuities.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="lines.html" class="internal"><span class="codenumber">1</span> <span class="title">Graphs of Equations and Lines</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="graphs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Graphs and Solutions of Equations</span></a></div></li>
+<li>
+<div class="toc-item"><a href="eq-of-lines.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Equations of Lines</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="eq-of-lines.html#standard" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Standard Form</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#slope" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Slope of Line</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#special-lines" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Special Lines</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#slope-intercept" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Slope-Intercept Form of a Line</span></a></div></li>
+<li><div class="toc-item"><a href="eq-of-lines.html#point-slope" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Point-Slope Form of a Line</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="linear-models-applications.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Linear Models and Applicaitions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Polynomials.html" class="internal"><span class="codenumber">2</span> <span class="title">Polynomials</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="functions.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Functions</span></a></div></li>
+<li><div class="toc-item"><a href="graphs-functions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphs of Functions</span></a></div></li>
+<li><div class="toc-item"><a href="linear-functions.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Linear Functions and Applications</span></a></div></li>
+<li>
+<div class="toc-item"><a href="quadratics.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Quardratic Functions and Applications</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="quadratics.html#basics" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Basics About Quadratics</span></a></div></li>
+<li><div class="toc-item"><a href="quadratics.html#quardratic-applications" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Applications With Quadratics</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="general-polynomials.html" class="internal"><span class="codenumber">2.5</span> <span class="title">General Polynomials</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="diff-calc.html" class="internal"><span class="codenumber">3</span> <span class="title">Differential Calculus</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="limits.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Limits</span></a></div></li>
+<li><div class="toc-item"><a href="aroc.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Average Rate Of Change</span></a></div></li>
+<li><div class="toc-item"><a href="iroc-deriv.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Instantaneous Rate Of Change and the Derivative</span></a></div></li>
+<li><div class="toc-item"><a href="more-marg-analysis.html" class="internal"><span class="codenumber">3.4</span> <span class="title">More About Marginal Analysis</span></a></div></li>
+<li><div class="toc-item"><a href="sect-power-rule.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Derivatives Using The Power Rule</span></a></div></li>
+<li><div class="toc-item"><a href="rel-ext.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Relative or Local Extrema</span></a></div></li>
+<li><div class="toc-item"><a href="first-deriv-test.html" class="internal"><span class="codenumber">3.7</span> <span class="title">The First Derivative Test</span></a></div></li>
+<li><div class="toc-item"><a href="second-deriv.html" class="internal"><span class="codenumber">3.8</span> <span class="title">The Second Derivative</span></a></div></li>
+<li><div class="toc-item"><a href="abs-ext.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Absolute Extrema</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="integration.html" class="internal"><span class="codenumber">4</span> <span class="title">Integral Calculus</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="antiderivs-indef-int.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Antiderivatives and Indefinite Integrals</span></a></div></li>
+<li><div class="toc-item"><a href="area-def-int.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Area And The Definite Integral</span></a></div></li>
+<li><div class="toc-item"><a href="sec-ftc.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div></li>
+<li><div class="toc-item"><a href="ftc-apps.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Applications of the Fundamental Theorem of Calculus</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-exp-log.html" class="internal"><span class="codenumber">5</span> <span class="title">Exponential and Logarithmic Models</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="basic-props.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Basic Properties</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="basic-props.html#subsect-exp" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="basic-props.html#subsect-log" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Logarithmic Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exponential-applications.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Applications Of Exponential Functions - Exponential Growth And Decay</span></a></div></li>
+<li class="active">
+<div class="toc-item"><a href="interest-models.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Interest Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="interest-models.html#sub-imp-int" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#sub-compound-interest" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Compound Interest</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#sub-cont-comp" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Continuous Compounding</span></a></div></li>
+<li><div class="toc-item"><a href="interest-models.html#subsection-13" class="internal"><span class="codenumber">5.3.4</span> <span class="title">APR and APY</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-ordinary-annuities.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Ordinary Annuities</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="interest-models"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Interest Models</span>
+</h2>
+<section class="subsection" id="sub-imp-int"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3.1</span> <span class="title">Simple Interest</span>
+</h3>
+<div class="para" id="p-216">Exponential functions are commonly used to model the growth and decay of money. But, let's first revisit a topic introduced in <a href="linear-models-applications.html" class="internal" title="Section 1.3: Linear Models and Applicaitions">Section 1.3</a> for comparison. In particular, recall <a href="" class="xref" data-knowl="./knowl/ex-lorrie-simp-int.html" title="Example 1.3.10">Example 1.3.10</a>.</div>
+<div class="para" id="p-217">
+<dfn class="terminology">Simple Interest</dfn> is interest computed only on the principal amount invested or borrowed. For this reason, when money grows (or declines) according to a simple interest model, it does so linearly.</div>
+<div class="para logical" id="p-218">
+<div class="para">Let</div>
+<ul class="disc">
+<li id="li-339"><div class="para" id="p-derived-li-339">
+<span class="process-math">\(P\)</span> = principal dollar amount invested or borrowed</div></li>
+<li id="li-340"><div class="para" id="p-derived-li-340">
+<span class="process-math">\(r\)</span> = yearly interest rate (as a decimal)</div></li>
+<li id="li-341"><div class="para" id="p-derived-li-341">
+<span class="process-math">\(t\)</span> = number of years</div></li>
+</ul>
+<div class="para">Then <span class="process-math">\(I(t) = Prt\)</span> is the amount of (simple) interest earned (or owed) in <span class="process-math">\(t\)</span> years. Notice that this is a linear model with vertical intercept <span class="process-math">\((0,0)\)</span> and slope <span class="process-math">\(m=Pr\text{.}\)</span> You should be aware that <span class="process-math">\(t\)</span> may represent a unit of time other than years, such as days, weeks, months, etc. So, pay attention to the given context for the appropriate units. However, unless otherwise mentioned, we will assume <span class="process-math">\(t\)</span> to be in years.</div>
+</div>
+<article class="example example-like" id="ex-maggie-simple-interest"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-maggie-simple-interest"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-maggie-simple-interest"><article class="example example-like">Maggie borrowed $4,000 at 3% simple interest for 9 months. How much interest will she pay? How much will Maggie owe in 9 months? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-160" id="solution-160"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-160"><div class="solution solution-like">We use the simple interest formula with <ul class="disc">
+<li id="li-342"><div class="para" id="p-derived-li-342">
+<span class="process-math">\(P = 4,000\)</span> and</div></li>
+<li id="li-343"><div class="para" id="p-derived-li-343"><span class="process-math">\(\displaystyle r= .03\)</span></div></li>
+</ul> so that our model for this problem is<div class="displaymath process-math">
+\begin{equation*}
+I(t) = 4000(.03)t = 120t.
+\end{equation*}
+</div>In  <span class="process-math">\(t = \frac{9}{12} = \frac{3}{4}\)</span> years,<div class="displaymath process-math">
+\begin{equation*}
+I\left (\frac{3}{4} \right) = 120\left( \frac{3}{4} \right) = 90.
+\end{equation*}
+</div>So, Maggie will pay $90 in simple interest.  In 9 months she will owe her principal and interest, which is<div class="displaymath process-math">
+\begin{equation*}
+P + I = $4000 + $90 = $4,090. 
+\end{equation*}
+</div>
+</div></div></article></div>
+<div class="para logical" id="p-219">
+<div class="para">The total amount owed in <a href="" class="xref" data-knowl="./knowl/ex-maggie-simple-interest.html" title="Example 5.3.1">Example 5.3.1</a> is referred to as a <em class="emphasis">future value</em>. In other words, $4,090 is the future value, <span class="process-math">\(F\text{,}\)</span> of $4,000 invested at 3% simple interest for 9 nine months. In general, the <em class="emphasis">future value</em>, <span class="process-math">\(F\text{,}\)</span> of a principal amount <span class="process-math">\(P\)</span> dollars in <span class="process-math">\(t\)</span> years at a simple interest rate <span class="process-math">\(r\)</span> (as a decimal) is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/ex-maggie-simple-interest.html">
+\begin{equation*}
+F = P + I = P + Prt = P(1+rt).
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="p-220">
+<div class="para">Notice that we can solve this expression above for the principal amount (or present value) if we know the future value <span class="process-math">\(F\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P = \frac{F}{1+rt}
+\end{equation*}
+</div>
+</div>
+<article class="remark remark-like" id="simp-int-formula"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Summary of Simple Interest Formulas.</span>
+</h4> <ol class="decimal">
+<li id="simple-future"><div class="para" id="p-derived-simple-future">Future Value: <span class="process-math">\(F = P(1+rt)\)</span>
+</div></li>
+<li id="simple-interest"><div class="para" id="p-derived-simple-interest">Interest: <span class="process-math">\(I = F - P = Prt\)</span>
+</div></li>
+<li id="simple-present"><div class="para" id="p-derived-simple-present">Present Value: <span class="process-math">\(P = \frac{F}{1+rt}\)</span>
+</div></li>
+</ol> Notice that in this context <span class="process-math">\(P\)</span> is the principal amount invested or borrowed, and the present value. The future value <span class="process-math">\(F\)</span> is sometimes referred to as the maturity value.</article><article class="example example-like" id="ex-randy-simpleint-futval"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-randy-simpleint-futval"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-randy-simpleint-futval"><article class="example example-like">Randy borrows $73,000 at 6% simple interest per year for 90 days.  Find the maturity value. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-161" id="solution-161"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-161"><div class="solution solution-like">We use the future value formula above with <ul class="disc">
+<li id="li-347"><div class="para" id="p-derived-li-347"><span class="process-math">\(\displaystyle P = 73,000\)</span></div></li>
+<li id="li-348"><div class="para" id="p-derived-li-348">
+<span class="process-math">\(r= .06\)</span> and</div></li>
+<li id="li-349"><div class="para" id="p-derived-li-349"><span class="process-math">\(t= \frac{90}{365}\text{.}\)</span></div></li>
+</ul> Substituting these values<div class="displaymath process-math" id="md-77">
+\begin{align*}
+F \amp = P(1+rt) \\
+F \amp = 73,000 \left(1+.06 \cdot \dfrac{90}{365}\right) \\
+F \amp = 74,080 
+\end{align*}
+</div>Randy will owe a total of $74,080 in 90 days. That is, $74,080 is the future value of $73,000 at 6% simple interest for 90 days.</div></div></article></div>
+<article class="example example-like" id="example-79"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-79"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-79"><article class="example example-like">Larry owes $6,500 to Margaret.  The loan is payable in one year at 5\% simple interest. Margaret needs cash immediately, so she decides to sell the loan to a bank 4 months before it is due. The bank wants an 8% return. How much should the bank pay? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-162" id="solution-162"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-162"><div class="solution solution-like">We first need to determine the amount the bank will get when the loan is paid off. That is, we need the future value of the $6,500 Margaret loaned to Larry. This is what the bank will receive at the end of the year. We use <a href="" class="xref" data-knowl="./knowl/simple-future.html" title="Item 1">Item 1</a>.<div class="displaymath process-math" data-contains-math-knowls="./knowl/simple-future.html ./knowl/simple-present.html" id="md-78">
+\begin{align*}
+F \amp = P(1+rt) \\
+F \amp = 6,500 \left(1+.05 \cdot 1\right) \: (\textrm{the loan is payable in} \: t=1 \: \textrm{year})\\
+F \amp = 6,825 
+\end{align*}
+</div>$6,825 is the amount the bank will get when the year is up in 4 months. To determine what they should pay in order to get an 8% return, we need the present value, <span class="process-math">\(P\text{,}\)</span> of $6,890 at 8% simple interest for four months. To calculate this, we use <a href="" class="xref" data-knowl="./knowl/simple-present.html" title="Item 3">Item 3</a>.<div class="displaymath process-math" data-contains-math-knowls="./knowl/simple-future.html ./knowl/simple-present.html" id="md-79">
+\begin{align*}
+P \amp = \frac{F}{1+rt} \\
+\\
+P \amp = \frac{6,825}{1+.08\left(\frac{4}{12}\right)} \\
+\\
+P \amp = 6,647.73 
+\end{align*}
+</div>The bank should pay $6,647.73 to get an 8% return on the loan they purchase from Margaret.</div></div></article></div>
+<div class="para" id="p-221">Treasury Bills, or T-bills, often involve simple interest calculations. A T-bill is a <em class="emphasis">simple discount loan</em>, meaning the interest is deducted in advance of the loan, but the full value of the loan must be repaid. T-bills are short term discount loans by investors, backed by the U.S. Treasury Department.</div>
+<article class="example example-like" id="ex-t-bill"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-t-bill"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-t-bill"><article class="example example-like">An investor bought a 10 month, $400 T-bill that sold at a simple discount rate of 3%. Find the interest earned on the T-bill, the price of the T-bill, and the simple interest rate the Treasury paid. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-163" id="solution-163"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-163"><div class="solution solution-like">Using <a href="" class="xref" data-knowl="./knowl/simple-interest.html" title="Item 2">Item 2</a> with <span class="process-math">\(t=\frac{10}{12}\text{,}\)</span> the interest is calculated as <span class="process-math">\(400(.03)(10/12) = 10\text{.}\)</span> So the interest the investor earned on the T-bill is $10. Since the interest is deducted in advance of the loan, we calculate<div class="displaymath process-math" data-contains-math-knowls="./knowl/simple-interest.html ./knowl/simple-future.html">
+\begin{equation*}
+400 - 10 = 390. 
+\end{equation*}
+</div>The price of the T-bill is $390. To find the interest rate will solve <a href="" class="xref" data-knowl="./knowl/simple-future.html" title="Item 1">Item 1</a> for <span class="process-math">\(r\text{,}\)</span> using <span class="process-math">\(F=400\)</span> and  <span class="process-math">\(P=390\text{:}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/simple-interest.html ./knowl/simple-future.html" id="md-80">
+\begin{align*}
+F \amp = P(1+rt) \\
+\\
+400 \amp = 390 \left(1+\frac{10}{12}r\right) \\
+\\
+1+\frac{10}{12}r \amp = \frac{400}{390} \\
+\\
+r \amp = \frac{12}{10}(\frac{400}{390} - 1)\\
+\\
+r \amp \approx .030769
+\end{align*}
+</div>Rounding to three decimal places, the simple interest rate paid by the Treasury was 3.077%.</div></div></article></div></section><section class="subsection" id="sub-compound-interest"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3.2</span> <span class="title">Compound Interest</span>
+</h3>
+<div class="para" id="p-222">
+<dfn class="terminology">Compound interest</dfn> is interest on both the initial principal and the accumulated interest from previous periods. Because of this, compound interest is calculated using exponential models. Under the same interest rate, compound interest will make an amount of money grow faster than simple interest, which is calculated only on the principal amount (recall that simple interest is linear).</div>
+<div class="para logical" id="p-223">
+<div class="para">Let</div>
+<ul class="disc">
+<li id="li-350"><div class="para" id="p-derived-li-350">
+<span class="process-math">\(P\)</span> = principal dollar amount invested or borrowed</div></li>
+<li id="li-351"><div class="para" id="p-derived-li-351">
+<span class="process-math">\(r\)</span> = yearly or annual interest rate (as a decimal)</div></li>
+<li id="li-352"><div class="para" id="p-derived-li-352">
+<span class="process-math">\(n\)</span> = number of compounding periods per year</div></li>
+<li id="li-353"><div class="para" id="p-derived-li-353">
+<span class="process-math">\(t\)</span> = number of years</div></li>
+</ul>
+</div>
+<div class="para logical" id="p-224">
+<div class="para">Consider principal amount $<span class="process-math">\(P\)</span> accumulating interest for <span class="process-math">\(n\)</span> compounding periods per year at an annual interest rate of <span class="process-math">\(r\text{.}\)</span> Note that in this case, the interest per period is <span class="process-math">\(\frac{r}{n}\text{.}\)</span> What will this amount grow to by the end of the year under compound interest?</div>
+<ul class="disc">
+<li id="li-354">
+<div class="para" id="p-225">Amount at end of first period:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P + \frac{r}{n}P = P\left(1+\frac{r}{n}\right)            
+\end{equation*}
+</div>
+<div class="para" id="p-226">This amount now collects interest during the second period. That is, this is the "new" principal amount for periond 2.</div>
+</li>
+<li id="li-355">
+<div class="para" id="p-227">Amount at end of second period:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P\left(1+\frac{r}{n}\right) + \frac{r}{n}\left(P\left(1+\frac{r}{n}\right) \right) =  
+P\left(1+\frac{r}{n}\right)^2           
+\end{equation*}
+</div>
+<div class="para" id="p-228">This amount now collects interest during the third period. That is, this is the "new" principal amount for periond 3.</div>
+</li>
+<li id="li-356">
+<div class="para" id="p-229">Amount at end of third period:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P\left(1+\frac{r}{n}\right)^2 + \frac{r}{n}\left(P\left(1+\frac{r}{n}\right) \right)^2 =  
+P\left(1+\frac{r}{n}\right)^3          
+\end{equation*}
+</div>
+<div class="para" id="p-230">This amount now collects interest during the fourth period. That is, this is the "new" principal amount for periond 4.</div>
+</li>
+</ul>
+<div class="para">This process continues <span class="process-math">\(n-3\)</span> more times. By the end of the year, this amount will have grown to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P\left(1+\frac{r}{n}\right)^n.
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="p-231">
+<div class="para">Using the notation described above, let <span class="process-math">\(A(t)\)</span> be the model that gives the dollar amount after <span class="process-math">\(t\)</span> years under compound interest. Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(t) = P\left(1+ \dfrac{r}{n}\right)^{nt}.
+\end{equation*}
+</div>
+</div>
+<div class="para" id="p-232">
+<span class="process-math">\(A(t)\)</span> is the future value of the principal <span class="process-math">\(P\)</span> in <span class="process-math">\(t\)</span> years. So, we will sometimes write <span class="process-math">\(F = A(t)\)</span> and call <span class="process-math">\(P\)</span> the present value. Just like with simple interest, we can write the above model in present and future value form.</div>
+<article class="remark remark-like" id="comp-int-formula"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Summary of Compund Interest Formulas.</span>
+</h4> <div class="para" id="p-233">For principal amount $<span class="process-math">\(P\)</span> invested or borrowed at an annual interest rate of <span class="process-math">\(r\)</span> with <span class="process-math">\(n\)</span> compounding periods per year, in <span class="process-math">\(t\)</span> years we have</div> <ol class="decimal">
+<li id="compound-future"><div class="para" id="p-derived-compound-future">Future Value = <span class="process-math">\(A(t) = F = P\left(1+\dfrac{r}{n}\right)^{nt}\)</span>
+</div></li>
+<li id="compound-interest"><div class="para" id="p-derived-compound-interest">Interest earned = <span class="process-math">\(I = F - P\)</span>
+</div></li>
+<li id="compound-present"><div class="para" id="p-derived-compound-present">Present Value = <span class="process-math">\(P = \dfrac{A(t)}{\left(1+\dfrac{r}{n}\right)^{nt}} = \dfrac{F}{\left(1+\dfrac{r}{n}\right)^{nt}}\)</span>
+</div></li>
+</ol></article><article class="example example-like" id="example-81"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-81"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.7</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-81"><article class="example example-like">Sam is planning to open a bar and grill in Boston, MA in 54 months. He invests $28,500 in account that pays 3.5% interest compounded quarterly. How much money will Sam have by the time he is ready to open his bar? How much interest will he have earned? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-164" id="solution-164"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-164"><div class="solution solution-like">We us <a href="" class="xref" data-knowl="./knowl/compound-future.html" title="Item 1">Item 1</a> with <span class="process-math">\(P = 28,500\text{,}\)</span> <span class="process-math">\(r = .035\text{,}\)</span> and <span class="process-math">\(n=4\text{.}\)</span> The compound interest model is then<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html">
+\begin{equation*}
+A(t) = 28,500\left(1+\frac{.035}{4}\right)^{4t}.
+\end{equation*}
+</div>Since 54 months corresponds to <span class="process-math">\(t = \frac{54}{12} = 4.5\)</span> years, we evaluate<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html">
+\begin{equation*}
+A(4.5) = 28,500\left(1+\frac{.035}{4}\right)^{4(4.5)} \approx 33,338.70 
+\end{equation*}
+</div>When Sam opens his bar in 54 months, his investment will have grown to $33,338.70. Hence, Sam will have earned $33,338.70 - $28,500 = $4,838.70 in interest.</div></div></article></div>
+<article class="example example-like" id="example-82"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-82"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.8</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-82"><article class="example example-like">Coach Pantusso needs $2,500 in 18 months for equipment for his little league baseball teams. He finds an account offering 5.75% interest compounded monthly. How much should Coach invest so that he has enough money to purchase the equipment? How much interest did he earn? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-165" id="solution-165"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-165"><div class="solution solution-like">To determine now much Coach should invest, we use <a href="" class="xref" data-knowl="./knowl/compound-present.html" title="Item 3">Item 3</a> given a future value in <span class="process-math">\(t=\frac{18}{12}\)</span> years of <span class="process-math">\(F = A(\frac{18}{12}) = 2,500\)</span> with interest <span class="process-math">\(r = .0575\)</span> and <span class="process-math">\(n = 12\)</span> compounding periods per year.<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html">
+\begin{equation*}
+P = \dfrac{2,500}{\left(1+\dfrac{.0575}{12}\right)^{12\left(\frac{18}{12}\right)}} 
+\approx 2,293.88.
+\end{equation*}
+</div>Coach needs to invest $2,293.88 so that he has enough money to purchase the equipment. In this case he will earn $2,500 - $2,293.88 = $206.12 interest.</div></div></article></div>
+<article class="example example-like" id="example-83"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-83"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.9</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-83"><article class="example example-like">The average annual inflation rate on Echo Island for the years 2020-2022 was 1.95%. How much did an item that sold for \$1,000 early 2023 cost 3 years prior? Assuming the same rate of inflation, how long will it take this price ($1,000) to double? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-166" id="solution-166"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-166"><div class="solution solution-like">
+<div class="para logical" id="p-234">
+<div class="para">We use <a href="" class="xref" data-knowl="./knowl/compound-present.html" title="Item 3">Item 3</a> (with present value corresponding to early 2020) given a future value in <span class="process-math">\(t=3\)</span> years (the year 2023) of <span class="process-math">\(F = A(3) = 1,000\)</span> with interest <span class="process-math">\(r = .0195\)</span> and <span class="process-math">\(n = 1\)</span> (for inflation, the compounding is 1 time a year).</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-present.html">
+\begin{equation*}
+P = \dfrac{1000}{\left(1+ \frac{.0195}{1}\right)^{1 \cdot 3}} \approx 943.71
+\end{equation*}
+</div>
+<div class="para">An item that sold for $1,000 at the beginning of 2023 cost $943.71 at the start of 2020.</div>
+</div> <div class="para logical" id="p-235">
+<div class="para">We now want to determine the doubling time under this inflation rate. To do this, we solve <a href="" class="xref" data-knowl="./knowl/compound-future.html" title="Item 1">Item 1</a> for <span class="process-math">\(t\text{,}\)</span> using <span class="process-math">\(P=1,000\)</span> and <span class="process-math">\(F = 2 \cdot 1000\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/fact-log-tool.html" id="md-81">
+\begin{align*}
+2 \cdot 1000 \amp = 1000 \left(1+\dfrac{.0195}{1}\right)^{1 \cdot t} \\
+\\
+(1.0195)^t \amp = 2 \quad (\textrm{apply the natural log to both sides}) \\
+\\
+t\ln(1.0195) \amp = \ln(2) \quad (\textrm{recall} \knowl{./knowl/fact-log-tool.html}{\text{Fact 5.1.12}})\\
+\\
+t \amp = \dfrac{\ln(2)}{\ln(1.0195)} \\
+\\
+t \amp \approx 35.89
+\end{align*}
+</div>
+<div class="para">Rounding up, it will take about 36 years for this price to double. Observe that this doubling time is independent of cost of the item. An item that cost $1 would also take about 36 years until the price doubled.</div>
+</div>
+</div></div></article></div>
+<article class="example example-like" id="example-84"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-84"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.10</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-84"><article class="example example-like">Carla and Eddie managed to save $11,559.23 for their wedding. They invested $10,000 at an annual interest rate of 7.25% compounded weekly. For how long did they invest thier money? How many compounding periods were there in this time. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-167" id="solution-167"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-167"><div class="solution solution-like">We solve <a href="" class="xref" data-knowl="./knowl/compound-future.html" title="Item 1">Item 1</a> for <span class="process-math">\(t\text{,}\)</span> using <span class="process-math">\(P=10,000\)</span> and <span class="process-math">\(F = 11,559.23\text{,}\)</span> <span class="process-math">\(r = .0725\text{,}\)</span> and <span class="process-math">\(n=52\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/fact-log-tool.html" id="md-82">
+\begin{align*}
+11,559.23 \amp = 10,000 \left(1+\dfrac{.0725}{52}\right)^{52 \cdot t} \\
+\\
+\left(1+\dfrac{.0725}{52}\right)^{52 \cdot t} \amp = \dfrac{11,559.23}{10,000} \quad (\textrm{apply the natural log to both sides}) \\
+\\
+52t\ln\left(1+\dfrac{.0725}{52}\right) \amp = \ln\left( \dfrac{11,559.23}{10,000}\right) \quad (\textrm{recall} \knowl{./knowl/fact-log-tool.html}{\text{Fact 5.1.12}})\\
+\\
+t \amp = \dfrac{\ln\left( \dfrac{11,559.23}{10,000}\right)}{52 \ln\left(1+\dfrac{.0725}{52}\right)} \\
+\\
+t \amp = 2
+\end{align*}
+</div>Carla and Eddie invested their money for 2 years with a total of <span class="process-math">\(2 \cdot 52 = 104 \)</span> compounding periods.</div></div></article></div></section><section class="subsection" id="sub-cont-comp"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3.3</span> <span class="title">Continuous Compounding</span>
+</h3>
+<div class="para logical" id="p-236">
+<div class="para">Let's look at the effect of increasing the number of yearly compounding periods on an investment. For simplicity, suppose $1 is invested at an annual interest rate of 100% for <span class="process-math">\(t=1\)</span> year, compounded <span class="process-math">\(n\)</span> times a year. For our calculations we use <a href="" class="xref" data-knowl="./knowl/compound-future.html" title="Item 1">Item 1</a> with <span class="process-math">\(P=r=1\text{.}\)</span> The future value of $1 at <span class="process-math">\(t=1\)</span> year is then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/def-e.html">
+\begin{equation*}
+A(1) = F = \left(1 + \dfrac{1}{n}\right)^n
+\end{equation*}
+</div>
+<div class="para">Let's look at how $1 grows as we increase <span class="process-math">\(n\text{.}\)</span> We round to the nearest cent:</div>
+<ul class="disc">
+<li id="li-360"><div class="para" id="p-derived-li-360">
+<span class="process-math">\(n=1\)</span> (yearly): <span class="process-math">\(\quad F = (1+1)^1 = $2\)</span>
+</div></li>
+<li id="li-361"><div class="para" id="p-derived-li-361">
+<span class="process-math">\(n=2\)</span> (semiannual): <span class="process-math">\(\quad F = \left(1+\dfrac{1}{2}\right)^2 \approx $2.25\)</span>
+</div></li>
+<li id="li-362"><div class="para" id="p-derived-li-362">
+<span class="process-math">\(n=4\)</span> (quarterly): <span class="process-math">\(\quad F = \left(1+\dfrac{1}{4}\right)^4 \approx $2.44\)</span>
+</div></li>
+<li id="li-363"><div class="para" id="p-derived-li-363">
+<span class="process-math">\(n=12\)</span> (monthly): <span class="process-math">\(\quad F = \left(1+\dfrac{1}{12}\right)^{12} \approx $2.61\)</span>
+</div></li>
+<li id="li-364"><div class="para" id="p-derived-li-364">
+<span class="process-math">\(n=52\)</span> (weekly): <span class="process-math">\(\quad F = \left(1+\dfrac{1}{52}\right)^{52} \approx $2.69\)</span>
+</div></li>
+<li id="li-365"><div class="para" id="p-derived-li-365">
+<span class="process-math">\(n=365\)</span> (daily): <span class="process-math">\(\quad F = \left(1+\dfrac{1}{52}\right)^{365} \approx $2.71\)</span>
+</div></li>
+</ul>
+<div class="para">We can continue to increase the number of compounding periods by letting <span class="process-math">\(n \to \infty\text{.}\)</span> Recalling <a href="" class="xref" data-knowl="./knowl/def-e.html" title="Definition 5.1.4">Definition 5.1.4</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/def-e.html">
+\begin{equation*}
+\lim_{n \to \infty} \left( 1 + \dfrac{1}{n}\right)^n \approx $2.72
+\end{equation*}
+</div>
+<div class="para">We obtain similar results using any interest rate. Indeed, for any value <span class="process-math">\(r\)</span> one can show</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/def-e.html">
+\begin{equation*}
+\lim_{n \to \infty} \left( 1 + \dfrac{r}{n}\right)^n = e^r
+\end{equation*}
+</div>
+<div class="para">Using the properties of limits, we can continue to extend the above result. For the compound interest model <span class="process-math">\(A(t) = P\left(1 + \dfrac{r}{n} \right)^{nt}\text{,}\)</span> we obtain the following by letting the number of compounding perionds increase without bound:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/def-e.html" id="md-83">
+\begin{align*}
+\lim_{n \to \infty}A(t) \amp =\lim_{n \to \infty} \left(  P \left(1 + \dfrac{r}{n} \right)^{nt} \right) \\
+\\
+\amp = P \left[ \lim_{n \to \infty} \left( 1 + \dfrac{r}{n} \right)^{nt} \right]\\
+\\
+\amp = P \left[ \lim_{n \to \infty} \left( 1 + \dfrac{r}{n} \right)^{n} \right]^t\\
+\\
+\amp = P \left[ e^r \right]^t\\
+\\
+\amp = Pe^{rt}
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="p-237">
+<div class="para">The <dfn class="terminology">continuous compounding</dfn> model is the result of letting the number of yearly compounding periods tend to infinity in the compound interest model. As we observed above, if we let the number of yearly compounding periods, <span class="process-math">\(n\text{,}\)</span> tend to infinity in the model given in <a href="" class="xref" data-knowl="./knowl/compound-future.html" title="Item 1">Item 1</a>, then we obtain the <em class="emphasis">continuous compounding</em> model</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html">
+\begin{equation*}
+A(t) = Pe^{rt},
+\end{equation*}
+</div>
+<div class="para">where as before, <span class="process-math">\(P\)</span> is the principal amount invested or borrowed, <span class="process-math">\(r\)</span> is the annual interest rate as a decimal, and <span class="process-math">\(t\)</span> is time in years. As with our other interest models, continous compounding has a future and present value form. The present value form is found by rewriting the above model in terms of <span class="process-math">\(P\text{.}\)</span>
+</div>
+</div>
+<article class="remark remark-like" id="cont-comp-formula"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.3.11</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous Compounding Formulas.</span>
+</h4> <div class="para" id="p-238">For principal amount $<span class="process-math">\(P\)</span> invested or borrowed at an annual interest rate of <span class="process-math">\(r\)</span> with <span class="process-math">\(n\)</span> compounding periods per year, in <span class="process-math">\(t\)</span> years we have</div> <ol class="decimal">
+<li id="cont-comp-future"><div class="para" id="p-derived-cont-comp-future">Future Value = <span class="process-math">\(A(t) = F = Pe^{rt}\)</span>
+</div></li>
+<li id="cont-comp-interest"><div class="para" id="p-derived-cont-comp-interest">Interest earned = <span class="process-math">\(I = F - P\)</span>
+</div></li>
+<li id="cont-comp-present"><div class="para" id="p-derived-cont-comp-present">Present Value = <span class="process-math">\(P = A(t)e^{-rt} = Fe^{-rt}\)</span>
+</div></li>
+</ol></article><article class="example example-like" id="example-85"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-85"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.12</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-85"><article class="example example-like">Norm, Cliff, and Woody are saving money to travel cross county on a snipe hunt. They decide to invest their money with Howe's Investment Firm, which is the only finanacial establishment they could only find that offered accounts with continuous compounding. <ol class="lower-alpha">
+<li id="li-369"><div class="para" id="p-derived-li-369">How much will Norm, Cliff, and Woody have if they invest $750 in an account with interest rate 3.86% compounded continuously for 15 months? How much did they earn in interest? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-168" id="solution-168"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-168"><div class="solution solution-like">Using <a href="" class="xref" data-knowl="./knowl/cont-comp-future.html" title="Item 1">Item 1</a> with the given information, the continous compouding model is<div class="displaymath process-math" data-contains-math-knowls="./knowl/cont-comp-future.html">
+\begin{equation*}
+A(t) = 750e^{.0386t}.
+\end{equation*}
+</div>Evaluating at <span class="process-math">\(t=\dfrac{15}{12}\)</span> years gives<div class="displaymath process-math" data-contains-math-knowls="./knowl/cont-comp-future.html">
+\begin{equation*}
+A\left( \dfrac{15}{12}\right) = 750e^{.0386 \cdot \frac{15}{12}} \approx 787.07.
+\end{equation*}
+</div>In 15 months, Norm, Cliff, and Woody will have $787.07. This means they earned $787.07 - $750 = $37.07 in interest.</div></div>
+</div></li>
+<li id="li-370"><div class="para" id="p-derived-li-370">If the desired amount in 15 months is $977, how much should Norm, Cliff, and Woody invest? If they let this investment grow for an additional 6 months, how much interest would they earn. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-169" id="solution-169"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-169"><div class="solution solution-like">
+<div class="para logical" id="p-239">
+<div class="para">Using <a href="" class="xref" data-knowl="./knowl/cont-comp-present.html" title="Item 3">Item 3</a> with <span class="process-math">\(F = 977\text{,}\)</span> <span class="process-math">\(r=.0386\)</span> and <span class="process-math">\(t=\dfrac{15}{12}\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/cont-comp-present.html">
+\begin{equation*}
+P = 977e^{-.0386 \cdot \frac{15}{12}} \approx 930.98.
+\end{equation*}
+</div>
+<div class="para">If Norm, Cliff, and Woody want $977 in 15 months, they should invest $930.98 in the account.</div>
+</div> <div class="para logical" id="p-240">
+<div class="para">In this case their their continuous compounding model is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(t) = 930.98e^{.0386t}.
+\end{equation*}
+</div>
+<div class="para">If they let their investment grow for an additional 6 months, then evaluating at <span class="process-math">\(t=\dfrac{21}{12}\)</span> gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A\left( \dfrac{21}{12}\right) = 930.98e^{.0386 \cdot \frac{21}{12}} \approx 996.04.
+\end{equation*}
+</div>
+<div class="para">In this case, Norm, Cliff, and Woody would earn $996.04 - $930.98 = $65.06 in interest.</div>
+</div>
+</div></div>
+</div></li>
+</ol></article></div>
+<article class="example example-like" id="example-86"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-86"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.13</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-86"><article class="example example-like">Jaco wants to buy a new bass guitar which costs $1,799.99 plus an additional 8.7396% in tax and surcharge. He invested $1,835 in an account with continuous compounding and was able to use this money to purchase his bass 19 months after his deposit. What was Jaco's interest rate? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-170" id="solution-170"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-170"><div class="solution solution-like">First, including tax and surcharge, Jaco's bass cost $1,799.99(1+.087396) = $1,957.30 (rounded to the nearest cent). To determine the account's interest rate, we can use <a href="" class="xref" data-knowl="./knowl/cont-comp-future.html" title="Item 1">Item 1</a> with <span class="process-math">\(F= 1,957.30\text{,}\)</span> <span class="process-math">\(P=1,835\text{,}\)</span> and <span class="process-math">\(t=\dfrac{19}{12}\)</span> to solve for the interest rate, <span class="process-math">\(r\text{:}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/cont-comp-future.html ./knowl/obs-apply-log.html" id="md-84">
+\begin{align*}
+1,835e^{\frac{19}{12}r} \amp = 1,957.30\\
+\\
+e^{\frac{19}{12}r} \amp = \dfrac{1,957.30}{1,835} \: (\textrm{take the natural log of both sides})\\
+\\
+\dfrac{19}{12}r \amp = \ln\left( \dfrac{1,957.30}{1,835} \right) \: (\textrm{recall} \knowl{./knowl/obs-apply-log.html}{\text{Item 5}}; \: 
+\textrm{here,} \: x=\frac{19}{12}r)\\
+\\
+r \amp = \dfrac{12}{19}\ln\left( \dfrac{1,957.30}{1,835} \right) \\
+\\
+r \amp \approx .04075
+\end{align*}
+</div>Jaco's account had an interest rate of 4.075%.</div></div></article></div>
+<article class="example example-like" id="example-87"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-87"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.14</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-87"><article class="example example-like">Suppose $P is invested. <ol class="lower-alpha">
+<li id="li-371"><div class="para" id="p-derived-li-371">If the money is earning 6.21% compounded continuously, how long will it take the investment to increase by 50%. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-171" id="solution-171"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-171"><div class="solution solution-like">We use <a href="" class="xref" data-knowl="./knowl/cont-comp-future.html" title="Item 1">Item 1</a> with <span class="process-math">\(F = 1.5P\)</span> and <span class="process-math">\(r=.0621\)</span> to solve for <span class="process-math">\(t\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/cont-comp-future.html ./knowl/obs-apply-log.html" id="md-85">
+\begin{align*}
+Pe^{.0621t} \amp = 1.5P \\
+\\
+e^{.0621t} \amp = 1.5 \: (\textrm{take the natural log of both sides}) \\
+\\
+.0621t \amp = \ln(1.5) \: (\textrm{recall} \knowl{./knowl/obs-apply-log.html}{\text{Item 5}}; \: 
+\textrm{here,} \: x=.0621t)\\
+\\
+t \amp = \dfrac{\ln(1.5)}{.0621}\\
+\\
+t \amp \approx 6.5
+\end{align*}
+</div>It will take approximately 6.5 years (or about 6 years and 6 months) for the investment to increase by 50%.</div></div>
+</div></li>
+<li id="li-372"><div class="para" id="p-derived-li-372">Under the same conditions, how long will it take the investment to double? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-172" id="solution-172"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-172"><div class="solution solution-like">We use <a href="" class="xref" data-knowl="./knowl/cont-comp-future.html" title="Item 1">Item 1</a> with <span class="process-math">\(F = 2P\)</span> and <span class="process-math">\(r=.0621\)</span> to solve for <span class="process-math">\(t\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/cont-comp-future.html ./knowl/obs-apply-log.html" id="md-86">
+\begin{align*}
+Pe^{.0621t} \amp = 2P \\
+\\
+e^{.0621t} \amp = 2 \: (\textrm{take the natural log of both sides}) \\
+\\
+.0621t \amp = \ln(2) \: (\textrm{recall} \knowl{./knowl/obs-apply-log.html}{\text{Item 5}}; \: 
+\textrm{here,} \: x=.0621t)\\
+\\
+t \amp = \dfrac{\ln(2)}{.0621}\\
+\\
+t \amp \approx 11.16
+\end{align*}
+</div>It will take approximately 11.16 years (or about 11 years and 2 months) for the investment to double.</div></div>
+</div></li>
+<li id="li-373"><div class="para" id="p-derived-li-373">If the value of the investment decreases (or decays) continuously at rate 5.53%, how long will it take for the investment to decrease to half its value? <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-173" id="solution-173"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-173"><div class="solution solution-like">We use <a href="" class="xref" data-knowl="./knowl/cont-comp-future.html" title="Item 1">Item 1</a> with <span class="process-math">\(F = .5 P\)</span> to solve for <span class="process-math">\(t\text{.}\)</span> Because the value of the investemet is decaying, however, we must use <span class="process-math">\(r=-.0553\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/cont-comp-future.html ./knowl/obs-apply-log.html" id="md-87">
+\begin{align*}
+Pe^{-.0553t} \amp = .5P \\
+\\
+e^{-.0553t} \amp = .5 \: (\textrm{take the natural log of both sides}) \\
+\\
+-.0553t \amp = \ln(.5) \: (\textrm{recall} \knowl{./knowl/obs-apply-log.html}{\text{Item 5}}; \: 
+\textrm{here,} \: x=-.0553t)\\
+\\
+t \amp = \dfrac{\ln(.5)}{-.0553}\\
+\\
+t \amp \approx 12.5
+\end{align*}
+</div>It will take approximately 12.5 years (or about 12 years and 6 months) for the investment to decay to half its value.</div></div>
+</div></li>
+</ol></article></div></section><section class="subsection" id="subsection-13"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3.4</span> <span class="title">APR and APY</span>
+</h3>
+<div class="para" id="p-241">
+<dfn class="terminology">APR (the annual percentage rate)</dfn>, also called the <em class="emphasis">nominal rate</em>, represents the stated yearly interest rate. While we will also use this term for investments, it is often used as the rate charged for borrowing money, including fees. APR does not take into consideration the number of compounding periods per year. For our purposes, it would be like the rate <span class="process-math">\(r\)</span> used in all our interest models above.</div>
+<div class="para" id="p-242">
+<dfn class="terminology">APY (the annual percentage yield)</dfn>, also called the <em class="emphasis">effective rate</em>, describes the interest rate under the effect of compounding periods. Because APY includes a calculation of how compounded interest impacts the rate over the course of one year, the APY will usually be larger than the APR. Also, the greater the number of yearly compounding periods, the bigger the difference between the APR and APY.</div>
+<div class="para logical" id="p-243">
+<div class="para">Suppose we are given an APR (annual interest rate) of <span class="process-math">\(r\)</span> compounded <span class="process-math">\(n\)</span> times a year. Then in <span class="process-math">\(t\)</span> years $P will grow according to the compound interest model</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/remark-growth-decay-rates.html">
+\begin{equation*}
+A(t) = P\left(1+\dfrac{r}{n} \right)^{nt}.
+\end{equation*}
+</div>
+<div class="para">The associated APY is the (actual) growth rate of this exponential model. Rewriting the above model,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/remark-growth-decay-rates.html">
+\begin{equation*}
+A(t) = P\left[\left(1+\dfrac{r}{n} \right)^{n}\right]^t
+\end{equation*}
+</div>
+<div class="para">and we see that <span class="process-math">\(A(t)\)</span> is a base <span class="process-math">\(b=\left(1+\dfrac{r}{n} \right)^{n}\)</span> exponential growth model. Recall <a href="" class="xref" data-knowl="./knowl/remark-growth-decay-rates.html" title="Remark 5.2.1: Terminology and Determing Growth and Decay Rates">Remark 5.2.1</a>. The (actual) growth rate, or APY, associated with <span class="process-math">\(A(t)\)</span> is <span class="process-math">\(b-1\text{,}\)</span> or</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/remark-growth-decay-rates.html">
+\begin{equation*}
+\left(1+\dfrac{r}{n} \right)^{n} - 1.
+\end{equation*}
+</div>
+<div class="para">This value is the associated APY and for a fixed APR, will incease as <span class="process-math">\(n\)</span> increases.</div>
+</div>
+<article class="definition definition-like" id="def-apy"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.3.15</span><span class="period">.</span>
+</h4>With an APR (or annual interest rate) of <span class="process-math">\(r\)</span> compounded <span class="process-math">\(n\)</span> times a year, the <dfn class="terminology">APY (annual percentage yield, or effective rate)</dfn>, denoted <span class="process-math">\(r_{E}\text{,}\)</span> is<div class="displaymath process-math">
+\begin{equation*}
+\textrm{APY} \: = r_{E} = \left(1 + \dfrac{r}{n} \right)^{n} - 1.
+\end{equation*}
+</div>In the case of continuous compounding, the APY is<div class="displaymath process-math">
+\begin{equation*}
+\textrm{APY} \: = r_{E} = e^r - 1.
+\end{equation*}
+</div></article><div class="para logical" id="p-244">
+<div class="para">For example, suppose $<span class="process-math">\(P\)</span> is invested at an annual rate (APR) of 2.5%. The APY is the (actual) growth rate of this investment, which increase with the compounding periods:</div>
+<ul class="disc">
+<li id="li-374"><div class="para" id="p-derived-li-374">Quarlterly compounding:<div class="displaymath process-math">
+\begin{equation*}
+\textrm{APY} \: = r_{E} =\left(1 + \dfrac{.025}{4} \right)^{4} - 1 \approx .025235
+\end{equation*}
+</div>
+</div></li>
+<li id="li-375"><div class="para" id="p-derived-li-375">Montly compounding:<div class="displaymath process-math">
+\begin{equation*}
+\textrm{APY} \: = r_{E} =\left(1 + \dfrac{.025}{12} \right)^{12} - 1 \approx .025288
+\end{equation*}
+</div>
+</div></li>
+<li id="li-376"><div class="para" id="p-derived-li-376">Daily compounding:<div class="displaymath process-math">
+\begin{equation*}
+\textrm{APY} \: = r_{E} =\left(1 + \dfrac{.025}{365} \right)^{365} - 1 \approx .025314
+\end{equation*}
+</div>
+</div></li>
+<li id="li-377"><div class="para" id="p-derived-li-377">Continuous compounding:<div class="displaymath process-math">
+\begin{equation*}
+\textrm{APY} \: = r_{E} =e^{.025} - 1 \approx .025315
+\end{equation*}
+</div>
+</div></li>
+</ul>
+</div>
+<div class="para" id="p-245">Because the APY gives the (actual) growth rate of an investment, it can be used to determine which account provides a better investment option.</div>
+<article class="example example-like" id="example-88"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-88"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.16</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-88"><article class="example example-like">Chambers and Crane Investment Bank is offering Account 1 with an APR of 3.245% compounded semiannually and Account 2 with an APR 3.223% compounded weekly. Which is the better investment option. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-174" id="solution-174"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-174"><div class="solution solution-like">While Account 1 has a higher APR, Account 2 offers more compounding periods. To compare, we find the APY (or (actual) growth rate) for each account. <ul class="disc">
+<li id="li-378"><div class="para" id="p-derived-li-378">Account 1<div class="displaymath process-math">
+\begin{equation*}
+\textrm{APY} \: = r_{E} =\left(1 + \dfrac{.03245}{2} \right)^{2} - 1 \approx .03271
+\end{equation*}
+</div>
+</div></li>
+<li id="li-379"><div class="para" id="p-derived-li-379">Account 2<div class="displaymath process-math">
+\begin{equation*}
+\textrm{APY} \: = r_{E} =\left(1 + \dfrac{.03223}{52} \right)^{52} - 1 \approx .03274
+\end{equation*}
+</div>
+</div></li>
+</ul> Since the APY for Account 2 (3.274%) is highter than the APY for Account 1 (3.271%), Account 2 is the better investment option. In other words, Account 2 is the better investment option since it offers a higher growth rate.</div></div></article></div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="exponential-applications.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-ordinary-annuities.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>
