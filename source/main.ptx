@@ -61,13 +61,49 @@
         </p>
 
 
-          <image source="ch-1/1.png" width="75%">
+          <image source="ch-1/1.png" width="100%">
           </image>
-        
+
+       <p>
+        The labeling of the horizontal and vertical axes are arbitrary. We can use whatever letters or symbols we want to name or identify 
+        each axis. However they are labled, ordered pairs will always have the form (horizontal position, vertical position). In the graph above 
+        each ordered pair has the form <m>(x,y)</m>. In the example below, they have the form <m>(t,P)</m>. 
+       </p>      
+
+       <example>
+        ADTF Distributors is a global distributor, supplier, producer, and manufacturer of a variety of goods and services with offices,
+        plants, and warehouses all over the world. In the graph below, <m>t</m> represents the number of years since 1999 and <m>P</m> represents 
+        ADTF Distributors' profit in millions of dollars for the year corresponding to <m>t</m>.
+         <image source="ch-1/0.png" width="100%">
+         </image>
+        <ol marker="(a)">
+         <li>
+          Interpret the coordinates of point <m>A</m>.
+           <solution>
+            <m>A = (2,2)</m>, so that <m>t=2</m> and <m>P=2</m>. Since <m>t</m> is the number of years since 1999, <m>t=2</m> corresponds 
+            to the year 2001. Since <m>P</m> is ADTF Distributors' profit in millions of dollars, <m>P=2</m> corresponds to a profit of $2,000,000. So, point 
+            <m>A = (2,2)</m> in interpreted as: In 2001, ADTF Distributors made a profit of $2,000,000. 
+           </solution>
+         </li>
+
+         <li>
+          Interpret the coordinates of point <m>C</m>.
+           <solution>
+            <m>C = (6,0)</m>, so that <m>t=6</m> and <m>P=0</m>. Since <m>t</m> is the number of years since 1999, <m>t=6</m> corresponds 
+            to the year 2005. Since <m>P</m> is ADTF Distributors' profit in millions <m>P=0</m> corresponds to a profit of $0. Another way 
+            to say a company's profit is $0 (no profit, no loss) is to say that the company broke even. So, point 
+            <m>C = (6,0)</m> in interpreted as: In 2005, ADTF Distributors broke even. Note that negaive profit will be interpreted as a 
+            <em>loss</em>.
+           </solution>
+         </li>
+        </ol> 
+  
+
+       </example>
 
         <p>
          When we have an equation with two variables, usually <m>x</m> and <m>y</m>, we can ask if a given point is a solution to 
-         that equation.  By the <em>graph of an equation</em>, we mean the collection of all the points <m>(x,y)</m>, 
+         that equation.  By the <em>graph of an equation</em>, we mean the c pretext build webollection of all the points <m>(x,y)</m>, 
          that satisfy the equation. As an example, consider the graph labeled <m>L</m> below.
         </p>
          
@@ -83,9 +119,9 @@
         </p>
 
           <example> 
-          Check that the indicated points on the graph below satisfy the equation <m> 3y^2 +x = 5 </m>. 
-          Determine if <m>(-10,3)</m> is on the graph.
-          <image source="ch-1/2t.png" width="75%">
+          Check that the points labeled on the graph below satisfy the equation <m> x+y^2 = 9</m>. 
+          Determine if <m>(-8,5)</m> is on the graph.
+          <image source="ch-1/2ex.png" width="95%">
           </image>
           </example>
 
@@ -143,34 +179,43 @@
            Notice in general that 
            <ul>
             <li> <m> m &gt; 0 </m> if and only if <m> \Delta y </m> and <m>\Delta x </m> have the same sign if and only if 
-                 the line rises from left to right </li>
+                 the line rises from left to right 
+                  <image source="ch-1/3a.png" width="75%">
+                  </image>
+
+            </li>      
             <li> <m> m &lt; 0 </m> if and only if  <m> \Delta y </m> and <m> \Delta x </m> have opposite signs if and only if 
-                 the line falls from left to right </li>
+                 the line falls from left to right 
+                  <image source="ch-1/3b.png" width="75%">
+                  </image>
+            </li>
            </ul>
           </p>
 
 
           <p>
            In applied mathematics, the variables in an equation or function (which we will get to later) are assigned a meaning. 
-           In this case, these equations and functions are called <term>mathematical models</term>. For example, equations representing a 
-           company's revenue, cost, and profit are often referred to as models, and the variable <m>x</m> often represents units produced 
-           by the company.
+           In this case, these equations or functions are called <term>mathematical models</term>. For example, equations representing a 
+           company's revenue, cost, and profit are often referred to as models.
           </p>
 
-           <example> 
+           <example xml:id="ex-rev-slope"> 
              Suppose a company's revenue is modeled by a line where points on the line have the form 
-             (units sold, revenue dollars).  If the company makes \$10 from selling 3 units and if they sell 7 units they 
-             make $29, find the slope of the line representing this company's revenue model.
+             (units sold, revenue dollars).  If the company makes \$14.25 from selling 3 units and if they sell 6 units they 
+             make $28.50, find the slope of the line representing this company's revenue model.
 
              <solution>
-              2 points on this line are <m>(3,10)</m> and <m>(7,29)</m>. So, 
+              2 points on this line are <m>(3,14.25)</m> and <m>(6,28.50)</m>. So, 
               <me>
-               m = \frac{29-10}{7-3}= 4.75.
+               m = \frac{28.50-14.25}{6-3}= \frac{14.25}{3} = 4.75.
               </me>
               Notice that we can assign units to the slope in this problem:  
               <m>\frac{\textrm{dollars}}{\textrm{units}}</m>. This helps us see the slope of a line as a rate of change, 
               an important concept in calculus.  In this problem we now see that this company makes 
-              $4.75 per each additional unit sold. Graph the line for homework.
+              $4.75 per each additional unit sold. The graph is below.
+               <image source="ch-1/3c.png" width="100%">
+               </image>
+
               </solution>
            </example>
          </subsection>
@@ -182,10 +227,14 @@
            <ul>
             <li><em>Horizontal lines</em>:  Every point on a horizontal line has the same vertical coordinate 
                 regardless of the horizontal location.  If we say this common <m>y</m> coordinate is <m>b</m>, 
-                then the horizontal line has equation <m>y=b</m>.  Note that the slope of any horizontal line is <m>m=0</m>. </li>
+                then the horizontal line has equation <m>y=b</m>.  Note that the slope of any horizontal line is <m>m=0</m>. 
+                Below is an example with <m>b=3</m>. 
+            </li>
             <li><em>Vertical lines</em>:  Every point on a vertical line has the same horizontal coordinate 
                 regardless of the vertical location.  If we say this common <m>x</m> coordinate is <m>a</m>, 
-                then the vertical line has equation <m>x=a</m>.  Note that the slope of any vertical line is undefined. </li>
+                then the vertical line has equation <m>x=a</m>.  Note that the slope of any vertical line is undefined. 
+                Below is an example with <m>a=5</m>.
+             </li>
            </ul>
            </p> 
 
@@ -197,15 +246,21 @@
          <subsection xml:id="slope-intercept">
          <title>Slope-Intercept Form of a Line</title>
           <p>
-           Suppose a line has slope $m$ and $y$-intercept $(0,b)$.  If <m>(x,y)</m> is any other point on the line then
+           Suppose a line has slope <m>m</m> and <m>y</m>-intercept <m>(0,b)</m>.  If <m>(x,y)</m> is any other point on the line then
            <me>
             m = \frac{m}{1} = \frac{y-b}{x-0}
            </me>
-           Cross multiplying and solving for $y$ we get 
+           Cross multiplying and solving for <m>y</m> we get 
            <me>
            y = mx + b
            </me>
-           This is called the <term>slope-intercept form</term> of a line.
+           This is called the <term>slope-intercept form</term> of a line. In this context, we call <m>x</m> the <term>independent variable</term>,
+           or <em>input variable</em> and <m>y</m> the <term>dependent variable</term>,
+           or <em>output variable</em>. Using this language and recalling <xref ref="def-slope" />, we can interpret the slope as the change in ouput per the change in input. For instance, if the 
+           slope of a line is <m>m = \frac{3}{4} = .75</m> we say the output increase by 3 units as the input increases by 4 units. 
+           Equivalently, this means the output increases by .75 units as the input increases by 1 unit. Recalling <xref ref="ex-rev-slope" /> in which we found <m>m=4.75</m>, 
+           we can say this company's revenue (the <em>output</em>) increases by $14.25 as the number of units sold (the <em>input</em>) inreases by 3. Equivalently, 
+           the company's revenue (the <em>output</em>) increases by $4.75 as the number of units sold increases by 1. 
           </p> 
   
          <example> Graph <m>3x + 4y =4</m> using the <m>y</m>-intercept and the slope. 
@@ -214,7 +269,7 @@
           get <m>y=-\frac{3}{4}x +1</m>.  So, the slope is <m>m=-\frac{3}{4}</m> and the <m>y</m>-intercept is <m>(0,1)</m>.  
           Starting at <m>(0,1)</m>, to get to another point on the line we can move up 3 units then left 4 units to get to 
           the point <m>(-4,4)</m> or down 3 units then right 4 units to arrive at the point <m>(4,-2)</m>.
-           <image source="ch-1/5.png" width="75%">
+           <image source="ch-1/5.png" width="100%">
            </image>
           </solution>
          </example>
@@ -273,7 +328,10 @@
          <title> Linear Models and Applicaitions  </title>
 
           <p>
-           We start with a couple examples.
+           We start with a couple examples. In each example, pay attention to the distinction between the <em>input variable</em> and 
+           <em>output variable</em>. Throughout this text, you should continue to practice identifying each of these variables 
+           in context, and writing a sentence to interpret each. Notice that in each case, points on the graph of these mathematical models 
+           will have the form <m>(\textrm{input variable}, \textrm{output variable})</m>.
           </p>
           
            <example> 
@@ -288,7 +346,11 @@
                  <me>
                   C=176.49n+5
                  </me> 
-               </solution>  </li> 
+                In this context, we refer to <m>n</m> as the <em>input variable</em> and <m>C</m> as the <em>output variable</em>. So, the 
+                <em>input variable</em>  <m>n</m> represents the number of nights stayed at the hotel. The <em>output variable</em> <m>C</m>
+                represents the cost in dollars for staying at the hotel for <m>n</m> nights.
+               </solution>  
+              </li> 
               
               <li> How much will you pay for a 4 night stay?  
                <solution>
@@ -323,6 +385,8 @@
                <me>
                 C = 2.25d + 8.75
                </me>
+             In this problem, the <em>input variable</em> is <m>d</m>, which represents the distance traveled in Jane's car in miles. 
+             The <em>output variable</em>, <m>C</m>, is the total charge in dollars for riding <m>d</m> miles in Jane's car. 
              Finish the problem for homework.
              </p>
             </solution>
@@ -375,6 +439,11 @@
               <me>
                C = 3x + 800
               </me> 
+              In this context, the <em>input variable</em> is <m>x</m>, which represents the number or quantity of t-shirts Tyler's 
+              company produces. The <em>output variable</em>, <m>C</m>, is the total cost to Tyler's company when 
+              they produce <m>x</m> t-shirts.
+               
+
              </solution> 
             </li>
 
@@ -390,7 +459,9 @@
 
            <li> Find an equation for <m>R</m>, the total revenue from selling <m>x</m> shirts.
              <solution> As we will discuss again later, the linear revenue model will have the form <me> R = \textrm{(price)(quantity)}. </me>  
-               So, the revenue model for Tyler's company is  <me> R = 14x </me>.
+               So, the revenue model for Tyler's company is  <me> R = 14x </me>. In this context, the <em>input variable</em> is <m>x</m>, 
+               which represents the number or quantity of t-shirts Tyler's company produces and sells. The <em>output variable</em>, 
+               <m>R</m>, is the revenue made by Tyler's company when they produce and sell <m>x</m> t-shirts.
              </solution>
            </li>
 
@@ -426,7 +497,7 @@
            <li> Using the inforamtion above, idenitfy two data points given by Freeze Frame's linear supply model. 
             <solution> 
              Since the linear model is given as <m>p = mq + b</m>, points on this line would have the form <m>(q,p)</m>. That is, the quantity <m>q</m> 
-             of cameras supplied by Freeze Frame represents the <em>imput variable</em>, giving the horizontal location of a point. The price <m>p</m> of 
+             of cameras supplied by Freeze Frame represents the <em>input variable</em>, giving the horizontal location of a point. The price <m>p</m> of 
              each camera represents the <em>output variable</em> giving the vertical location of a point. Therefore, the given data can be expressed as 
              the ordered pairs
               <me>
@@ -489,7 +560,7 @@
             Identify two data points given in this problems. 
             <solution>
              Since the linear model is given as <m>d = mt + b</m>, points on this line would have the form <m>(t,d)</m>. That is, the time <m>t</m> 
-             in years since Quick Copy purchased the office machine represents the <em>imput variable</em>, giving the horizontal location of a point. The value <m>d</m> of 
+             in years since Quick Copy purchased the office machine represents the <em>input variable</em>, giving the horizontal location of a point. The value <m>d</m> of 
              of the office machine represents the <em>output variable</em> giving the vertical location of a point. Therefore, the given data can be expressed as 
              the ordered pairs
               <me>
@@ -6737,7 +6808,6 @@
        </me> 
       so that Pennypacker's monthly payments are $4,656,868.59. 
      </li>
-
      <li>
       Using the compound interest model  
        <me>
