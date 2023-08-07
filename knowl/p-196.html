@@ -13,13 +13,21 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We have the following, which will be useful when converting bases of exponential models.</div>
-<ol class="decimal">
-<li><div class="para">If <span class="process-math">\(b &gt; 0\text{,}\)</span> <span class="process-math">\(b \neq 1\)</span> then <span class="process-math">\(b^t = e^{kt} \)</span> where <span class="process-math">\(k = \ln(b)\)</span>
-</div></li>
-<li><div class="para">For any real number <span class="process-math">\(k \)</span> we have <span class="process-math">\(e^{kt} = b^t \)</span> where <span class="process-math">\(b = e^k\)</span>
-</div></li>
-</ol>
+<div class="para">Notice that we can use <a href="" class="xref" data-knowl="./knowl/obs-exponentiate.html" title="Item 6">Item 6</a>, and <a href="" class="xref" data-knowl="./knowl/fact-log-tool.html" title="Fact 5.1.12">Fact 5.1.12</a>  to rewrite any exponential function in terms of base <span class="process-math">\(e\text{.}\)</span>Indeed, for <span class="process-math">\(b &gt; 0\text{,}\)</span> <span class="process-math">\(b \neq 1\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/obs-exponentiate.html ./knowl/fact-log-tool.html">
+\begin{equation*}
+b^t = e^{\ln(b^t)} = e^{\ln(b) \cdot t} = e^{kt}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(k = \ln(b)\text{.}\)</span>  It should be clear that if</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/obs-exponentiate.html ./knowl/fact-log-tool.html">
+\begin{equation*}
+e^{kt} = b^t
+\end{equation*}
+</div>
+<div class="para">then <span class="process-math">\(b=e^k\)</span>
+</div>
 </div>
 <span class="incontext"><a href="basic-props.html#p-196" class="internal">in-context</a></span>
 </body>

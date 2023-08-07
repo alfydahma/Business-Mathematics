@@ -13,12 +13,58 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h3 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">c.1</span><span class="period">.</span>
-</h3>Using <a href="" class="xref" data-knowl="./knowl/convert-b-e.html" title="Item 1">Item 1</a> with <span class="process-math">\(b = 1.04489\)</span> and rounding to five decimal places, we have <span class="process-math">\(k=\ln(1.04489) \approx .04391 \)</span> so that<div class="displaymath process-math" data-contains-math-knowls="./knowl/convert-b-e.html">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">a.1</span><span class="period">.</span>
+</h3>
+<div class="para logical">
+<div class="para">To do this we need to determine <span class="process-math">\(y_0\)</span> and <span class="process-math">\(b\)</span> given that</div>
+<ul class="disc">
+<li><div class="para"><span class="process-math">\(\displaystyle D(0) = 8\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle D(4) = 9.536\)</span></div></li>
+</ul>
+</div> <div class="para logical">
+<div class="para">(remember, <span class="process-math">\(D\)</span> is in thousands). We first determine the intial amount, <span class="process-math">\(y_0\text{,}\)</span> at time <span class="process-math">\(t=0\)</span> (see the first bullet point above and recall <a href="" class="xref" data-knowl="./knowl/initial-amount.html" title="Item 2">Item 2</a>).</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/initial-amount.html">
 \begin{equation*}
-D(t) = 8e^{.04391t}
+D(0) = y_0b^0 =  y_0 = 8
 \end{equation*}
-</div>The continuous growth rate is then <span class="process-math">\(.04391\)</span> or <span class="process-math">\(4.391\%\text{.}\)</span> The graph of <span class="process-math">\(D(t)\)</span> is below with corresponding points labeled. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-5/e10.png" class="contained"></div>
+</div>
+<div class="para">so that <span class="process-math">\(D(t) = 8b^{t}\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">Now we can use the fact that <span class="process-math">\(D(4) = 9.536\)</span> to find <span class="process-math">\(b\text{.}\)</span> We solve the following for <span class="process-math">\(b\text{,}\)</span> rounding our answer to five decimal places:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/remark-growth-decay-rates.html">
+\begin{align*}
+D(4) \amp = 9.536\\
+\\
+8b^{4} \amp = 9.536\\
+\\
+b^{4} \amp = \frac{9.536}{8} \quad \textrm{(take fourth root of both sides)}\\
+\\
+b  \amp = \left(\frac{9.536}{8}\right)^{1/4} \\
+\\
+b \amp \approx 1.04489
+\end{align*}
+</div>
+<div class="para">We find that the number clients ADTF Distributors has (in thousands) <span class="process-math">\(t\)</span> years after 1999 is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/remark-growth-decay-rates.html">
+\begin{equation*}
+D(t) = 8(1.04489)^t.
+\end{equation*}
+</div>
+<div class="para">To determine the (actual) growth rate, recall <a href="" class="xref" data-knowl="./knowl/remark-growth-decay-rates.html" title="Remark 5.2.1: Terminology and Determing Growth and Decay Rates">Remark 5.2.1</a>. Now,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/remark-growth-decay-rates.html">
+\begin{equation*}
+b - 1 = 1.04489 - 1 = .04489
+\end{equation*}
+</div>
+<div class="para">and we see that the (actual) growth rate is .04489 or 4.489%. Since <span class="process-math">\(t=10\)</span> corresponds to 2009</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/remark-growth-decay-rates.html">
+\begin{equation*}
+D(10) = 8(1.04489)^{10} \approx 12.41068 \: \textrm{(rounded to 5 decimal places).}
+\end{equation*}
+</div>
+<div class="para">While we would typically round this number up, we do not want to count a fraction of a client in our total. So, in 2009 ADTF Distributors had approximately 12,410 (whole) clients.</div>
+</div>
 </div>
 <span class="incontext"><a href="exponential-applications.html#solution-156" class="internal">in-context</a></span>
 </body>

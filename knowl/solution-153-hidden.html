@@ -10,10 +10,32 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">Using <a href="" class="xref" data-knowl="./knowl/convert-b-e.html" title="Item 1">Item 1</a> with <span class="process-math">\(b = .875\)</span> and rounding to five decimal places, we have <span class="process-math">\(k= \ln(.875) \approx -.13353\)</span> so that<div class="displaymath process-math" data-contains-math-knowls="./knowl/convert-b-e.html">
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para logical">
+<div class="para">We first determine the intial amount, <span class="process-math">\(y_0\text{,}\)</span> at time <span class="process-math">\(t=0\)</span> (recall <a href="" class="xref" data-knowl="./knowl/initial-amount.html" title="Item 2">Item 2</a>). We are given that Mingy purchased the truck (at <span class="process-math">\(t=0\)</span>) for $52,000 which means the point <span class="process-math">\((0,52000)\)</span> is on the the graph of <span class="process-math">\(G(t)\text{.}\)</span> In other words</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/initial-amount.html">
 \begin{equation*}
-M(t) = 52,000(.875)^t = 52,000e^{\ln(.875) t} = 52,000e^{-.13353 t}.
+M(0) = y_0 b^{0} =  y_0 = 52,000
 \end{equation*}
-</div>The corresponding continuous decay rate is <span class="process-math">\(.13353\)</span> or <span class="process-math">\(13.353\%\text{.}\)</span> The graph of <span class="process-math">\(M(t)\)</span> is below with corresponding points labeled. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-5/e9.png" class="contained"></div>
+</div>
+<div class="para">so that <span class="process-math">\(M(t) = 52,000 b^{t}\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">Now we find <span class="process-math">\(b\)</span> using the remaining information. Recall <a href="" class="xref" data-knowl="./knowl/remark-growth-decay-rates.html" title="Remark 5.2.1: Terminology and Determing Growth and Decay Rates">Remark 5.2.1</a>. We are <em class="emphasis">given</em> that 12.5%, or .125, is the (actual) decay rate for the truck. This means</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/remark-growth-decay-rates.html">
+\begin{equation*}
+.125 = 1-b
+\end{equation*}
+</div>
+<div class="para">and we find that b = .875 so that <span class="process-math">\(M(t) = 52,000(.875)^t\text{.}\)</span> Notice that a decay (or depreciation) rate of 12.5% each year means the truck retains 87.5% of its value each year.</div>
+</div> <div class="para logical">
+<div class="para">Now, rounding the output value to the nearest cent,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M(3) = 52,0000(.875)^3 \approx 34,835.94 
+\end{equation*}
+</div>
+<div class="para">so that at the end of the third year (or start of the fourth year), Mingy's truck will be worth $34,835.94.</div>
+</div>
 </div></body>
 </html>

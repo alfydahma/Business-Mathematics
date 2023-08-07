@@ -273,13 +273,13 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="area-def-int"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">Area And The Definite Integral</span>
 </h2>
-<div class="para" id="p-144">We now explore the application of area to solving problems involving the <em class="emphasis">total change</em> (or <em class="emphasis">net change</em> or <em class="emphasis">total accumulation</em>) in a function. Recall <a href="" class="xref" data-knowl="./knowl/farbman.html" title="Example 4.1.5">Example 4.1.5</a>, in which Farbman's cost, <span class="process-math">\(C(x)\text{,}\)</span> was increasing at a constant rate of $92.47 per additional unit manufactured (<span class="process-math">\(MC(x) = 92.47\)</span>).  We found the cost function to be <span class="process-math">\(C(x) = 92.47x + 597.52\)</span> so that the total, or net, change in cost the company incurs between the third and seventh dresser they manufacture is  <span class="process-math">\(C(7) - C(3) = 369.88\text{,}\)</span> or $369.88.  Notice the region under the marginal cost function over the interval <span class="process-math">\([3,7]\)</span> forms a rectangle of height 92.47 and width of 4. So, the area of this region is <span class="process-math">\((92.47)(4) = 369.88\text{.}\)</span>
+<div class="para" id="p-145">We now explore the application of area to solving problems involving the <em class="emphasis">total change</em> (or <em class="emphasis">net change</em> or <em class="emphasis">total accumulation</em>) in a function. Recall <a href="" class="xref" data-knowl="./knowl/farbman.html" title="Example 4.1.5">Example 4.1.5</a>, in which Farbman's cost, <span class="process-math">\(C(x)\text{,}\)</span> was increasing at a constant rate of $92.47 per additional unit manufactured (<span class="process-math">\(MC(x) = 92.47\)</span>).  We found the cost function to be <span class="process-math">\(C(x) = 92.47x + 597.52\)</span> so that the total, or net, change in cost the company incurs between the third and seventh dresser they manufacture is  <span class="process-math">\(C(7) - C(3) = 369.88\text{,}\)</span> or $369.88.  Notice the region under the marginal cost function over the interval <span class="process-math">\([3,7]\)</span> forms a rectangle of height 92.47 and width of 4. So, the area of this region is <span class="process-math">\((92.47)(4) = 369.88\text{.}\)</span>
 </div>
 <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c41.png" class="contained"></div>
 <article class="fact theorem-like" id="total-change"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span>
 </h3>
-<dfn class="terminology">Total Change In <span class="process-math">\(F\)</span></dfn>:  Suppose <span class="process-math">\(f \geq 0\)</span> is continuous on the interval <span class="process-math">\([a,b]\text{,}\)</span> and <span class="process-math">\(f\)</span> is the rate of change of <span class="process-math">\(F\)</span> (this means <span class="process-math">\(F' = f\text{,}\)</span> or <span class="process-math">\(F\)</span> is antiderivative of <span class="process-math">\(f\)</span> ). Then the <dfn class="terminology">total change</dfn> in <span class="process-math">\(F\)</span> as <span class="process-math">\(x\)</span> goes from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\)</span> is the area between the graph of <span class="process-math">\(f\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{.}\)</span></article><div class="para logical" id="p-145">
+<dfn class="terminology">Total Change In <span class="process-math">\(F\)</span></dfn>:  Suppose <span class="process-math">\(f \geq 0\)</span> is continuous on the interval <span class="process-math">\([a,b]\text{,}\)</span> and <span class="process-math">\(f\)</span> is the rate of change of <span class="process-math">\(F\)</span> (this means <span class="process-math">\(F' = f\text{,}\)</span> or <span class="process-math">\(F\)</span> is antiderivative of <span class="process-math">\(f\)</span> ). Then the <dfn class="terminology">total change</dfn> in <span class="process-math">\(F\)</span> as <span class="process-math">\(x\)</span> goes from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\)</span> is the area between the graph of <span class="process-math">\(f\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{.}\)</span></article><div class="para logical" id="p-146">
 <div class="para">In the picture above, the region under <span class="process-math">\(MC(x)\)</span> is a rectangle, and so we have a nice formula to calculate the area. Of course, the above fact is also true for more complicated curves. Suppose instead that Farbman's marginal cost is given to be</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/total-change.html">
 \begin{equation*}
@@ -294,16 +294,16 @@ C(7) - C(3) = \textrm{Area under} \: MC(x) \: \textrm{from} \: x=3 \: \textrm{to
 </div>
 </div>
 <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c42.png" class="contained"></div>
-<div class="para" id="p-146">So, how do we calculate this area? Well, we know how to calculate the area of rectangles, so let's start there.</div>
-<div class="para" id="p-147">Left Endpoint Approximation</div>
+<div class="para" id="p-147">So, how do we calculate this area? Well, we know how to calculate the area of rectangles, so let's start there.</div>
+<div class="para" id="p-148">Left Endpoint Approximation</div>
 <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c43.png" class="contained"></div>
-<div class="para logical" id="p-148">
+<div class="para logical" id="p-149">
 <div class="para">In the above picture, the interval <span class="process-math">\([3,7]\)</span> is divided into 4 smaller intervals, called subintervals, the length of each being 1 unit.  This is the width of each rectangle, <span class="process-math">\(R_i\)</span> for <span class="process-math">\(1 \leq i \leq 4\text{.}\)</span>  Notice that for the height of each rectangle <span class="process-math">\(R_i\)</span> we used the marginal cost value at the left endpoint of each of the 4 smaller intervals.  If <span class="process-math">\(A_i\)</span> denotes the area of <span class="process-math">\(R_i\)</span> for <span class="process-math">\(1 \leq i \leq 4\text{,}\)</span> then</div>
 <ul class="disc">
-<li id="li-244"><div class="para" id="p-derived-li-244"><span class="process-math">\(\displaystyle A_1 = 1 \cdot MC(3)  = MC(3) = 95\)</span></div></li>
-<li id="li-245"><div class="para" id="p-derived-li-245"><span class="process-math">\(\displaystyle A_2 = 1 \cdot MP(4) = MC(4) = 50\)</span></div></li>
-<li id="li-246"><div class="para" id="p-derived-li-246"><span class="process-math">\(\displaystyle A_3 = 1 \cdot MP(5) = MC(5) = 71\)</span></div></li>
-<li id="li-247"><div class="para" id="p-derived-li-247"><span class="process-math">\(\displaystyle A_4 = 1 \cdot MP(6) = MC(6) = 98 \)</span></div></li>
+<li id="li-246"><div class="para" id="p-derived-li-246"><span class="process-math">\(\displaystyle A_1 = 1 \cdot MC(3)  = MC(3) = 95\)</span></div></li>
+<li id="li-247"><div class="para" id="p-derived-li-247"><span class="process-math">\(\displaystyle A_2 = 1 \cdot MP(4) = MC(4) = 50\)</span></div></li>
+<li id="li-248"><div class="para" id="p-derived-li-248"><span class="process-math">\(\displaystyle A_3 = 1 \cdot MP(5) = MC(5) = 71\)</span></div></li>
+<li id="li-249"><div class="para" id="p-derived-li-249"><span class="process-math">\(\displaystyle A_4 = 1 \cdot MP(6) = MC(6) = 98 \)</span></div></li>
 </ul>
 <div class="para">Now, the area under <span class="process-math">\(MC(x)\text{,}\)</span> or in other words, the total change in cost <span class="process-math">\(C\)</span> from <span class="process-math">\(x=3\)</span> to <span class="process-math">\(x=7\)</span> is approximately</div>
 <div class="displaymath process-math" id="md-52">
@@ -316,15 +316,15 @@ C(7) - C(3) = \textrm{Area under} \: MC(x) \: \textrm{from} \: x=3 \: \textrm{to
 \end{align*}
 </div>
 </div>
-<div class="para" id="p-149">It is worthwhile pointing out here that the choice to use the left endpoints of the subintervals to form our rectangles was arbitrary. We could have have evaluated the marginal cost function at any number we like within each subinterval to determine the height of the rectangles. We also could have arbitrarily chosen the width of each rectanlge. Below are two more illustrations using the right endpoint and midpoint of each interval to determine the height.</div>
-<div class="para" id="p-150">Right Endpoint Approximation</div>
+<div class="para" id="p-150">It is worthwhile pointing out here that the choice to use the left endpoints of the subintervals to form our rectangles was arbitrary. We could have have evaluated the marginal cost function at any number we like within each subinterval to determine the height of the rectangles. We also could have arbitrarily chosen the width of each rectanlge. Below are two more illustrations using the right endpoint and midpoint of each interval to determine the height.</div>
+<div class="para" id="p-151">Right Endpoint Approximation</div>
 <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c44.png" class="contained"></div>
-<div class="para" id="p-151">Midpoint Approxmiation</div>
+<div class="para" id="p-152">Midpoint Approxmiation</div>
 <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c45.png" class="contained"></div>
-<div class="para" id="p-152">That the left and right endpoint approximations are the same is coincidence. Most often, choosing different test points to determine the height of the approximating rectangles will give different area approximations. Regardless, we can make these approximations better and better by continuing to increase the number of inscribed rectangles. The sum of the areas of these approximating rectangles is referred to as a <dfn class="terminology">Riemann Sum</dfn>. Look how close we can approximate the acutal area using only 40 rectangles. This, of course, provides a better approximaition of the total change in <span class="process-math">\(C(x)\text{.}\)</span>
+<div class="para" id="p-153">That the left and right endpoint approximations are the same is coincidence. Most often, choosing different test points to determine the height of the approximating rectangles will give different area approximations. Regardless, we can make these approximations better and better by continuing to increase the number of inscribed rectangles. The sum of the areas of these approximating rectangles is referred to as a <dfn class="terminology">Riemann Sum</dfn>. Look how close we can approximate the acutal area using only 40 rectangles. This, of course, provides a better approximaition of the total change in <span class="process-math">\(C(x)\text{.}\)</span>
 </div>
 <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c46.png" class="contained"></div>
-<div class="para logical" id="p-153">
+<div class="para logical" id="p-154">
 <div class="para">Letting <span class="process-math">\(A_i, 1 \leq i \leq 40\)</span> denote the area of each rectangle, and using summation notation for the <dfn class="terminology">Riemann Sum</dfn>,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -332,7 +332,7 @@ C(7) - C(3) \approx \sum_{i=1}^{40} A_i = A_1 + A_2 + A_3 + \cdots + A_{40} =307
 \end{equation*}
 </div>
 </div>
-<div class="para logical" id="p-154">
+<div class="para logical" id="p-155">
 <div class="para">Let <span class="process-math">\(n\)</span> represent the number of rectangles we use. Then the Riemann Sum has the form</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/total-change.html">
 \begin{equation*}

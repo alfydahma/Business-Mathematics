@@ -12,12 +12,36 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
-</h3>Suppose <span class="process-math">\(f(x)\)</span> represents the number of backpacks sold in thousands by ADTF Distributors when they spend <span class="process-math">\(x\)</span> hundred dollars on advertising, valid for <span class="process-math">\(0 \leq x \leq 4.\)</span>  The graph of <span class="process-math">\(f(x)\)</span> is given below. <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/ch-3/c7.png" class="contained"></div> <ol class="lower-alpha">
-<li><div class="para">How many backpacks did ADTF Distributors sell as a result of increasing spending on advertising from $100 to $400? <a href="" class="solution-knowl original" data-knowl="./knowl/solution-47-hidden.html" title="Solution a.1"><span class="type">Solution</span><span class="period">.</span></a>
-</div></li>
-<li><div class="para">As money spent on advertising increased from $100 to $400, what was the average number of backpacks sold per hundred dollar increase? <a href="" class="solution-knowl original" data-knowl="./knowl/solution-48-hidden.html" title="Solution b.1"><span class="type">Solution</span><span class="period">.</span></a>
-</div></li>
-</ol></article><span class="incontext"><a href="aroc.html#example-31" class="internal">in-context</a></span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
+</h3>
+<ol class="lower-alpha">
+<li>
+<span class="process-math">\(\displaystyle \lim_{x \rightarrow 2}(x^2-4x+3) = 2^2 -4(2) +3 =-1 \)</span><div class="para">(Why could we use direct substitution to calculate this limit?)</div>
+</li>
+<li>
+<span class="process-math">\(\displaystyle \lim_{x \rightarrow 2}\dfrac{x^2-4x+3}{x-3} = \dfrac{2^2 -4(2) +3}{2-3} = 1 \)</span><div class="para">(Why could we use direct substitution to calculate this limit?)</div>
+</li>
+<li>
+<span class="process-math">\(\displaystyle \lim_{x \rightarrow 2}\sqrt{\dfrac{x^2-4x+3}{x-3}} = 
+\sqrt{\displaystyle \lim_{x \rightarrow 2}\dfrac{x^2-4x+3}{x-3}} = \sqrt{1} = 1 \)</span><div class="para">(What property above allowed us to calculate this limit so easily?)</div>
+</li>
+<li>
+<span class="process-math">\(\displaystyle \lim_{x \rightarrow 1}\dfrac{x^2-1}{x-1} \)</span><div class="para logical">
+<div class="para">Notice that direct substitution leads to division by 0, which is undefined.  This, as we know, does not mean the limit DNE (we found this limit to be 2 - see <a href="" class="xref" data-knowl="./knowl/ex2xapp1.html" title="Example 3.1.2">Example 3.1.2</a>).  To calculate this limit algebraically, we have to do a little algebra first.  Recall our work from above in which we found</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/ex2xapp1.html">
+\begin{equation*}
+\dfrac{x^2 -1}{x-1} = \dfrac{(x -1)(x+1)}{x-1} \quad \stackrel{x \neq 1}{=} \quad x+1 
+\end{equation*}
+</div>
+<div class="para">so that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/ex2xapp1.html">
+\begin{equation*}
+\lim_{x \rightarrow 1}\dfrac{x^2-1}{x-1} = \lim_{x \rightarrow 1}(x+1)= 1+1 = 2.
+\end{equation*}
+</div>
+<div class="para">The idea with problems like this is to reduce the function to the point where you can use direct substitution to evaluate the limit.</div>
+</div>
+</li>
+</ol></article><span class="incontext"><a href="limits.html#example-31" class="internal">in-context</a></span>
 </body>
 </html>

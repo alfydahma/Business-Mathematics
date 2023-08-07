@@ -10,32 +10,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">We are asked to find the absolute maximum value of Fawlty Towers' profit function, <span class="process-math">\(P\text{.}\)</span> We begin by determing the price, <span class="process-math">\(p\text{,}\)</span> and quantity, <span class="process-math">\(q\text{,}\)</span> models for room rentals. Using <span class="process-math">\(d=\)</span> <em class="emphasis">price increase (in dollars)</em> as the input variable we are given <ul class="disc">
-<li><div class="para">
-<span class="process-math">\(p(d) = 80 + d\text{,}\)</span> and</div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle q(d) = 300-d\)</span></div></li>
-</ul> Recalling that revenue = (price)(quantity), the revenue function, <span class="process-math">\(R\text{,}\)</span> is<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html">
-\begin{align*}
-R(d) \amp = (p(d))(q(d)) \\
-R(d) \amp = (80 + d)(300-d) \\
-R(d) \amp = -d^2 + 220d +24,000. 
-\end{align*}
-</div>Next recall that cost = (cost per unit)(number of units) + (fixed costs). Since we are not given any fixed costs, the cost model,<span class="process-math">\(C\text{,}\)</span> is<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html">
-\begin{align*}
-C(d) \amp = 22(q(d)) + 0 \\
-C(d) \amp = 22(300-d) \\
-C(d) \amp = -22d +6,600. 
-\end{align*}
-</div>With revenue and cost determined,<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html">
-\begin{align*}
-P(d) \amp = R(d) - C(d) \\
-P(d) \amp = (-d^2 + 220d +24,000) - (-22d +6,600) \\
-P(d) \amp = -d^2 + 242d + 17,400. 
-\end{align*}
-</div>Finally, we determine that absolute maximum value of <span class="process-math">\(P(d)\)</span> on the interval <span class="process-math">\([0,300]\text{.}\)</span> As usual, we need the critical value of <span class="process-math">\(P(d)\text{.}\)</span> We solve<div class="displaymath process-math" data-contains-math-knowls="./knowl/crit-number-thm.html">
-\begin{align*}
-P'(d) \amp = 0\\
--2d + 242 \amp = 0
-\end{align*}
-</div>so that <span class="process-math">\(d=121\)</span> is the only critical number of <span class="process-math">\(P(d)\text{.}\)</span> Since <span class="process-math">\(P''(121) = -2 &lt; 0\text{,}\)</span> the second derivative test tells us that <span class="process-math">\(d=121\)</span> gives a relative maximum. Since <span class="process-math">\(d=121\)</span> is the only critical number in <span class="process-math">\([0,300]\text{,}\)</span> <a href="" class="xref" data-knowl="./knowl/crit-number-thm.html" title="Theorem 3.9.4: Critical Number Theorem">Theorem 3.9.4</a> tells us that the relative maximum will also be an absolute maximum. Evaluating at <span class="process-math">\(d=121\text{,}\)</span> we find <span class="process-math">\(p(121) = 201\)</span> and <span class="process-math">\(P(121) = 32,041\text{.}\)</span> Hence Fawlty Towers should charge $201 for a room to obtain a maximum profit of $32,041.</div></body>
+<body class="ignore-math"><div class="solution solution-like">First observe that <span class="process-math">\(R(t)\)</span> is a continuous function (it's a polynomial) defined on the closed and bounded interval <span class="process-math">\([2,10]\text{.}\)</span> So, by <a href="" class="xref" data-knowl="./knowl/evt.html" title="Theorem 3.9.2: Extreme Value Theorem">Theorem 3.9.2</a> <span class="process-math">\(R(t)\)</span> must achieve its absolute extreme values. To find them, we use  <a href="" class="xref" data-knowl="./knowl/fact-abs-ext.html" title="Fact 3.9.3">Fact 3.9.3</a>. That is, we evaluate <span class="process-math">\(R(t)\)</span> at the critical numbers (which was done in the previous part) and endpoints of the interval. <ul class="disc">
+<li><div class="para"><span class="process-math">\(\displaystyle R(2) = 87.67\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle R(6) = 205 \)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle R(8) = 195.67 \)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle R(10) = 258.33\)</span></div></li>
+</ul> Comparing these values, we see that <span class="process-math">\(R(t)\)</span> has an absolute minimum value of 87.67 at <span class="process-math">\(t=2\)</span> and an absolute maximum value of 258.33 at <span class="process-math">\(t=10\text{.}\)</span> In the context of this model, this means <ul class="disc">
+<li><div class="para">VL Consultatns had an absolute minimum revenue of $8,767,000 in 2015 (<span class="process-math">\(t=2\)</span>).</div></li>
+<li><div class="para">VL Consultatns had an absolute maximum revenue of 25,833,000 in 2023 (<span class="process-math">\(t=10\)</span>).</div></li>
+</ul> Notice that both absolute extreme values occured at the endpoints, NOT the critical numbers.</div></body>
 </html>

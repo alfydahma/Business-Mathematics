@@ -13,20 +13,31 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Notice that we can use <a href="" class="xref" data-knowl="./knowl/obs-exponentiate.html" title="Item 6">Item 6</a>, and <a href="" class="xref" data-knowl="./knowl/fact-log-tool.html" title="Fact 5.1.12">Fact 5.1.12</a>  to rewrite any exponential function in terms of base <span class="process-math">\(e\text{.}\)</span>Indeed, for <span class="process-math">\(b &gt; 0\text{,}\)</span> <span class="process-math">\(b \neq 1\text{,}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/obs-exponentiate.html ./knowl/fact-log-tool.html">
+<div class="para">
+<a href="" class="xref" data-knowl="./knowl/fact-log-tool.html" title="Fact 5.1.12">Fact 5.1.12</a> is uselful when sloving exponential equations. For example, to solve</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-log-tool.html">
 \begin{equation*}
-b^t = e^{\ln(b^t)} = e^{\ln(b) \cdot t} = e^{kt}
+3^t = 11,
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(k = \ln(b)\text{.}\)</span>  It should be clear that if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/obs-exponentiate.html ./knowl/fact-log-tool.html">
-\begin{equation*}
-e^{kt} = b^t
-\end{equation*}
+<div class="para">we can apply the natural logarithm to both sides and then solve the resulting equation:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-log-tool.html">
+\begin{align*}
+\ln(3^t) \amp = \ln(11) \\
+\\
+t\ln(3) \amp = \ln(11) \\
+\\
+t \amp = \frac{\ln(11)}{\ln(3)}
+\end{align*}
 </div>
-<div class="para">then <span class="process-math">\(b=e^k\)</span>
+<div class="para">Rounded to three decimal places <span class="process-math">\(t \approx 2.183 \text{.}\)</span> Note that we could have used any logarithm to solve this equation. Since the base is 3 and <span class="process-math">\(\log_3(3) = 1\text{,}\)</span> the base 3 logarithm is another good choice:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-log-tool.html">
+\begin{align*}
+\log_3(3^t) \amp = \log_3(11) \\
+t\log_3(3) \amp = \log_3(11) \\
+t \amp = \log_3(11) \\
+t \amp \approx 2.183
+\end{align*}
 </div>
 </div>
 <span class="incontext"><a href="basic-props.html#p-195" class="internal">in-context</a></span>

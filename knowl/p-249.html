@@ -13,33 +13,30 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Now, suppose we deposit $<span class="process-math">\(P\)</span> at the end of each period for <span class="process-math">\(m\)</span> total compounding periods at an interest rate of <span class="process-math">\(i\)</span> each period.  Note that <span class="process-math">\(i\)</span> is NOT necessarily the annual rate.  To compare with our previous work, if <span class="process-math">\(r\)</span> were the annual interest rate and there were <span class="process-math">\(n\)</span> compounding periods per year, then we would use <span class="process-math">\(i = \dfrac{r}{n}\)</span> as the interest rate per period. In other words, using our new notation, we can rewrite our compound interest model as follows. For principal <span class="process-math">\(P\text{,}\)</span> compounded <span class="process-math">\(n\)</span> times a year for <span class="process-math">\(t\)</span> years at an annual interest rate <span class="process-math">\(r\)</span>
+<div class="para">As a an example, consider the following equality. For any real number <span class="process-math">\(x\text{,}\)</span> we have,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x-1)(1+x+x^2+x^3+x^4) = x^5 - 1.
+\end{equation*}
+</div>
+<div class="para">When <span class="process-math">\(x \neq 1\)</span> this is equivalent to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1+x+x^2+x^3+x^4 = \dfrac{x^5-1}{x-1}
+\end{equation*}
+</div>
+<div class="para">Similarly</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1+x+x^2+x^3+x^4 + x^5 = \dfrac{x^6-1}{x-1}, \: \textrm{and} 
+\end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-P \left( 1+ \dfrac{r}{n} \right)^{nt} = P\left(1+ i \right)^{m}
+1+x+x^2+x^3+x^4 + x^5 +x^6= \dfrac{x^7-1}{x-1} 
 \end{equation*}
 </div>
-<div class="para">Now, using our compound interest model, with $<span class="process-math">\(P\)</span> deposited at the end of each period,</div>
-<ul class="disc">
-<li><div class="para">Accumulated amount from deposit 1 = <span class="process-math">\(P(1+i)^{m-1}\)</span>
-</div></li>
-<li><div class="para">Accumulated amount from deposit 2 = <span class="process-math">\(P(1+i)^{m-2}\)</span>
-</div></li>
-<li><div class="para">Accumulated amount from deposit 3 = <span class="process-math">\(P(1+i)^{m-3}\)</span>
-</div></li>
-</ul>
-<div class="para"><span class="process-math">\(\vdots\)</span></div>
-<ul class="disc">
-<li><div class="para">Accumulated amount from deposit m-3 = <span class="process-math">\(P(1+i)^{3}\)</span>
-</div></li>
-<li><div class="para">Accumulated amount from deposit m-2 = <span class="process-math">\(P(1+i)^{2}\)</span>
-</div></li>
-<li><div class="para">Accumulated amount from deposit m-1 = <span class="process-math">\(P(1+i)\)</span>
-</div></li>
-<li><div class="para">Accumulated amount from deposit m = <span class="process-math">\(P\)</span>
-</div></li>
-</ul>
+<div class="para">and so on. What will be useful to us here, is that the sum on the left can be computed using division. In general, the following is true:</div>
 </div>
 <span class="incontext"><a href="section-ordinary-annuities.html#p-249" class="internal">in-context</a></span>
 </body>

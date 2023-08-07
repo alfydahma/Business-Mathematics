@@ -12,7 +12,26 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">We will see this idea illustrated in the following examples.</div>
+<div class="para logical">
+<div class="para">Be aware that if the functions intersect at some value <span class="process-math">\(c\)</span> in the interval <span class="process-math">\((a,b)\text{,}\)</span> and <span class="process-math">\(f(x) \geq g(x)\)</span> for <span class="process-math">\(x\)</span> in <span class="process-math">\([a,c)\)</span> and <span class="process-math">\(g(x) \geq f(x)\)</span> for <span class="process-math">\(x\)</span> in <span class="process-math">\((c,b]\text{,}\)</span> then two integrals are needed to find the total area, <span class="process-math">\(A\text{,}\)</span> trapped by <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> over the interval <span class="process-math">\([a,b]\text{.}\)</span>  The area would be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \int_{x=a}^{c} (f(x) - g(x)) \: dx + \int_{x=c}^{b} (g(x) - f(x)) \: dx
+\end{equation*}
+</div>
+<div class="para">This is illustated in the graph below. Notice that <span class="process-math">\(A\)</span> is the sum of two regions of area, <span class="process-math">\(A = A_1 + A_2\text{,}\)</span> where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A_1 = \int_{x=a}^{c} (f(x) - g(x)) \: dx
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A_2 = \int_{x=c}^{b} (g(x) - f(x)) \: dx
+\end{equation*}
+</div>
+</div>
 <span class="incontext"><a href="ftc-apps.html#p-167" class="internal">in-context</a></span>
 </body>
 </html>

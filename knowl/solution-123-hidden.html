@@ -10,14 +10,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">To do this, we subtract the rate of cost of using the new equipment from the rate of savings associated with using the new equipment. This function, <span class="process-math">\(S'(x) - C'(x)\text{,}\)</span> will give the rate of net savings. Using our answer from the previous part, to determine the net, maximal savings, we integrate from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=7\)</span> to obtain:<div class="displaymath process-math">
+<body class="ignore-math"><div class="solution solution-like">Let <span class="process-math">\(P(t)\)</span> represent VL Consultant's total profit function. Then we are asked to find <span class="process-math">\(P(15) - P(5)\)</span> (note that <span class="process-math">\(t=5\)</span> corresponds to the start of 1994 and <span class="process-math">\(t=15\)</span> corresponds to the start of 2004). Since <span class="process-math">\(MP(t) = MR(t) - MC(t)\text{,}\)</span> by <a href="" class="xref" data-knowl="./knowl/thm-ftc.html" title="Theorem 4.3.1: The Fundamental Theorem of Calculus (FTC)">Theorem 4.3.1</a><div class="displaymath process-math" data-contains-math-knowls="./knowl/thm-ftc.html">
 \begin{align*}
-\int_{x=0}^{7} (S'(x) - C'(x)) \, dx \amp = \int_{x=0}^{7} (-.88x^2 - 2.64x + 61.6) \, dx\\
+P(15) - P(5) \amp =  \int_{t=5}^{15} MP(t) \, dt \\
 \\
-\amp = \left(-\frac{.88}{3}x^3 - 1.32x^2 + 61.6x\right)\Biggr|_{x=0}^{7} \\
+\amp = \int_{t=5}^{15} [MR(t) - MC(t)]  \, dt \\
 \\
-\amp = 265.9 
+\amp = \int_{t=5}^{15}\left[(1.03t^2 - 8.42t +50)-(.43t^2 - 1.36t + 8)\right]  \, dt\\
+\\
+\amp = \int_{t=5}^{15}(.6t^2 - 9.78t + 42)  \, dt\\
+\\
+\amp = \left(.2t^3 - 4.89t^2  + 42t\right)\Biggr|_{t=5}^{15}   \\
+\\
+\amp = 364  
 \end{align*}
-</div>where the answer above is rounded to one decimal place. We see that Puddy's net, maximal savings from using the new equipment is $2,659. Geometrically, this is the area between <span class="process-math">\(S'(x)\)</span> and <span class="process-math">\(C'(x)\)</span> over <span class="process-math">\([0,7]\text{,}\)</span> as depicted below. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c62.png" class="contained"></div>
+</div>VL Consultants' total profit from the start of 1994 to the start of 2004 was $364,000,000. You should be able to verify algebraically that <span class="process-math">\(MR(t) &gt; MC(t)\)</span> for all <span class="process-math">\(t\)</span> in <span class="process-math">\([5,15]\text{.}\)</span> So, the definite integral above is the area between <span class="process-math">\(MR(t)\)</span> and <span class="process-math">\(MC(t)\)</span> from <span class="process-math">\(t=5\)</span> to <span class="process-math">\(t=15\text{.}\)</span> Below is the graph illustrating the value of the definite integral as the area between these two models. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c60b.png" class="contained"></div>
 </div></body>
 </html>

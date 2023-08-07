@@ -10,16 +10,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">Let <span class="process-math">\(R(w)\)</span> be the function that gives the number of bicycles produced by UCRF in <span class="process-math">\(w\)</span> weeks (that is, <span class="process-math">\(R'(w)=r(w)\)</span>). Since day 8 starts the second week, and day 28 ends the fourth week, we are asked to find <span class="process-math">\(R(4) - R(1)\text{.}\)</span> Using <a href="" class="xref" data-knowl="./knowl/thm-ftc.html" title="Theorem 4.3.1: The Fundamental Theorem of Calculus (FTC)">Theorem 4.3.1</a>,<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm-ftc.html">
+<body class="ignore-math"><div class="solution solution-like">Using <a href="" class="xref" data-knowl="./knowl/thm-ftc.html" title="Theorem 4.3.1: The Fundamental Theorem of Calculus (FTC)">Theorem 4.3.1</a> with <span class="process-math">\(c=0\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/thm-ftc.html">
+\begin{equation*}
+\int_{x=0}^{2} (6x^2 - 7x -3) \: dx = = (2 \cdot 8^3 - \dfrac{7}{2} \cdot 8^2 - 3 \cdot 8) - (0) = -4
+\end{equation*}
+</div>
+<div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c54.png" class="contained"></div> Observe that <span class="process-math">\(6x^2 - 7x -3\)</span> crosses the <span class="process-math">\(x\)</span>-axis at <span class="process-math">\(x = 1.5\text{,}\)</span> where it changes from negative to positive. Using property 3 above and the area labels in the graph<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm-ftc.html">
 \begin{align*}
-R(4)-R(1) \amp = \int_{w=1}^{4} r(w) \, dw\\
+\int_{x=0}^{2} (6x^2 - 7x -3) \: dx  \amp = \int_{x=0}^{1.5} (6x^2 - 7x -3) \: dx  + \int_{x=1.5}^{2} (6x^2 - 7x -3) \: dx \\
 \\
-\amp = \int_{w=1}^{4} (95+.3w^2-.5w) \, dw\\
+\amp = -A_1 + A_2 \\
 \\
-\amp = \left(95w + .1w^3 - .25w^2\right)\Biggr|_{w=1}^{4} \\
+\amp = -5.63 + 1.63\\
 \\
-\amp = 287.55 
+\amp = -4 
 \end{align*}
-</div>To answer the question we will round down, since UCRF will not count a fraction of a bike in their total. So, the number of bikes produced by UCRF from day 8 to day 28 was 287 bikes. Below is the graph which illustrates the value of the definite integral as are under <span class="process-math">\(r(w)\text{.}\)</span> <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c56.png" class="contained"></div>
+</div>
 </div></body>
 </html>

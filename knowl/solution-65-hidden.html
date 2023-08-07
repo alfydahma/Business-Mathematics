@@ -10,9 +10,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><div class="displaymath process-math">
-\begin{equation*}
-\dfrac{dg}{dt} = 1t^{1-1} = t^0 = 1
-\end{equation*}
-</div></div></body>
+<body class="ignore-math"><div class="solution solution-like">We are asked to find and interpret <span class="process-math">\(MR(100) = R'(100)\text{.}\)</span>  We first need to find the marginal revenue function.<div class="displaymath process-math">
+\begin{align*}
+MR(s) \amp  = \lim_{h \rightarrow 0} \dfrac{R(s+h) - R(s)}{h}  \\
+\\
+\amp = \lim_{h \rightarrow 0}\dfrac{10(s+h) - .002(s+h)^2 - (10s -.002s^2)}{h}    \\
+\\
+\amp =\lim_{h \rightarrow 0} \dfrac{10s + 10h -.002s^2 - .004sh - .002h^2 -10s +.002s^2}{h}   \\
+\\
+\amp = \lim_{h \rightarrow 0} \dfrac{h(10 -.004s - .002h)}{h} = \lim_{h \rightarrow 0}(10-.004s -.002h)    \\
+\\
+\amp = 10 - .004s -.002(0) = 10 - .004s.   
+\end{align*}
+</div>So, <span class="process-math">\(MR(s) = 10-.004s\)</span> which means that <span class="process-math">\(MR(100) = 9.6\text{.}\)</span> This means: When When ECCO produces <span class="process-math">\(s=100\)</span> pairs of speakers, their revenue is increasing at an approximate rate of $9,600 per additional pair produced.  In other words, the revenue generated from producing the <span class="process-math">\(101^{\textrm{st}}\)</span> pair of speakers is approximately $9,600.</div></body>
 </html>

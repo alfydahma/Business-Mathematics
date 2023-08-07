@@ -10,9 +10,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">The years 2008 and 2012 correspond to input values 8 and 12 resprectively. Using our work from part (a) with <span class="process-math">\(x=8 \)</span> and <span class="process-math">\(h=12-8 = 4\)</span> we have<div class="displaymath process-math">
+<body class="ignore-math"><div class="solution solution-like">First, we simplify the differene quotient:<div class="displaymath process-math" data-contains-math-knowls="./knowl/aroc-def-ex.html">
+\begin{align*}
+\dfrac{f(x +h) - f(x)}{h} \amp = \dfrac{(x+h)^2-1 - (x^2-1)}{h} \\
+\amp = \dfrac{x^2 + 2xh + h^2 -1 -x^2 +1}{h} \\
+\amp = \dfrac{2xh + h^2}{h} = \dfrac{h(2x+h)}{h} = 2x + h. 
+\end{align*}
+</div>With <span class="process-math">\(x = x_1 = -1\)</span> and <span class="process-math">\(h = 3 - (-1) = 4\)</span> we have<div class="displaymath process-math" data-contains-math-knowls="./knowl/aroc-def-ex.html">
 \begin{equation*}
-\textrm{AROC} = \dfrac{1}{100}(20(8) + 10(4) -104) = .96 \: \dfrac{\textrm{million records}}{\textrm{year}}
+\textrm{AROC} =  \dfrac{f(x +h) - f(x)}{h} = 2x + 4 = 2(-1) + 4 = 2
 \end{equation*}
-</div>This means: From 2008 to 2012, vinyl record sales increased an average of 960,000 vinyl records sold per year. That is, 960,000 is the average yearly INCREASE in vinyl records sold for this four year span.</div></body>
+</div>Compare this with <a href="" class="xref" data-knowl="./knowl/aroc-def-ex.html" title="Example 3.2.3">Example 3.2.3</a>. Below is the graph of <span class="process-math">\(f(x) = x^2 -1\text{.}\)</span>  Included in the graph is the secant line <span class="process-math">\(L\)</span> through <span class="process-math">\((-1,f(-1))\)</span> and <span class="process-math">\((3,f(3))\text{.}\)</span> The slope of <span class="process-math">\(L\)</span> equals the AROC calculated above, which is 2. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c9.png" class="contained"></div>
+</div></body>
 </html>

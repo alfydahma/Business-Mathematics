@@ -10,16 +10,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">Letting <span class="process-math">\(P(x)\)</span> represent ADTF Distributors' associated profit function, we are asked to find <span class="process-math">\(P(5) - P(1)\)</span> (recall that <span class="process-math">\(x\)</span> is in hundreds of thousands of hoodies). Using <a href="" class="xref" data-knowl="./knowl/thm-ftc.html" title="Theorem 4.3.1: The Fundamental Theorem of Calculus (FTC)">Theorem 4.3.1</a><div class="displaymath process-math" data-contains-math-knowls="./knowl/thm-ftc.html">
+<body class="ignore-math"><div class="solution solution-like">Again we can use <a href="" class="xref" data-knowl="./knowl/thm-ftc.html" title="Theorem 4.3.1: The Fundamental Theorem of Calculus (FTC)">Theorem 4.3.1</a>, choosing <span class="process-math">\(c=0\)</span> for the integration constant.<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm-ftc.html">
 \begin{align*}
-P(5) - P(1) \amp = \int_{x=1}^{5} MP(x) \, dx\\
+\int_{x=2}^{8} \left(\dfrac{1}{2}x^2 - 4x \right) \: dx \amp = \left(\dfrac{1}{6}x^3 - 2x^2\right) \Biggr|_{x=2}^{8}\\
 \\
-\amp = \int_{x=1}^{5} (.4x^3 - 1.2x + 1) \, dx  \\
+\amp = \left(\dfrac{1}{6} \cdot 8^3 - 2\cdot 8^2 \right) - \left(\dfrac{1}{6} \cdot 2^3 - 2\cdot 2^2 \right) \\
 \\
-\amp = \left( .1x^4 - .6x^2 + x \right)\Biggr|_{x=1}^{5} \\
-\\
-\amp = 52. 
+\amp = -36
 \end{align*}
-</div>ADTF Distributors' net change profit when production is increased from 100,000 to 500,000 hoodies is $52,000,000. Below is the graph, which illustrates the value of the definite integral as the area under ADTF Distributors' marginal profit function. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c55.png" class="contained"></div> It is important to note that $52 million is not  ADTF Distributors' profit from producing and selling 500,000 hoodies. We do not have enough information to fully determine <span class="process-math">\(P(x)\text{:}\)</span> <span class="process-math">\(P(x) = .1x^4 - .6x^2 + x + c \text{,}\)</span> where <span class="process-math">\(c\)</span> is an arbritrary constant. As a result, unable to calculate <span class="process-math">\(P(5)\text{.}\)</span>
+</div>Notice that <span class="process-math">\(\dfrac{1}{2}x^2 - 4x \leq 0\)</span> on the interval <span class="process-math">\([2,8]\text{,}\)</span> so the value of the definite integral and the area (which is always postive) have opposite signs. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c53.png" class="contained"></div>
 </div></body>
 </html>

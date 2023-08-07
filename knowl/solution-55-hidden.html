@@ -10,17 +10,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">Let's first simplify the difference quotient.  Most of the time, that just means simplify until you can cancel the <span class="process-math">\(h\)</span> in the denominator:<div class="displaymath process-math">
-\begin{align*}
-\dfrac{f(x+h) - f(x)}{h} \amp = \dfrac{2(x+h)^2 - 3(x+h) -1 - (2x^2 - 3x -1)}{h} \\
-\amp = \dfrac{2x^2 + 4xh + 2h^2 - 3x - 3h -1 -2x^2 +3x +1}{h}  \\
-\amp = \dfrac{h(4x+2h-3)}{h} = 4x + 2h - 3 
-\end{align*}
-</div>Now, when we take the limit as <span class="process-math">\(h\)</span> goes to 0, we can just substitute 0 in for <span class="process-math">\(h\)</span> (since we can view the simplified difference quotient as a polynomial in <span class="process-math">\(h\)</span>).  So,<div class="displaymath process-math">
-\begin{align*}
-f'(x) = \dfrac{df}{dx} \amp = \lim_{h \rightarrow 0}\dfrac{f(x+h) - f(x)}{h}  = \lim_{h \rightarrow 0} (4x + 2h-3) \\
-\amp = 4x + 2 \cdot 0 -3 = 4x - 3. 
-\end{align*}
-</div>That is, the derivative of <span class="process-math">\(f(x)=2x^2 -3x -1\)</span> is <span class="process-math">\(f'(x) = \dfrac{df}{dx} =  4x - 3 \text{.}\)</span>
+<body class="ignore-math"><div class="solution solution-like">The years 2010 and 2015 correspond to input values 10 and 15 resprectively. Using our work from part (a) with <span class="process-math">\(x=10 \)</span> and <span class="process-math">\(h=15-10 = 5\)</span> we have<div class="displaymath process-math">
+\begin{equation*}
+\textrm{AROC} = \dfrac{1}{100}(20(10) + 10(5) -104) = 1.46 \: \dfrac{\textrm{million records}}{\textrm{year}}
+\end{equation*}
+</div>This means: From 2010 to 2015, vinyl record sales increased an average of 1,460,000 vinyl records sold per year. That is, 1,460,000 is the average yearly INCREASE in vinyl records sold for this five year span. Below is the graph of <span class="process-math">\(s(x)\)</span> and the secant lines corresponding to the AROCs calculed in parts (b) and (c). <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c10.png" class="contained"></div>
 </div></body>
 </html>

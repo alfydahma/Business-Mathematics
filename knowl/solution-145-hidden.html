@@ -10,21 +10,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">We solve <span class="process-math">\(C(a) = 34\text{,}\)</span> or <span class="process-math">\(20 + \ln(4a + 1) = 34\text{,}\)</span> for <span class="process-math">\(a\text{.}\)</span> We need to "separate" the <span class="process-math">\(a\)</span> from the natural log. To do this, first note that if <span class="process-math">\(b &gt; 0\text{,}\)</span> <span class="process-math">\(b \neq 1\)</span> and <span class="process-math">\(n = m\text{,}\)</span> then <span class="process-math">\(b^n = b^m\text{.}\)</span> So, we can rewrite the equation, "exponentiate" both sides using <span class="process-math">\(b=e\text{,}\)</span> and use <a href="" class="xref" data-knowl="./knowl/obs-exponentiate.html" title="Item 6">Item 6</a>. Doing so, we have<div class="displaymath process-math" data-contains-math-knowls="./knowl/obs-exponentiate.html">
+<body class="ignore-math"><div class="solution solution-like">We need to solve <span class="process-math">\(V(t) = 364\)</span> for <span class="process-math">\(t\text{.}\)</span> To do this, we use <a href="" class="xref" data-knowl="./knowl/fact-log-tool.html" title="Fact 5.1.12">Fact 5.1.12</a>:<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-log-tool.html ./knowl/obs-apply-log.html">
 \begin{align*}
-20 + \ln(4a + 1) \amp = 34 \\
+29e^{.23t} \amp = 364 \\
 \\
-\ln(4a + 1) \amp = 14 \\
+e^{.23t} \amp = \frac{364}{29} \\
 \\
-e^{\ln(4a + 1)} \amp = e^{14} \\
+\ln(e^{.23t}) \amp = \ln\left(\frac{364}{29}\right) \\
 \\
-4a+1 \amp = e^{14}  \\
+.23t\ln(e) \amp = \ln\left(\frac{364}{29}\right) \\
 \\
-4a \amp = e^{14} - 1 \\
+.23t \amp = \ln\left(\frac{364}{29}\right) \\
 \\
-a \amp = \frac{e^{14} - 1}{4} \\
+t \amp = \frac{\ln\left(\frac{364}{29}\right)}{.23} \\
 \\
-a \amp \approx 300,650.82
+t \amp \approx 10.999 
 \end{align*}
-</div>Roundiong up, if the shipping costs are $3,400,000, ADFT Distributors shipped about 300,651 ATVs.</div></body>
+</div>It took The Great Escape about 11 years (which corresponds to the year 2020) to have 364,000 vacation rentals posted on their site. Note that in the third step above we could have employed <a href="" class="xref" data-knowl="./knowl/obs-apply-log.html" title="Item 5">Item 5</a> to see that <span class="process-math">\(\ln(e^{.23t}) = .23t\text{.}\)</span> The graph of <span class="process-math">\(V(t)\)</span> is below with the corresponding points identified. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-5/e7.png" class="contained"></div>
+</div></body>
 </html>

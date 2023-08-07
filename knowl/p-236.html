@@ -11,61 +11,24 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Let's look at the effect of increasing the number of yearly compounding periods on an investment. For simplicity, suppose $1 is invested at an annual interest rate of 100% for <span class="process-math">\(t=1\)</span> year, compounded <span class="process-math">\(n\)</span> times a year. For our calculations we use <a href="" class="xref" data-knowl="./knowl/compound-future.html" title="Item 1">Item 1</a> with <span class="process-math">\(P=r=1\text{.}\)</span> The future value of $1 at <span class="process-math">\(t=1\)</span> year is then</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/def-e.html">
-\begin{equation*}
-A(1) = F = \left(1 + \dfrac{1}{n}\right)^n
-\end{equation*}
+<div class="para">We now want to determine the doubling time under this inflation rate. To do this, we solve <a href="" class="xref" data-knowl="./knowl/compound-future.html" title="Item 1">Item 1</a> for <span class="process-math">\(t\text{,}\)</span> using <span class="process-math">\(P=1,000\)</span> and <span class="process-math">\(F = 2 \cdot 1000\)</span>
 </div>
-<div class="para">Let's look at how $1 grows as we increase <span class="process-math">\(n\text{.}\)</span> We round to the nearest cent:</div>
-<ul class="disc">
-<li><div class="para">
-<span class="process-math">\(n=1\)</span> (yearly): <span class="process-math">\(\quad F = (1+1)^1 = $2\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(n=2\)</span> (semiannual): <span class="process-math">\(\quad F = \left(1+\dfrac{1}{2}\right)^2 \approx $2.25\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(n=4\)</span> (quarterly): <span class="process-math">\(\quad F = \left(1+\dfrac{1}{4}\right)^4 \approx $2.44\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(n=12\)</span> (monthly): <span class="process-math">\(\quad F = \left(1+\dfrac{1}{12}\right)^{12} \approx $2.61\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(n=52\)</span> (weekly): <span class="process-math">\(\quad F = \left(1+\dfrac{1}{52}\right)^{52} \approx $2.69\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(n=365\)</span> (daily): <span class="process-math">\(\quad F = \left(1+\dfrac{1}{52}\right)^{365} \approx $2.71\)</span>
-</div></li>
-</ul>
-<div class="para">We can continue to increase the number of compounding periods by letting <span class="process-math">\(n \to \infty\text{.}\)</span> Recalling <a href="" class="xref" data-knowl="./knowl/def-e.html" title="Definition 5.1.4">Definition 5.1.4</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/def-e.html">
-\begin{equation*}
-\lim_{n \to \infty} \left( 1 + \dfrac{1}{n}\right)^n \approx $2.72
-\end{equation*}
-</div>
-<div class="para">We obtain similar results using any interest rate. Indeed, for any value <span class="process-math">\(r\)</span> one can show</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/def-e.html">
-\begin{equation*}
-\lim_{n \to \infty} \left( 1 + \dfrac{r}{n}\right)^n = e^r
-\end{equation*}
-</div>
-<div class="para">Using the properties of limits, we can continue to extend the above result. For the compound interest model <span class="process-math">\(A(t) = P\left(1 + \dfrac{r}{n} \right)^{nt}\text{,}\)</span> we obtain the following by letting the number of compounding perionds increase without bound:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/def-e.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/compound-future.html ./knowl/fact-log-tool.html">
 \begin{align*}
-\lim_{n \to \infty}A(t) \amp =\lim_{n \to \infty} \left(  P \left(1 + \dfrac{r}{n} \right)^{nt} \right) \\
+2 \cdot 1000 \amp = 1000 \left(1+\dfrac{.0195}{1}\right)^{1 \cdot t} \\
 \\
-\amp = P \left[ \lim_{n \to \infty} \left( 1 + \dfrac{r}{n} \right)^{nt} \right]\\
+(1.0195)^t \amp = 2 \quad (\textrm{apply the natural log to both sides}) \\
 \\
-\amp = P \left[ \lim_{n \to \infty} \left( 1 + \dfrac{r}{n} \right)^{n} \right]^t\\
+t\ln(1.0195) \amp = \ln(2) \quad (\textrm{recall} \knowl{./knowl/fact-log-tool.html}{\text{Fact 5.1.12}})\\
 \\
-\amp = P \left[ e^r \right]^t\\
+t \amp = \dfrac{\ln(2)}{\ln(1.0195)} \\
 \\
-\amp = Pe^{rt}
+t \amp \approx 35.89
 \end{align*}
 </div>
+<div class="para">Rounding up, it will take about 36 years for this price to double. Observe that this doubling time is independent of cost of the item. An item that cost $1 would also take about 36 years until the price doubled.</div>
 </div>
 <span class="incontext"><a href="interest-models.html#p-236" class="internal">in-context</a></span>
 </body>

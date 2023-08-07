@@ -10,13 +10,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">We use the future value formula for an ordinary annuity (<a href="" class="xref" data-knowl="./knowl/ordinary-annuity-future.html" title="Item">Item </a>) given in <a href="" class="xref" data-knowl="./knowl/ordinary-annuity-formula.html" title="Fact 5.4.2">Fact 5.4.2</a> with <span class="process-math">\(P=200\text{,}\)</span> <span class="process-math">\(i = .04\text{,}\)</span> and <span class="process-math">\(m=5\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/ordinary-annuity-future.html ./knowl/ordinary-annuity-formula.html">
+<body class="ignore-math"><div class="solution solution-like">We use <a href="" class="xref" data-knowl="./knowl/cont-comp-future.html" title="Item 1">Item 1</a> with <span class="process-math">\(F = .5 P\)</span> to solve for <span class="process-math">\(t\text{.}\)</span> Because the value of the investemet is decaying, however, we must use <span class="process-math">\(r=-.0553\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/cont-comp-future.html ./knowl/obs-apply-log.html">
 \begin{align*}
-F \amp = P\left(\dfrac{(1+i)^m - 1}{i} \right)\\
+Pe^{-.0553t} \amp = .5P \\
 \\
-F \amp = 200\left(\dfrac{(1+.04)^5 - 1}{.04} \right) \\
+e^{-.0553t} \amp = .5 \: (\textrm{take the natural log of both sides}) \\
 \\
-F \amp \approx 1083.26  
+-.0553t \amp = \ln(.5) \: (\textrm{recall} \knowl{./knowl/obs-apply-log.html}{\text{Item 5}}; \: 
+\textrm{here,} \: x=-.0553t)\\
+\\
+t \amp = \dfrac{\ln(.5)}{-.0553}\\
+\\
+t \amp \approx 12.5
 \end{align*}
-</div>In 5 years the account will grow to $1,083.26</div></body>
+</div>It will take approximately 12.5 years (or about 12 years and 6 months) for the investment to decay to half its value.</div></body>
 </html>

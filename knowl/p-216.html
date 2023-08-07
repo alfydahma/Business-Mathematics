@@ -12,7 +12,30 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Exponential functions are commonly used to model the growth and decay of money. But, let's first revisit a topic introduced in <a href="linear-models-applications.html" class="internal" title="Section 1.3: Linear Models and Applicaitions">Section 1.3</a> for comparison. In particular, recall <a href="" class="xref" data-knowl="./knowl/ex-lorrie-simp-int.html" title="Example 1.3.10">Example 1.3.10</a>.</div>
-<span class="incontext"><a href="interest-models.html#p-216" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">Now we find <span class="process-math">\(k\)</span> using the fact that <span class="process-math">\(R(5) = 296.9\text{.}\)</span> We solve the following for <span class="process-math">\(k\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/obs-apply-log.html">
+\begin{align*}
+R(5) \amp = 296.9\\
+\\
+411e^{5k} \amp = 296.9\\
+\\
+e^{5k} \amp = \frac{296.9}{411} \quad \textrm{(apply the natural log to both sides)}\\
+\\
+5k \amp = \ln\left(\frac{296.9}{411}\right) \quad (\textrm{recall} \knowl{./knowl/obs-apply-log.html}{\text{Item 5}})\\
+\\
+k \amp = \frac{\ln\left(\frac{296.9}{411}\right)}{5}
+\end{align*}
+</div>
+<div class="para">Rounding to five decimal places, <span class="process-math">\(k = -.06504\)</span> so that the continuous decay rate is 6.504% and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/obs-apply-log.html">
+\begin{equation*}
+R(t) = 411e^{-.06504t}.
+\end{equation*}
+</div>
+<div class="para">Evaluating at <span class="process-math">\(t=8\)</span> and rounding to one decimal place gives <span class="process-math">\(R(8) = 411e^{-.06504(8)} = 244.3\)</span> which means Bound-2-Read's annual revenue in 2004 was about $244.3 million dollars.</div>
+</div>
+<span class="incontext"><a href="exponential-applications.html#p-216" class="internal">in-context</a></span>
 </body>
 </html>

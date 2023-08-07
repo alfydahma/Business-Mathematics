@@ -14,23 +14,16 @@
 <div class="solution solution-like">
 <h3 class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">b.1</span><span class="period">.</span>
-</h3>Since <span class="process-math">\(q_0 = 25\)</span> is the equilibrium quantity, and <span class="process-math">\(p_0 = 77\)</span> gives the equilibrium price, the consumer surplus is<div class="displaymath process-math">
-\begin{equation*}
-\textrm{CS} = \int_{q=0}^{25} (D(q) - 77) \: dq = \int_{q=0}^{25} ((302 -.36q^2) - 77) \: dq 
-\end{equation*}
-</div>which we can simplify and evaluate. However, let's find the consumer surplus by first evaluating the integral portion, <span class="process-math">\(\int_{q=0}^{25} D(q) \: dq\)</span> and then use our answer from the previous part. Now,<div class="displaymath process-math">
+</h3>To do this, we subtract the rate of cost of using the new equipment from the rate of savings associated with using the new equipment. This function, <span class="process-math">\(S'(x) - C'(x)\text{,}\)</span> will give the rate of net savings. Using our answer from the previous part, to determine the net, maximal savings, we integrate from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=7\)</span> to obtain:<div class="displaymath process-math">
 \begin{align*}
-\int_{q=0}^{25} D(q) \: dq \amp =  \int_{q=0}^{25} (302-.36q^2) \: dq  \\
+\int_{x=0}^{7} (S'(x) - C'(x)) \, dx \amp = \int_{x=0}^{7} (-.88x^2 - 2.64x + 61.6) \, dx\\
 \\
-\amp =  \left(302q-.12q^3 \right)\Biggr|_{q=0}^{25}\\
+\amp = \left(-\frac{.88}{3}x^3 - 1.32x^2 + 61.6x\right)\Biggr|_{x=0}^{7} \\
 \\
-\amp = 5,675. 
+\amp = 265.9 
 \end{align*}
-</div>Since<div class="displaymath process-math">
-\begin{equation*}
-\textrm{CS} = \int_{q = 0}^{q_0} D(q)  \: dq - p_0 q_0, 
-\end{equation*}
-</div>we find that the consumer surplus in this market is 5,675-1,925 = 3,750. So, when supply and demand are at equilibrium, the consumer surplus for the sale of the new snow blowers will be $3,750.</div>
+</div>where the answer above is rounded to one decimal place. We see that Puddy's net, maximal savings from using the new equipment is $2,659. Geometrically, this is the area between <span class="process-math">\(S'(x)\)</span> and <span class="process-math">\(C'(x)\)</span> over <span class="process-math">\([0,7]\text{,}\)</span> as depicted below. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c62.png" class="contained"></div>
+</div>
 <span class="incontext"><a href="ftc-apps.html#solution-125" class="internal">in-context</a></span>
 </body>
 </html>

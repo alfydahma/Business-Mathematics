@@ -13,26 +13,41 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h3 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.8.4.1</span><span class="period">.</span>
-</h3>We begin by finding the critical numbers for <span class="process-math">\(L(t)\text{.}\)</span> We solve<div class="displaymath process-math">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">d.1</span><span class="period">.</span>
+</h3>To find candidates for inflection points, we solve <span class="process-math">\(P''(t)=0\)</span><div class="displaymath process-math">
 \begin{align*}
-L'(t) \amp = 0  \\
-t^2 - 20t + 91 \amp =0 \\
-(t-7)(t-13) \amp = 0
+P''(t) \amp = 0\\
+-.6t + 3.6 \amp = 0 \quad \textrm{(multiply both sides by 10)} \\
+-6t + 36\amp = 0 \\
+-6(t-6) \amp = 0
 \end{align*}
-</div>and we find two critical numbers: <span class="process-math">\(t=7\)</span> and <span class="process-math">\(t=13\text{.}\)</span> Next, notice that<div class="displaymath process-math">
+</div>and we see that <span class="process-math">\(t=6\)</span> may give an inflection point. Let's make a sign chart for the second derivative. <ul class="disc">
+<li><div class="para">In the interval <span class="process-math">\([2, 6)\)</span> we can test with <span class="process-math">\(t = 3\text{:}\)</span><div class="displaymath process-math">
 \begin{equation*}
-L''(t) = 2t -20.
+P''(3) = -6(3-6) &gt; 0
 \end{equation*}
-</div>Evaluating <span class="process-math">\(L''(t)\)</span> at each critical value we find <ul class="disc">
-<li><div class="para">
-<span class="process-math">\(L''(7) = -6 &lt; 0\text{,}\)</span> and</div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle L''(13) = 6 &gt; 0\)</span></div></li>
-</ul> Using the second derivative test, we conclude <ul class="disc">
-<li><div class="para">WKRP in Cincinnati had a relative maximum annual listernship in 2015 (<span class="process-math">\(t=7\)</span>). Since <span class="process-math">\(L(7) = 96.33\text{,}\)</span> the relative maximum number of annual listeners was 96,330,000.</div></li>
-<li><div class="para">WKRP in Cincinnati had a relative minimum annual listernship in 2021 (<span class="process-math">\(t=13\)</span>). Since <span class="process-math">\(L(13) = 60.33\text{,}\)</span> the relative minimum number of annual listeners was 60,330,000.</div></li>
-</ul>
 </div>
+</div></li>
+<li><div class="para">In the interval <span class="process-math">\((6,10]\)</span> we can test with <span class="process-math">\(t = 7\text{:}\)</span><div class="displaymath process-math">
+\begin{equation*}
+P''(7) = -6(7-6) &lt; 0
+\end{equation*}
+</div>
+</div></li>
+</ul> The sign chart for <span class="process-math">\(P''(t)\)</span> is below. Notice that the concavity of <span class="process-math">\(P\)</span> is labeled below the intervals. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c32.png" class="contained"></div> Since the sign of <span class="process-math">\(P''\)</span> changes about <span class="process-math">\(t=6\text{,}\)</span> we can conclude that the point <span class="process-math">\((6,P(6)) = (6,19.6)\)</span> is an inflection point. Comparing the sign charts for <span class="process-math">\(P'\)</span> and <span class="process-math">\(P''\)</span> we see that <ul class="disc">
+<li><div class="para">
+<span class="process-math">\(P\)</span> is deceasing at an increasing rate from <span class="process-math">\(t=2\)</span> to <span class="process-math">\(t=3\)</span>
+</div></li>
+<li><div class="para">
+<span class="process-math">\(P\)</span> is increasing at an increasing rate from <span class="process-math">\(t=3\)</span> to <span class="process-math">\(t=6\)</span>
+</div></li>
+<li><div class="para">
+<span class="process-math">\(P\)</span> is increasing at a decreasing rate from <span class="process-math">\(t=6\)</span> to <span class="process-math">\(t=9\)</span>
+</div></li>
+<li><div class="para">
+<span class="process-math">\(P\)</span> is decreasing at a decreasing rate from <span class="process-math">\(t=9\)</span> to <span class="process-math">\(t=10\)</span>
+</div></li>
+</ul> From the second and third bullet points above, we can now conclude that (6,19.6) is a point of diminishing returns. That is, Pendant Publusihng had a point of diminishing returns in 2004 during which year their profit was $19,600,000.</div>
 <span class="incontext"><a href="second-deriv.html#solution-89" class="internal">in-context</a></span>
 </body>
 </html>

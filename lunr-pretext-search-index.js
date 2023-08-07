@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Graphs and Solutions of Equations",
-  "body": " Graphs and Solutions of Equations  The Euclidean plane or rectangular coordinate system is formed by two perpendicular copies of the real line intersecting at the number of each line. Each number line is called an axis . A point in the plane, called an ordered pair , is specified by (horizontal position, vertical position). The horizontal axis is often labeled and the vertical axis . The point is called the origin . The plane is divided into 4 quadrants, as pictured below.    When we have an equation with two variables, usually and , we can ask if a given point is a solution to that equation. By the graph of an equation , we mean the collection of all the points , that satisfy the equation. As an example, consider the graph labeled below.     is the visual representation of the graph of in the plane. For homework check that each point labeled on the graph satisfies the equation defining . Note that is called the -intercept and is called the -intercept (the points where the graph crosses the coordinate axes). Is the point on the graph?  Check that the indicated points on the graph below satisfy the equation . Determine if is on the graph.    "
+  "body": " Graphs and Solutions of Equations  The Euclidean plane or rectangular coordinate system is formed by two perpendicular copies of the real line intersecting at the number of each line. Each number line is called an axis . A point in the plane, called an ordered pair , is specified by (horizontal position, vertical position). The horizontal axis is often labeled and the vertical axis . The point is called the origin . The plane is divided into 4 quadrants, as pictured below.    The labeling of the horizontal and vertical axes are arbitrary. We can use whatever letters or symbols we want to name or identify each axis. However they are labled, ordered pairs will always have the form (horizontal position, vertical position). In the graph above each ordered pair has the form . In the example below, they have the form .  ADTF Distributors is a global distributor, supplier, producer, and manufacturer of a variety of goods and services with offices, plants, and warehouses all over the world. In the graph below, represents the number of years since 1999 and represents ADTF Distributors' profit in millions of dollars for the year corresponding to .    Interpret the coordinates of point .  , so that and . Since is the number of years since 1999, corresponds to the year 2001. Since is ADTF Distributors' profit in millions of dollars, corresponds to a profit of $2,000,000. So, point in interpreted as: In 2001, ADTF Distributors made a profit of $2,000,000.   Interpret the coordinates of point .  , so that and . Since is the number of years since 1999, corresponds to the year 2005. Since is ADTF Distributors' profit in millions corresponds to a profit of $0. Another way to say a company's profit is $0 (no profit, no loss) is to say that the company broke even. So, point in interpreted as: In 2005, ADTF Distributors broke even. Note that negaive profit will be interpreted as a loss .     When we have an equation with two variables, usually and , we can ask if a given point is a solution to that equation. By the graph of an equation , we mean the c pretext build webollection of all the points , that satisfy the equation. As an example, consider the graph labeled below.     is the visual representation of the graph of in the plane. For homework check that each point labeled on the graph satisfies the equation defining . Note that is called the -intercept and is called the -intercept (the points where the graph crosses the coordinate axes). Is the point on the graph?  Check that the points labeled on the graph below satisfy the equation . Determine if is on the graph.    "
 },
 {
   "id": "p-1",
@@ -34,7 +34,16 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.1.1",
   "title": "",
-  "body": "Check that the indicated points on the graph below satisfy the equation . Determine if is on the graph.   "
+  "body": "ADTF Distributors is a global distributor, supplier, producer, and manufacturer of a variety of goods and services with offices, plants, and warehouses all over the world. In the graph below, represents the number of years since 1999 and represents ADTF Distributors' profit in millions of dollars for the year corresponding to .    Interpret the coordinates of point .  , so that and . Since is the number of years since 1999, corresponds to the year 2001. Since is ADTF Distributors' profit in millions of dollars, corresponds to a profit of $2,000,000. So, point in interpreted as: In 2001, ADTF Distributors made a profit of $2,000,000.   Interpret the coordinates of point .  , so that and . Since is the number of years since 1999, corresponds to the year 2005. Since is ADTF Distributors' profit in millions corresponds to a profit of $0. Another way to say a company's profit is $0 (no profit, no loss) is to say that the company broke even. So, point in interpreted as: In 2005, ADTF Distributors broke even. Note that negaive profit will be interpreted as a loss .    "
+},
+{
+  "id": "example-2",
+  "level": "2",
+  "url": "graphs.html#example-2",
+  "type": "Example",
+  "number": "1.1.2",
+  "title": "",
+  "body": "Check that the points labeled on the graph below satisfy the equation . Determine if is on the graph.   "
 },
 {
   "id": "eq-of-lines",
@@ -43,30 +52,30 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Equations of Lines",
-  "body": " Equations of Lines   Standard Form  The standard form of a line is given by where and are real numbers and and are not both 0. Notice that the line in our previous example was given in standard form.  For this example we work with the line given in standard form (identify and for homework). Let's find points on this line, , by solving the equation for . Verify for homework that is the same as . Now we can substitute values for and compute :  When , we have which gives the point on .  When , we have which gives the point on .  When , we have which gives the point on .  All three of these points fall on the same line. Plot those points and graph this line for homework.    Slope of Line   Slope is a measure of the steepness of a line and is constant per unit change in the horizontal direction. We denot the slope with the letter . That is, if you move 1 unit to the right in the horizontal direction, then moving units in the vertical direction will get you to another point on the line. In the figure below notice that since we have to move up in the vertical direction as we move to the right in the horizontal direction.    Let and be any two distinct points on the line . Then the slope , denoted , of the line is given by   Notice in general that   if and only if and have the same sign if and only if the line rises from left to right   if and only if and have opposite signs if and only if the line falls from left to right    In applied mathematics, the variables in an equation or function (which we will get to later) are assigned a meaning. In this case, these equations and functions are called mathematical models . For example, equations representing a company's revenue, cost, and profit are often referred to as models, and the variable often represents units produced by the company.  Suppose a company's revenue is modeled by a line where points on the line have the form (units sold, revenue dollars). If the company makes \\$10 from selling 3 units and if they sell 7 units they make $29, find the slope of the line representing this company's revenue model. 2 points on this line are and . So, Notice that we can assign units to the slope in this problem: . This helps us see the slope of a line as a rate of change, an important concept in calculus. In this problem we now see that this company makes $4.75 per each additional unit sold. Graph the line for homework.     Special Lines    Horizontal lines : Every point on a horizontal line has the same vertical coordinate regardless of the horizontal location. If we say this common coordinate is , then the horizontal line has equation . Note that the slope of any horizontal line is .  Vertical lines : Every point on a vertical line has the same horizontal coordinate regardless of the vertical location. If we say this common coordinate is , then the vertical line has equation . Note that the slope of any vertical line is undefined.        Slope-Intercept Form of a Line  Suppose a line has slope $m$ and $y$-intercept $(0,b)$. If is any other point on the line then Cross multiplying and solving for $y$ we get This is called the slope-intercept form of a line.  Graph using the -intercept and the slope. We rewrite this in slope-intercept form to get . So, the slope is and the -intercept is . Starting at , to get to another point on the line we can move up 3 units then left 4 units to get to the point or down 3 units then right 4 units to arrive at the point .     Suppose represents a company's cost in dollars for items produced, and their cost can be modeled with a line. If it costs them $30 to produce 2 items and their cost increases at a constant rate of $4 per additional unit produced, find the equation of the line modeling the company's cost in slope intercept form. We are given the point and slope . The line has the form , and substituting we have . We can solve for by substituting and . The desired line is . For homework, find the cost of producing 15 items then graph the line.     Point-Slope Form of a Line  If is a fixed point on a line and is any other point, then Cross multiplying we get This is called the point-slope form of the line .  The point-slope form is useful in putting a line in slope-intercept form. For instance, suppose the line contains the points and . Let's find the equation for . First we need the slope. Find it for homework. You should get . Now we can use either point to work with, say .     "
+  "body": " Equations of Lines   Standard Form  The standard form of a line is given by where and are real numbers and and are not both 0. Notice that the line in our previous example was given in standard form.  For this example we work with the line given in standard form (identify and for homework). Let's find points on this line, , by solving the equation for . Verify for homework that is the same as . Now we can substitute values for and compute :  When , we have which gives the point on .  When , we have which gives the point on .  When , we have which gives the point on .  All three of these points fall on the same line. Plot those points and graph this line for homework.    Slope of Line   Slope is a measure of the steepness of a line and is constant per unit change in the horizontal direction. We denot the slope with the letter . That is, if you move 1 unit to the right in the horizontal direction, then moving units in the vertical direction will get you to another point on the line. In the figure below notice that since we have to move up in the vertical direction as we move to the right in the horizontal direction.    Let and be any two distinct points on the line . Then the slope , denoted , of the line is given by   Notice in general that   if and only if and have the same sign if and only if the line rises from left to right     if and only if and have opposite signs if and only if the line falls from left to right      In applied mathematics, the variables in an equation or function (which we will get to later) are assigned a meaning. In this case, these equations or functions are called mathematical models . For example, equations representing a company's revenue, cost, and profit are often referred to as models.  Suppose a company's revenue is modeled by a line where points on the line have the form (units sold, revenue dollars). If the company makes \\$14.25 from selling 3 units and if they sell 6 units they make $28.50, find the slope of the line representing this company's revenue model. 2 points on this line are and . So, Notice that we can assign units to the slope in this problem: . This helps us see the slope of a line as a rate of change, an important concept in calculus. In this problem we now see that this company makes $4.75 per each additional unit sold. The graph is below.       Special Lines    Horizontal lines : Every point on a horizontal line has the same vertical coordinate regardless of the horizontal location. If we say this common coordinate is , then the horizontal line has equation . Note that the slope of any horizontal line is . Below is an example with .  Vertical lines : Every point on a vertical line has the same horizontal coordinate regardless of the vertical location. If we say this common coordinate is , then the vertical line has equation . Note that the slope of any vertical line is undefined. Below is an example with .        Slope-Intercept Form of a Line  Suppose a line has slope and -intercept . If is any other point on the line then Cross multiplying and solving for we get This is called the slope-intercept form of a line. In this context, we call the independent variable , or input variable and the dependent variable , or output variable . Using this language and recalling , we can interpret the slope as the change in ouput per the change in input. For instance, if the slope of a line is we say the output increase by 3 units as the input increases by 4 units. Equivalently, this means the output increases by .75 units as the input increases by 1 unit. Recalling in which we found , we can say this company's revenue (the output ) increases by $14.25 as the number of units sold (the input ) inreases by 3. Equivalently, the company's revenue (the output ) increases by $4.75 as the number of units sold increases by 1.  Graph using the -intercept and the slope. We rewrite this in slope-intercept form to get . So, the slope is and the -intercept is . Starting at , to get to another point on the line we can move up 3 units then left 4 units to get to the point or down 3 units then right 4 units to arrive at the point .     Suppose represents a company's cost in dollars for items produced, and their cost can be modeled with a line. If it costs them $30 to produce 2 items and their cost increases at a constant rate of $4 per additional unit produced, find the equation of the line modeling the company's cost in slope intercept form. We are given the point and slope . The line has the form , and substituting we have . We can solve for by substituting and . The desired line is . For homework, find the cost of producing 15 items then graph the line.     Point-Slope Form of a Line  If is a fixed point on a line and is any other point, then Cross multiplying we get This is called the point-slope form of the line .  The point-slope form is useful in putting a line in slope-intercept form. For instance, suppose the line contains the points and . Let's find the equation for . First we need the slope. Find it for homework. You should get . Now we can use either point to work with, say .     "
 },
 {
-  "id": "p-4",
+  "id": "p-5",
   "level": "2",
-  "url": "eq-of-lines.html#p-4",
+  "url": "eq-of-lines.html#p-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "standard form "
 },
 {
-  "id": "example-2",
+  "id": "example-3",
   "level": "2",
-  "url": "eq-of-lines.html#example-2",
+  "url": "eq-of-lines.html#example-3",
   "type": "Example",
   "number": "1.2.1",
   "title": "",
   "body": "For this example we work with the line given in standard form (identify and for homework). Let's find points on this line, , by solving the equation for . Verify for homework that is the same as . Now we can substitute values for and compute :  When , we have which gives the point on .  When , we have which gives the point on .  When , we have which gives the point on .  All three of these points fall on the same line. Plot those points and graph this line for homework. "
 },
 {
-  "id": "p-5",
+  "id": "p-6",
   "level": "2",
-  "url": "eq-of-lines.html#p-5",
+  "url": "eq-of-lines.html#p-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -82,49 +91,22 @@ var ptx_lunr_docs = [
   "body": "Let and be any two distinct points on the line . Then the slope , denoted , of the line is given by  "
 },
 {
-  "id": "p-7",
+  "id": "p-8",
   "level": "2",
-  "url": "eq-of-lines.html#p-7",
+  "url": "eq-of-lines.html#p-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "mathematical models "
 },
 {
-  "id": "example-3",
+  "id": "ex-rev-slope",
   "level": "2",
-  "url": "eq-of-lines.html#example-3",
+  "url": "eq-of-lines.html#ex-rev-slope",
   "type": "Example",
   "number": "1.2.3",
   "title": "",
-  "body": "Suppose a company's revenue is modeled by a line where points on the line have the form (units sold, revenue dollars). If the company makes \\$10 from selling 3 units and if they sell 7 units they make $29, find the slope of the line representing this company's revenue model. 2 points on this line are and . So, Notice that we can assign units to the slope in this problem: . This helps us see the slope of a line as a rate of change, an important concept in calculus. In this problem we now see that this company makes $4.75 per each additional unit sold. Graph the line for homework.  "
-},
-{
-  "id": "p-9",
-  "level": "2",
-  "url": "eq-of-lines.html#p-9",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "slope-intercept form "
-},
-{
-  "id": "example-4",
-  "level": "2",
-  "url": "eq-of-lines.html#example-4",
-  "type": "Example",
-  "number": "1.2.4",
-  "title": "",
-  "body": "Graph using the -intercept and the slope. We rewrite this in slope-intercept form to get . So, the slope is and the -intercept is . Starting at , to get to another point on the line we can move up 3 units then left 4 units to get to the point or down 3 units then right 4 units to arrive at the point .    "
-},
-{
-  "id": "example-5",
-  "level": "2",
-  "url": "eq-of-lines.html#example-5",
-  "type": "Example",
-  "number": "1.2.5",
-  "title": "",
-  "body": "Suppose represents a company's cost in dollars for items produced, and their cost can be modeled with a line. If it costs them $30 to produce 2 items and their cost increases at a constant rate of $4 per additional unit produced, find the equation of the line modeling the company's cost in slope intercept form. We are given the point and slope . The line has the form , and substituting we have . We can solve for by substituting and . The desired line is . For homework, find the cost of producing 15 items then graph the line.  "
+  "body": "Suppose a company's revenue is modeled by a line where points on the line have the form (units sold, revenue dollars). If the company makes \\$14.25 from selling 3 units and if they sell 6 units they make $28.50, find the slope of the line representing this company's revenue model. 2 points on this line are and . So, Notice that we can assign units to the slope in this problem: . This helps us see the slope of a line as a rate of change, an important concept in calculus. In this problem we now see that this company makes $4.75 per each additional unit sold. The graph is below.    "
 },
 {
   "id": "p-10",
@@ -133,12 +115,39 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "point-slope "
+  "body": "slope-intercept form independent variable dependent variable "
+},
+{
+  "id": "example-5",
+  "level": "2",
+  "url": "eq-of-lines.html#example-5",
+  "type": "Example",
+  "number": "1.2.4",
+  "title": "",
+  "body": "Graph using the -intercept and the slope. We rewrite this in slope-intercept form to get . So, the slope is and the -intercept is . Starting at , to get to another point on the line we can move up 3 units then left 4 units to get to the point or down 3 units then right 4 units to arrive at the point .    "
 },
 {
   "id": "example-6",
   "level": "2",
   "url": "eq-of-lines.html#example-6",
+  "type": "Example",
+  "number": "1.2.5",
+  "title": "",
+  "body": "Suppose represents a company's cost in dollars for items produced, and their cost can be modeled with a line. If it costs them $30 to produce 2 items and their cost increases at a constant rate of $4 per additional unit produced, find the equation of the line modeling the company's cost in slope intercept form. We are given the point and slope . The line has the form , and substituting we have . We can solve for by substituting and . The desired line is . For homework, find the cost of producing 15 items then graph the line.  "
+},
+{
+  "id": "p-11",
+  "level": "2",
+  "url": "eq-of-lines.html#p-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "point-slope "
+},
+{
+  "id": "example-7",
+  "level": "2",
+  "url": "eq-of-lines.html#example-7",
   "type": "Example",
   "number": "1.2.6",
   "title": "",
@@ -151,25 +160,25 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Linear Models and Applicaitions",
-  "body": " Linear Models and Applicaitions  We start with a couple examples.  A hotel charges $159 per night plus an 11% nightly room tax. Assume that you will leave a $5 tip at the end of your visit regardless of the number of nights you stay.  Write a formula to model the total cost, , for nights in the hotel. Each night you stay you get charged $159 plus an 11% tax. For nights this means you'll pay . With the $5 tip the total cost for nights is    How much will you pay for a 4 night stay? Evaluating at gives You will pay $710.96 to stay at the hotel for 4 nights.     Jane drives for a ride sharing service. Passengers are charged an $8.75 pickup fee and then pay an additional \\$2.25 per mile traveled. Find a linear equation to model the charge for a single ride. Use your model to determine how far a passenger traveled in Jane's car if they paid $33.50. Let   = total charge in dollars for a ride in Jane's car   = distance traveled in miles   We need a model in the form . Notice that passengers are responsible for the pickup fee of $8.75 with miles traveled. So, we know the point is on the line (which is the (or vertical) intercept). We are also given that passengers pay which means that 2.25 is the slope, . The desired model is Finish the problem for homework.    We will use mathematical models analyze and solve many problems in business that involve cost , revenue , and profit .  A company's cost , , represents the amount of money that the company spends on the creation or production of goods or services, often measured over a set amount of time or by the number of units produced.  A company's revenue , , represents the amount of money brought in by a company's operations, often measured over a set amount of time or by the number of units sold.  Note that a business's revenue is its gross income before subtracting any expenses.  A company's profit , , represents the amount of money a company has left after paying for business expenses, often measured over a set amount of time or by the number of units produced. In other words   The next definition, related to cost, revenue, and profit, will be used in many examples to follow.  A company's break-even point is the point at which total cost and total revenue are equal. In other words, a company's break even point occurs when , or equivalently, when .  Tyler's company is making t-shirts to sell at the IUP football games this season. His fixed costs are $800 and he has variable costs of $3 per shirt. He will sell the shirts for $14 at the games.  Find an equation for , the total cost to produce shirts. As we will discuss again later, the linear cost model will have the form Since represents the number, or quantity, of t-shirts, the variable cost is . With the fixed costs given, the cost model for Tyler's company is    Find the cost to produce 80 t-shirts. Using the above linear model and evaluating at gives The cost to produce 80 t-shirts is $1,040   Find an equation for , the total revenue from selling shirts. As we will discuss again later, the linear revenue model will have the form So, the revenue model for Tyler's company is .   Find the number of shirts that Tyler needs to sell to break even. We solve After rounding, we conclude that Tyler must sell 73 t-shirts to break-even.      Supply and demand refers to the relationship between the quantity of a commodity that producers wish to sell at various prices and the quantity that consumers wish to buy at various prices. It is the main model of price determination used in economic theory. The price of a commodity is determined by the interaction of supply and demand in a market. The resulting price is referred to as the equilibrium price and represents an agreement between producers and consumers of the good. In equilibrium the quantity of a good supplied by producers equals the quantity demanded by consumers. This, of course, is referred to as the equilibrium quantity .  Freeze Frame camera company supplies 50 cameras when the price is $175.69; when the price is $275.19, 100 of these cameras are available. Let represent the price of each camera and the quanity, or number of, cameras sold. Assme that Freeze Frame's supply model is linear and expressed as .  Using the inforamtion above, idenitfy two data points given by Freeze Frame's linear supply model. Since the linear model is given as , points on this line would have the form . That is, the quantity of cameras supplied by Freeze Frame represents the imput variable , giving the horizontal location of a point. The price of each camera represents the output variable giving the vertical location of a point. Therefore, the given data can be expressed as the ordered pairs    Find Freeze Frame's linear supply model. We need the slope and -intercept. This means that for each additional camera suppled, the supply price increases by $1.99 To find the -intercept we use the point-slope form of a line:   Finally, we have determined that Freeze Frame's linear supply model is     Suppose the demand for Freeze Frame cameras is given by where again is price and the quantity. Determine the equilibrium price and quantity. Setting supply equal to demand we solve to get an equilibrium quantity of (after roudning) and an equilibrium price of $243.35. That is, the market for Freeze Frame cameras will be at equilibrium when 84 cameras (the equilibrium quantity) are supplied at a price of $243.35 (the equilbrium price). So, the equilibrium point is        Quick Copy buys an office machine for $5,200 that is expected to last for 8 years, at the end of which time its value will be $1,100. Let represent time in years since the office machine was purchased and represent the machine's value in dollars years after it was purchased. Assume the decline in value is constant each year, so that the depreciation is linear and the value of the machine in years can be expressed as .  Identify two data points given in this problems. Since the linear model is given as , points on this line would have the form . That is, the time in years since Quick Copy purchased the office machine represents the imput variable , giving the horizontal location of a point. The value of of the office machine represents the output variable giving the vertical location of a point. Therefore, the given data can be expressed as the ordered pairs    Find the depreciation model for the office machine purchased by Quick Copy. We need the slope and -intercept. This means that for each additional yaer Quick Copy owns the office machine, it's value deccreases by $512.50. We are given the -intercept so that the desired model is     Determine how long it will take the office machine to depreiciate to $2637.50     Simple Interest is a very common linear model, used in an example below. Let principal amount invested or borrowed, annual interest rate, = time in years, and = simple interest. Then the simple interest formula is Simple interest does not take into consideration any compounding. It's used to calculate interest on many CD's for a year or less. We will discuss simple interest in more detail in .   Lorrie deposits $5,000 into an account that pays simple interest at a rate of 4% per year. How much interest will she make in 18 months?   Note that we use .04 for 4% and to convert to years.     "
-},
-{
-  "id": "example-7",
-  "level": "2",
-  "url": "linear-models-applications.html#example-7",
-  "type": "Example",
-  "number": "1.3.1",
-  "title": "",
-  "body": "A hotel charges $159 per night plus an 11% nightly room tax. Assume that you will leave a $5 tip at the end of your visit regardless of the number of nights you stay.  Write a formula to model the total cost, , for nights in the hotel. Each night you stay you get charged $159 plus an 11% tax. For nights this means you'll pay . With the $5 tip the total cost for nights is    How much will you pay for a 4 night stay? Evaluating at gives You will pay $710.96 to stay at the hotel for 4 nights.    "
+  "body": " Linear Models and Applicaitions  We start with a couple examples. In each example, pay attention to the distinction between the input variable and output variable . Throughout this text, you should continue to practice identifying each of these variables in context, and writing a sentence to interpret each. Notice that in each case, points on the graph of these mathematical models will have the form .  A hotel charges $159 per night plus an 11% nightly room tax. Assume that you will leave a $5 tip at the end of your visit regardless of the number of nights you stay.  Write a formula to model the total cost, , for nights in the hotel. Each night you stay you get charged $159 plus an 11% tax. For nights this means you'll pay . With the $5 tip the total cost for nights is In this context, we refer to as the input variable and as the output variable . So, the input variable  represents the number of nights stayed at the hotel. The output variable  represents the cost in dollars for staying at the hotel for nights.   How much will you pay for a 4 night stay? Evaluating at gives You will pay $710.96 to stay at the hotel for 4 nights.     Jane drives for a ride sharing service. Passengers are charged an $8.75 pickup fee and then pay an additional \\$2.25 per mile traveled. Find a linear equation to model the charge for a single ride. Use your model to determine how far a passenger traveled in Jane's car if they paid $33.50. Let   = total charge in dollars for a ride in Jane's car   = distance traveled in miles   We need a model in the form . Notice that passengers are responsible for the pickup fee of $8.75 with miles traveled. So, we know the point is on the line (which is the (or vertical) intercept). We are also given that passengers pay which means that 2.25 is the slope, . The desired model is In this problem, the input variable is , which represents the distance traveled in Jane's car in miles. The output variable , , is the total charge in dollars for riding miles in Jane's car. Finish the problem for homework.    We will use mathematical models analyze and solve many problems in business that involve cost , revenue , and profit .  A company's cost , , represents the amount of money that the company spends on the creation or production of goods or services, often measured over a set amount of time or by the number of units produced.  A company's revenue , , represents the amount of money brought in by a company's operations, often measured over a set amount of time or by the number of units sold.  Note that a business's revenue is its gross income before subtracting any expenses.  A company's profit , , represents the amount of money a company has left after paying for business expenses, often measured over a set amount of time or by the number of units produced. In other words   The next definition, related to cost, revenue, and profit, will be used in many examples to follow.  A company's break-even point is the point at which total cost and total revenue are equal. In other words, a company's break even point occurs when , or equivalently, when .  Tyler's company is making t-shirts to sell at the IUP football games this season. His fixed costs are $800 and he has variable costs of $3 per shirt. He will sell the shirts for $14 at the games.  Find an equation for , the total cost to produce shirts. As we will discuss again later, the linear cost model will have the form Since represents the number, or quantity, of t-shirts, the variable cost is . With the fixed costs given, the cost model for Tyler's company is In this context, the input variable is , which represents the number or quantity of t-shirts Tyler's company produces. The output variable , , is the total cost to Tyler's company when they produce t-shirts.   Find the cost to produce 80 t-shirts. Using the above linear model and evaluating at gives The cost to produce 80 t-shirts is $1,040   Find an equation for , the total revenue from selling shirts. As we will discuss again later, the linear revenue model will have the form So, the revenue model for Tyler's company is . In this context, the input variable is , which represents the number or quantity of t-shirts Tyler's company produces and sells. The output variable , , is the revenue made by Tyler's company when they produce and sell t-shirts.   Find the number of shirts that Tyler needs to sell to break even. We solve After rounding, we conclude that Tyler must sell 73 t-shirts to break-even.      Supply and demand refers to the relationship between the quantity of a commodity that producers wish to sell at various prices and the quantity that consumers wish to buy at various prices. It is the main model of price determination used in economic theory. The price of a commodity is determined by the interaction of supply and demand in a market. The resulting price is referred to as the equilibrium price and represents an agreement between producers and consumers of the good. In equilibrium the quantity of a good supplied by producers equals the quantity demanded by consumers. This, of course, is referred to as the equilibrium quantity .  Freeze Frame camera company supplies 50 cameras when the price is $175.69; when the price is $275.19, 100 of these cameras are available. Let represent the price of each camera and the quanity, or number of, cameras sold. Assme that Freeze Frame's supply model is linear and expressed as .  Using the inforamtion above, idenitfy two data points given by Freeze Frame's linear supply model. Since the linear model is given as , points on this line would have the form . That is, the quantity of cameras supplied by Freeze Frame represents the input variable , giving the horizontal location of a point. The price of each camera represents the output variable giving the vertical location of a point. Therefore, the given data can be expressed as the ordered pairs    Find Freeze Frame's linear supply model. We need the slope and -intercept. This means that for each additional camera suppled, the supply price increases by $1.99 To find the -intercept we use the point-slope form of a line:   Finally, we have determined that Freeze Frame's linear supply model is     Suppose the demand for Freeze Frame cameras is given by where again is price and the quantity. Determine the equilibrium price and quantity. Setting supply equal to demand we solve to get an equilibrium quantity of (after roudning) and an equilibrium price of $243.35. That is, the market for Freeze Frame cameras will be at equilibrium when 84 cameras (the equilibrium quantity) are supplied at a price of $243.35 (the equilbrium price). So, the equilibrium point is        Quick Copy buys an office machine for $5,200 that is expected to last for 8 years, at the end of which time its value will be $1,100. Let represent time in years since the office machine was purchased and represent the machine's value in dollars years after it was purchased. Assume the decline in value is constant each year, so that the depreciation is linear and the value of the machine in years can be expressed as .  Identify two data points given in this problems. Since the linear model is given as , points on this line would have the form . That is, the time in years since Quick Copy purchased the office machine represents the input variable , giving the horizontal location of a point. The value of of the office machine represents the output variable giving the vertical location of a point. Therefore, the given data can be expressed as the ordered pairs    Find the depreciation model for the office machine purchased by Quick Copy. We need the slope and -intercept. This means that for each additional yaer Quick Copy owns the office machine, it's value deccreases by $512.50. We are given the -intercept so that the desired model is     Determine how long it will take the office machine to depreiciate to $2637.50     Simple Interest is a very common linear model, used in an example below. Let principal amount invested or borrowed, annual interest rate, = time in years, and = simple interest. Then the simple interest formula is Simple interest does not take into consideration any compounding. It's used to calculate interest on many CD's for a year or less. We will discuss simple interest in more detail in .   Lorrie deposits $5,000 into an account that pays simple interest at a rate of 4% per year. How much interest will she make in 18 months?   Note that we use .04 for 4% and to convert to years.     "
 },
 {
   "id": "example-8",
   "level": "2",
   "url": "linear-models-applications.html#example-8",
   "type": "Example",
+  "number": "1.3.1",
+  "title": "",
+  "body": "A hotel charges $159 per night plus an 11% nightly room tax. Assume that you will leave a $5 tip at the end of your visit regardless of the number of nights you stay.  Write a formula to model the total cost, , for nights in the hotel. Each night you stay you get charged $159 plus an 11% tax. For nights this means you'll pay . With the $5 tip the total cost for nights is In this context, we refer to as the input variable and as the output variable . So, the input variable  represents the number of nights stayed at the hotel. The output variable  represents the cost in dollars for staying at the hotel for nights.   How much will you pay for a 4 night stay? Evaluating at gives You will pay $710.96 to stay at the hotel for 4 nights.    "
+},
+{
+  "id": "example-9",
+  "level": "2",
+  "url": "linear-models-applications.html#example-9",
+  "type": "Example",
   "number": "1.3.2",
   "title": "",
-  "body": "Jane drives for a ride sharing service. Passengers are charged an $8.75 pickup fee and then pay an additional \\$2.25 per mile traveled. Find a linear equation to model the charge for a single ride. Use your model to determine how far a passenger traveled in Jane's car if they paid $33.50. Let   = total charge in dollars for a ride in Jane's car   = distance traveled in miles   We need a model in the form . Notice that passengers are responsible for the pickup fee of $8.75 with miles traveled. So, we know the point is on the line (which is the (or vertical) intercept). We are also given that passengers pay which means that 2.25 is the slope, . The desired model is Finish the problem for homework.   "
+  "body": "Jane drives for a ride sharing service. Passengers are charged an $8.75 pickup fee and then pay an additional \\$2.25 per mile traveled. Find a linear equation to model the charge for a single ride. Use your model to determine how far a passenger traveled in Jane's car if they paid $33.50. Let   = total charge in dollars for a ride in Jane's car   = distance traveled in miles   We need a model in the form . Notice that passengers are responsible for the pickup fee of $8.75 with miles traveled. So, we know the point is on the line (which is the (or vertical) intercept). We are also given that passengers pay which means that 2.25 is the slope, . The desired model is In this problem, the input variable is , which represents the distance traveled in Jane's car in miles. The output variable , , is the total charge in dollars for riding miles in Jane's car. Finish the problem for homework.   "
 },
 {
   "id": "definition-2",
@@ -208,40 +217,40 @@ var ptx_lunr_docs = [
   "body": "A company's break-even point is the point at which total cost and total revenue are equal. In other words, a company's break even point occurs when , or equivalently, when . "
 },
 {
-  "id": "example-9",
+  "id": "example-10",
   "level": "2",
-  "url": "linear-models-applications.html#example-9",
+  "url": "linear-models-applications.html#example-10",
   "type": "Example",
   "number": "1.3.7",
   "title": "",
-  "body": "Tyler's company is making t-shirts to sell at the IUP football games this season. His fixed costs are $800 and he has variable costs of $3 per shirt. He will sell the shirts for $14 at the games.  Find an equation for , the total cost to produce shirts. As we will discuss again later, the linear cost model will have the form Since represents the number, or quantity, of t-shirts, the variable cost is . With the fixed costs given, the cost model for Tyler's company is    Find the cost to produce 80 t-shirts. Using the above linear model and evaluating at gives The cost to produce 80 t-shirts is $1,040   Find an equation for , the total revenue from selling shirts. As we will discuss again later, the linear revenue model will have the form So, the revenue model for Tyler's company is .   Find the number of shirts that Tyler needs to sell to break even. We solve After rounding, we conclude that Tyler must sell 73 t-shirts to break-even.    "
+  "body": "Tyler's company is making t-shirts to sell at the IUP football games this season. His fixed costs are $800 and he has variable costs of $3 per shirt. He will sell the shirts for $14 at the games.  Find an equation for , the total cost to produce shirts. As we will discuss again later, the linear cost model will have the form Since represents the number, or quantity, of t-shirts, the variable cost is . With the fixed costs given, the cost model for Tyler's company is In this context, the input variable is , which represents the number or quantity of t-shirts Tyler's company produces. The output variable , , is the total cost to Tyler's company when they produce t-shirts.   Find the cost to produce 80 t-shirts. Using the above linear model and evaluating at gives The cost to produce 80 t-shirts is $1,040   Find an equation for , the total revenue from selling shirts. As we will discuss again later, the linear revenue model will have the form So, the revenue model for Tyler's company is . In this context, the input variable is , which represents the number or quantity of t-shirts Tyler's company produces and sells. The output variable , , is the revenue made by Tyler's company when they produce and sell t-shirts.   Find the number of shirts that Tyler needs to sell to break even. We solve After rounding, we conclude that Tyler must sell 73 t-shirts to break-even.    "
 },
 {
-  "id": "p-16",
+  "id": "p-17",
   "level": "2",
-  "url": "linear-models-applications.html#p-16",
+  "url": "linear-models-applications.html#p-17",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Supply and demand equilibrium price equilibrium quantity "
 },
 {
-  "id": "example-10",
-  "level": "2",
-  "url": "linear-models-applications.html#example-10",
-  "type": "Example",
-  "number": "1.3.8",
-  "title": "",
-  "body": "Freeze Frame camera company supplies 50 cameras when the price is $175.69; when the price is $275.19, 100 of these cameras are available. Let represent the price of each camera and the quanity, or number of, cameras sold. Assme that Freeze Frame's supply model is linear and expressed as .  Using the inforamtion above, idenitfy two data points given by Freeze Frame's linear supply model. Since the linear model is given as , points on this line would have the form . That is, the quantity of cameras supplied by Freeze Frame represents the imput variable , giving the horizontal location of a point. The price of each camera represents the output variable giving the vertical location of a point. Therefore, the given data can be expressed as the ordered pairs    Find Freeze Frame's linear supply model. We need the slope and -intercept. This means that for each additional camera suppled, the supply price increases by $1.99 To find the -intercept we use the point-slope form of a line:   Finally, we have determined that Freeze Frame's linear supply model is     Suppose the demand for Freeze Frame cameras is given by where again is price and the quantity. Determine the equilibrium price and quantity. Setting supply equal to demand we solve to get an equilibrium quantity of (after roudning) and an equilibrium price of $243.35. That is, the market for Freeze Frame cameras will be at equilibrium when 84 cameras (the equilibrium quantity) are supplied at a price of $243.35 (the equilbrium price). So, the equilibrium point is       "
-},
-{
   "id": "example-11",
   "level": "2",
   "url": "linear-models-applications.html#example-11",
   "type": "Example",
+  "number": "1.3.8",
+  "title": "",
+  "body": "Freeze Frame camera company supplies 50 cameras when the price is $175.69; when the price is $275.19, 100 of these cameras are available. Let represent the price of each camera and the quanity, or number of, cameras sold. Assme that Freeze Frame's supply model is linear and expressed as .  Using the inforamtion above, idenitfy two data points given by Freeze Frame's linear supply model. Since the linear model is given as , points on this line would have the form . That is, the quantity of cameras supplied by Freeze Frame represents the input variable , giving the horizontal location of a point. The price of each camera represents the output variable giving the vertical location of a point. Therefore, the given data can be expressed as the ordered pairs    Find Freeze Frame's linear supply model. We need the slope and -intercept. This means that for each additional camera suppled, the supply price increases by $1.99 To find the -intercept we use the point-slope form of a line:   Finally, we have determined that Freeze Frame's linear supply model is     Suppose the demand for Freeze Frame cameras is given by where again is price and the quantity. Determine the equilibrium price and quantity. Setting supply equal to demand we solve to get an equilibrium quantity of (after roudning) and an equilibrium price of $243.35. That is, the market for Freeze Frame cameras will be at equilibrium when 84 cameras (the equilibrium quantity) are supplied at a price of $243.35 (the equilbrium price). So, the equilibrium point is       "
+},
+{
+  "id": "example-12",
+  "level": "2",
+  "url": "linear-models-applications.html#example-12",
+  "type": "Example",
   "number": "1.3.9",
   "title": "",
-  "body": "Quick Copy buys an office machine for $5,200 that is expected to last for 8 years, at the end of which time its value will be $1,100. Let represent time in years since the office machine was purchased and represent the machine's value in dollars years after it was purchased. Assume the decline in value is constant each year, so that the depreciation is linear and the value of the machine in years can be expressed as .  Identify two data points given in this problems. Since the linear model is given as , points on this line would have the form . That is, the time in years since Quick Copy purchased the office machine represents the imput variable , giving the horizontal location of a point. The value of of the office machine represents the output variable giving the vertical location of a point. Therefore, the given data can be expressed as the ordered pairs    Find the depreciation model for the office machine purchased by Quick Copy. We need the slope and -intercept. This means that for each additional yaer Quick Copy owns the office machine, it's value deccreases by $512.50. We are given the -intercept so that the desired model is     Determine how long it will take the office machine to depreiciate to $2637.50   "
+  "body": "Quick Copy buys an office machine for $5,200 that is expected to last for 8 years, at the end of which time its value will be $1,100. Let represent time in years since the office machine was purchased and represent the machine's value in dollars years after it was purchased. Assume the decline in value is constant each year, so that the depreciation is linear and the value of the machine in years can be expressed as .  Identify two data points given in this problems. Since the linear model is given as , points on this line would have the form . That is, the time in years since Quick Copy purchased the office machine represents the input variable , giving the horizontal location of a point. The value of of the office machine represents the output variable giving the vertical location of a point. Therefore, the given data can be expressed as the ordered pairs    Find the depreciation model for the office machine purchased by Quick Copy. We need the slope and -intercept. This means that for each additional yaer Quick Copy owns the office machine, it's value deccreases by $512.50. We are given the -intercept so that the desired model is     Determine how long it will take the office machine to depreiciate to $2637.50   "
 },
 {
   "id": "ex-lorrie-simp-int",
@@ -271,27 +280,27 @@ var ptx_lunr_docs = [
   "body": "A function is a rule from a set, called the domain of the function, to another set, called the range of the function, such that each member of the domain is assigned to one and only one member of the range. "
 },
 {
-  "id": "p-23",
+  "id": "p-24",
   "level": "2",
-  "url": "functions.html#p-23",
+  "url": "functions.html#p-24",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "dependent independent "
 },
 {
-  "id": "example-13",
+  "id": "example-14",
   "level": "2",
-  "url": "functions.html#example-13",
+  "url": "functions.html#example-14",
   "type": "Example",
   "number": "2.1.2",
   "title": "",
   "body": "Let . For homework find the following. The last two parts will involve 's and 's. In other words, your answers will be symbolic and not numbers.                           "
 },
 {
-  "id": "example-14",
+  "id": "example-15",
   "level": "2",
-  "url": "functions.html#example-14",
+  "url": "functions.html#example-15",
   "type": "Example",
   "number": "2.1.3",
   "title": "",
@@ -307,36 +316,36 @@ var ptx_lunr_docs = [
   "body": " Graphs of Functions  Points on the graph of a function have the form where is in the domain of . Notice that these points have the form (domain value, range value). So, the domain values are on the , or horizontal axis, and the range values are on the , or vertical, axis. The points where the graph touches or crosses an axis are called intercepts .  Use the graph of below to answer the following questions. Note that both ends of the graph (on the left and right) continue to go downwards forever.    Find .  since the point is on the graph of .   Find .  since the point is on the graph of .   Find the -intercept(s) or determine that there are none. Since the horizontal axis is labeled , these are the points where the graph crosses the horizontal axis. These points are    Find the -intercepts or determine that there are none. Since the vertical axis is labeled , these are the points where the graph crosses the vertical axis. This point is    Find the domain of . We look at the horizontal (or ) axis to determine this. Since every number on the -axis has a point above or below it on the graph (think about drawing vertical lines through numbers on the horizontal axis), .   Find the range of . We look at the vertical (or ) axis to determine this. Since every number below and including 5 on the -axis has a point on the graph to the right or left of it (think about drawing horizontal lines through numbers on the vertical axis) .     Remember that if is a function between sets, then input values correspond uniquely to output values. In other words, for every input value, there is only one ouptput value. Geometrically, this means that if you locate a domain value on the horizontal axis of the graph of , then there is exactly one point on the vertical line through that domain value. This gives us the following geometric test to determine if a graph represents a function.   The Vertical Line Test (VLT) : A graph represents a function if and only if any vertical line intersects the graph AT MOST once.  Use the VLT to determine if the graphs represent a function.  Graph given below.  Because any vertical line will intersect this graph at most once, this graph represents a function. Note that there are open circles at the points and . For homeowork find the domain and range of this function.  Graph given below.  Because a vertical line can drawn that intersects this graph more than once (for instance ), this graph DOES NOT rerpresent a function.    "
 },
 {
-  "id": "p-26",
+  "id": "p-27",
   "level": "2",
-  "url": "graphs-functions.html#p-26",
+  "url": "graphs-functions.html#p-27",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "intercepts "
 },
 {
-  "id": "example-15",
+  "id": "example-16",
   "level": "2",
-  "url": "graphs-functions.html#example-15",
+  "url": "graphs-functions.html#example-16",
   "type": "Example",
   "number": "2.2.1",
   "title": "",
   "body": "Use the graph of below to answer the following questions. Note that both ends of the graph (on the left and right) continue to go downwards forever.    Find .  since the point is on the graph of .   Find .  since the point is on the graph of .   Find the -intercept(s) or determine that there are none. Since the horizontal axis is labeled , these are the points where the graph crosses the horizontal axis. These points are    Find the -intercepts or determine that there are none. Since the vertical axis is labeled , these are the points where the graph crosses the vertical axis. This point is    Find the domain of . We look at the horizontal (or ) axis to determine this. Since every number on the -axis has a point above or below it on the graph (think about drawing vertical lines through numbers on the horizontal axis), .   Find the range of . We look at the vertical (or ) axis to determine this. Since every number below and including 5 on the -axis has a point on the graph to the right or left of it (think about drawing horizontal lines through numbers on the vertical axis) .    "
 },
 {
-  "id": "p-28",
+  "id": "p-29",
   "level": "2",
-  "url": "graphs-functions.html#p-28",
+  "url": "graphs-functions.html#p-29",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "The Vertical Line Test (VLT) "
 },
 {
-  "id": "example-16",
+  "id": "example-17",
   "level": "2",
-  "url": "graphs-functions.html#example-16",
+  "url": "graphs-functions.html#example-17",
   "type": "Example",
   "number": "2.2.2",
   "title": "",
@@ -361,45 +370,45 @@ var ptx_lunr_docs = [
   "body": "A function of the form where and are constants is called a linear function . "
 },
 {
-  "id": "example-17",
+  "id": "example-18",
   "level": "2",
-  "url": "linear-functions.html#example-17",
+  "url": "linear-functions.html#example-18",
   "type": "Example",
   "number": "2.3.2",
   "title": "",
   "body": "The pharmaceutical company CVL produces an antidepressant drug that can be made for $10.75 per unit, . They sell this same drug for $24.53 per unit, . Their total cost for producing units is $1523.82.  Find CVL's cost function, , for this antidepressant drug. With the cost per unit given as $10.75, we have To find we use the fact that CVL's total cost for producing units is $1523.82. That is which gives so that From the cost model above we see that CVL's fixed costs are $470.32 Observe also that the cost per unit is the slope of . So, CVL's cost increase by $10.75 for every addtional unit of the antidresspant drug they produce. Make sure you are aware of the role the variables play when you work through these examples. For this model, the input variable is which represents the number of units of the antidepressant drug produced by CVL. The output variable is which represents CVL's cost in dollars for producing units of the antidpressant drug. You should take a minute to identify the variables and write a sentence to describe them as you work through all these examples.    Find CVL's revenue function, , for this antidepressant drug. With the price per unit given as , CVL'S revenue function for this drug is Notice that the price per unit is the slope of the revenue model. This means CVL's revenue increases by $24.53 for every addtional unit of the antidresspant drug they produce and sell.   Find the CVL's profit model, . Then find and interpret the average profit from producing and selling units of the antidepressant drug We subract the cost function from the revenue function: Notice that the slope of the profit model is . This means CVL's profit increases by $13.78 for every addtional unit of the antidresspant drug they produce and sell. Now, , which means CVL's profit from producing and selling 272 units of the antidepressant drug is $3,277.84. To calculate the average profit we divide this by the number of units: So, CVL's average profit from producing and selling units of the antidresspant drug is $12.05 per unit or Notice that the units for average profit (as well as average cost and average revenue) are     How many units of the drug should CVL produce and sell in order to break even? The break-even point occurs when CVL's profit is $0. So, we solve Recall that we always round up to identify the break-even point. So, CVL must produce and sell units of the antidepressant drug to break even. See the figure below for an illustration of the models and break-even point.      "
 },
 {
-  "id": "example-18",
+  "id": "example-19",
   "level": "2",
-  "url": "linear-functions.html#example-18",
+  "url": "linear-functions.html#example-19",
   "type": "Example",
   "number": "2.3.3",
   "title": "",
   "body": "Cosmo recently purchased a Honda Civic for $24,535. The value of the car is estimated to be $17,020 in 3 years from the purchase date. Assuming linear depreciation, find the depreciation model for this Honda Civic, where is the value of the car in dollars years after the car was purchased by Cosmo. Then find the value of the car in 5 years.  will have the form where the slope will be the rate of depreciation per year. Let's start by finding the slope, . We are given the data points and so that Since we are given the intercept (the vertical intercept) we see that In 5 years the car will be worth . Note that means the car depreciates by \\$2,505 per year.  "
 },
 {
-  "id": "p-39",
+  "id": "p-40",
   "level": "2",
-  "url": "linear-functions.html#p-39",
+  "url": "linear-functions.html#p-40",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "piecewise linear function "
 },
 {
-  "id": "example-19",
+  "id": "example-20",
   "level": "2",
-  "url": "linear-functions.html#example-19",
+  "url": "linear-functions.html#example-20",
   "type": "Example",
   "number": "2.3.4",
   "title": "",
   "body": "ADTF Distributors produces and sells Doggie DNA Kits to determine dog genetics. They find that that their annual net profit, in hundreds of dollars, is given by a piecewise linear function , where is the number of years since 2010.  In 2010 ADTF Distributors' profit from producing and selling Doggie DNA Kits was $10,042. Their profit was $21,634 in 2016. Find ADTF Distributors' linear profit model between these years. We are given the data points and . Finding the line through these points we see that ADTF Distributors' profit model from 2010 up to and including 2016 is    From 2016 to 2021, ADTF Distributors determined that their profit increased at rate of $4,974 per year until their profit reached $60,234 in 2021. Find ADTF Distributors' linear profit model between 2016 and 2021 We are given the slope to be and data point . Finding the line with these conditions we see that ADTF Distributors' profit model from 2016 to 2021 is    Epress as a piecewise linear model.  You should graph this piecewise functon for homwork.    "
 },
 {
-  "id": "p-41",
+  "id": "p-42",
   "level": "2",
-  "url": "linear-functions.html#p-41",
+  "url": "linear-functions.html#p-42",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -433,27 +442,27 @@ var ptx_lunr_docs = [
   "body": "A quadratic function is a function that can be written in the form where , and are constants called coefficients and . The graph of a quadratic function is called a parabola . "
 },
 {
-  "id": "p-44",
+  "id": "p-45",
   "level": "2",
-  "url": "quadratics.html#p-44",
+  "url": "quadratics.html#p-45",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "vertex axis of symmetry "
 },
 {
-  "id": "p-47",
+  "id": "p-48",
   "level": "2",
-  "url": "quadratics.html#p-47",
+  "url": "quadratics.html#p-48",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "vertex form "
 },
 {
-  "id": "p-48",
+  "id": "p-49",
   "level": "2",
-  "url": "quadratics.html#p-48",
+  "url": "quadratics.html#p-49",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -469,36 +478,36 @@ var ptx_lunr_docs = [
   "body": "The point at which (supply equals demand) in a market is called the equilibrium point . "
 },
 {
-  "id": "example-21",
+  "id": "example-22",
   "level": "2",
-  "url": "quadratics.html#example-21",
+  "url": "quadratics.html#example-22",
   "type": "Example",
   "number": "2.4.3",
   "title": "",
   "body": "Suppose the price and demand for an item are related by where is the price in dollars and is the number of items demanded in hundreds. Suppose also that price and supply are related by where is again price in dollars and is quantity supplied in hundreds. Find the equilibrium price and quantity. The equilibrium price and quantity occurs when . We solve: To solve this equation it is best to use the quadratic formula: Substitute the correct values for , and for homework. You should find two solutions:   which we can disregard (why?)   which is a valid solution for this problem  So, the equilibrium quantity is or 300 items and the equilibrium price is or $96. In other words, this market is in equilibrium (supply equls demand) when 300 items are supplied at price of $96. Notice that , the equilibrium point, is the intersection point of the graphs of and .    "
 },
 {
-  "id": "example-22",
+  "id": "example-23",
   "level": "2",
-  "url": "quadratics.html#example-22",
+  "url": "quadratics.html#example-23",
   "type": "Example",
   "number": "2.4.4",
   "title": "",
   "body": "Researchers conducted a market study to track how changes in technology and climate affected the sales of gas powered cars on Echo Island. They found that the number of gas powered cars in tens sold in a month is given by where represents the number of months after the study began. How many months into the study did gas powered cars reach their maximum sales? What was the maximum number of cars sold in a month during the study? Since , the quadratic does indeed have a maximum value. We need the vertex: and so that the vertex is . Therefore, the maxmimum number of gas powered cars sold on Echo Island occurred 4 months after the study. The maximum number sold was 769 cars.    "
 },
 {
-  "id": "example-23",
+  "id": "example-24",
   "level": "2",
-  "url": "quadratics.html#example-23",
+  "url": "quadratics.html#example-24",
   "type": "Example",
   "number": "2.4.5",
   "title": "",
   "body": "Sofa King has determined that when hundred sofas are produced their average cost per sofa in hundreds of dollars is determined by the function How many sofas should Sofa King produce in order to minimize average cost? Write a sentence or two interpreting your answer. Find the cost funtion, . To minimize average cost, Sofa King should produce 450 sofas. At this production level, their (minimum) average cost is $89 per sofa. Sofa King's cost function is (in hundreds of dollars).  "
 },
 {
-  "id": "example-24",
+  "id": "example-25",
   "level": "2",
-  "url": "quadratics.html#example-24",
+  "url": "quadratics.html#example-25",
   "type": "Example",
   "number": "2.4.6",
   "title": "",
@@ -523,18 +532,18 @@ var ptx_lunr_docs = [
   "body": "A polynomial is a function that can written in the form where is a whole number and are real numbers called coefficients . If then is called the degree of the polynomial, which is expressed by writing deg( ) = . In this case the number is called the leading coefficient , and is called the leading term . "
 },
 {
-  "id": "example-25",
+  "id": "example-26",
   "level": "2",
-  "url": "general-polynomials.html#example-25",
+  "url": "general-polynomials.html#example-26",
   "type": "Example",
   "number": "2.5.2",
   "title": "",
   "body": "Identify the end behavior of the polynomial  First you should convince yourself that this is indeed a polynomial. We just need to identify the leading term, which will be the product of the leading terms of each factor: So, the end behavior is as in Case 4 above.  "
 },
 {
-  "id": "example-26",
+  "id": "example-27",
   "level": "2",
-  "url": "general-polynomials.html#example-26",
+  "url": "general-polynomials.html#example-27",
   "type": "Example",
   "number": "2.5.3",
   "title": "",
@@ -586,18 +595,18 @@ var ptx_lunr_docs = [
   "body": "Let be a fixed real number. We say the limit of the function is the number if all the values can be made arbitrarily close to the number by making sufficiently close to . We denote this by writing  "
 },
 {
-  "id": "p-72",
+  "id": "p-73",
   "level": "2",
-  "url": "limits.html#p-72",
+  "url": "limits.html#p-73",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "one-sided limit "
 },
 {
-  "id": "example-30",
+  "id": "example-31",
   "level": "2",
-  "url": "limits.html#example-30",
+  "url": "limits.html#example-31",
   "type": "Example",
   "number": "3.1.5",
   "title": "",
@@ -622,9 +631,9 @@ var ptx_lunr_docs = [
   "body": "Suppose represents the number of backpacks sold in thousands by ADTF Distributors when they spend hundred dollars on advertising, valid for The graph of is given below.    How many backpacks did ADTF Distributors sell as a result of increasing spending on advertising from $100 to $400? For an increase of spending from $100 to $400 we look at what happens as increases from 1 to 4. In this case we see that increases from 2 to 3.51. Since 3.51 - 2 = 1.51 we find that ADTF Distributors sold an additional 1,510 backpacks as a result of increasing the amount spent on advertising from $100 to $400.   As money spent on advertising increased from $100 to $400, what was the average number of backpacks sold per hundred dollar increase? We need to determine the average change in as increases from 1 to 2, then 2 to 3, and finally 3 to 4. Respectively, these changes are 3-2=1, 3.5-3 = .5, and 3.51 - 3.5 = .01. The average of these three numbers is Alternatively, this is is the same as as finding over the interval  We conclude that as money spent on advertising increased from $100 to $400, ADTF Distributors' sales increased on average by approximately 503 backpacks per hundred dollar increase spent on advertising. This number is average rate of change of as goes from 1 to 4. That is,     "
 },
 {
-  "id": "p-86",
+  "id": "p-87",
   "level": "2",
-  "url": "aroc.html#p-86",
+  "url": "aroc.html#p-87",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -640,9 +649,9 @@ var ptx_lunr_docs = [
   "body": "The average rate of change (AROC) of as goes from to is given by which is also the slope of the secant line through the points and . "
 },
 {
-  "id": "p-87",
+  "id": "p-88",
   "level": "2",
-  "url": "aroc.html#p-87",
+  "url": "aroc.html#p-88",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -658,18 +667,18 @@ var ptx_lunr_docs = [
   "body": "Let . Find the AROC of as goes from -1 to 3 using . With and we have Remember, this is a rate of change, so given a context, the units would be:   "
 },
 {
-  "id": "example-33",
+  "id": "example-34",
   "level": "2",
-  "url": "aroc.html#example-33",
+  "url": "aroc.html#example-34",
   "type": "Example",
   "number": "3.2.4",
   "title": "",
   "body": "Let . Find the AROC of as goes from -1 to 3 using the simplified difference quotient. First, we simplify the differene quotient: With and we have Compare this with . Below is the graph of . Included in the graph is the secant line through and . The slope of equals the AROC calculated above, which is 2.    "
 },
 {
-  "id": "example-34",
+  "id": "example-35",
   "level": "2",
-  "url": "aroc.html#example-34",
+  "url": "aroc.html#example-35",
   "type": "Example",
   "number": "3.2.5",
   "title": "",
@@ -694,9 +703,9 @@ var ptx_lunr_docs = [
   "body": "The derivative of the function , denoted as or , is given by provided the limit exists. If the limit does not exits, we say is non-differentiable at . "
 },
 {
-  "id": "example-35",
+  "id": "example-36",
   "level": "2",
-  "url": "iroc-deriv.html#example-35",
+  "url": "iroc-deriv.html#example-36",
   "type": "Example",
   "number": "3.3.2",
   "title": "",
@@ -766,27 +775,27 @@ var ptx_lunr_docs = [
   "body": " (The Power Rule)  If is any real number other than 0 and , then Furthermore, if is a constant function, then .  "
 },
 {
-  "id": "example-40",
+  "id": "example-41",
   "level": "2",
-  "url": "sect-power-rule.html#example-40",
+  "url": "sect-power-rule.html#example-41",
   "type": "Example",
   "number": "3.5.2",
   "title": "",
   "body": "Find the following derivatives using .   (note that )      (note that )       Note that this is not in the form required by the . So, we have to rewrite this function as . Since ,      Note that this is not in the form required by the . So, we have to rewrite this function as . Since ,      Since is a constant function .    "
 },
 {
-  "id": "example-41",
+  "id": "example-42",
   "level": "2",
-  "url": "sect-power-rule.html#example-41",
+  "url": "sect-power-rule.html#example-42",
   "type": "Example",
   "number": "3.5.3",
   "title": "",
   "body": "Find the following derivatives using and the two properties above.          Let's first rewrite this function as . Now which simplifies to     . Try this one out yourself. You should rewrite the function first.   "
 },
 {
-  "id": "example-42",
+  "id": "example-43",
   "level": "2",
-  "url": "sect-power-rule.html#example-42",
+  "url": "sect-power-rule.html#example-43",
   "type": "Example",
   "number": "3.5.4",
   "title": "",
@@ -856,27 +865,27 @@ var ptx_lunr_docs = [
   "body": " The First Derivative Test  To find the relative extreme values of a function we first need to find the critical numbers for (by solving ) and then determining if changes sign (from positive to negative or vice versa) on either side of the critical number. This information is recorded in a sign chart for the first derivative.  Let be a critical number of with . Below are the four possibilities for what a sign chart for could look like around , with a corresponding graph for .        The pictures above illustrate what happens in case the critical number produces a relative extreme value. Below are illustrations for what happens when no relative extreme values exist at the critical number.        Finding relative extreme values for a function using a sign chart for its derivative is what we will refer to as using the first derivative test .  Let . Find intervals where is increasing, decreasing, and find all relative extreme values of . We will use the first derivative test by making a sign chart for . First we need the critical numbers of . These numbers must be in the domain of , so first note that dom( ) . Next, we solve . Note that . So, We find two critical numbers: and . We can algebraically check the sign of the derivative, , by picking test values in the appropriate intervals determined by the critical numbers:  In the interval we can test with :   In the interval we can test with :   In the interval we can test with :   The signs of the derivative, , tell us whether the function is increasing or decreasing, which we will indicate with up and down arrows respectively. The sign chart for is below.  Using our sign chart, we can now answer the questions.   is increasing on the intervals and .   is decreasing on the interval .   has no relative maximum value.   has a relative minimum at . The relative minimum value is .  Notice that even though there is no relative extreme value at , there is a \"flat spot\" there where has a horizontal tangent line. Following is the graph of      Kruger Industrial Smoothing supplies hardware stores around the US with sanders, grinders, whetstones, and other smoothing tools. Kruger's revenue function, in hundreds of thousands of dollars, is given by valid for where is the number of years since 2004. Take a moment to identfiy the input and output variables and write a sentence to interpret each.  Write the domain of in interval notaion and determine what years Kruger's revenue function is value. In interval notation, dom( ) , which means Kruger's revenue function is valued from 2005 through 2019.   Determine Kruger's revenue in 2009 and write a sentence to interpret. Since 2009 corresponds to and , we see that Kruger's revenue in 2009 was $46,900,000.   Deternime Kruger's marginal revenue in 2012 and write a sentence to interpret its meaning. Since and 2012 corresponds to , we have that . This means that in 2012 Kruger's revenue was increasing at an approximate rate of $4,500,000 per year. Meaning, Kruger expects to gernerate $4,500,000 more revenue in 2013 than in 2012.   Find the critical numbers of and identify the corresponding years for these values. To find the critical numbers we solve , keeping only those that are in the interval . and find two critical values, and , both of which are in . These critical values correspond to 2007 and 2015.   Make and interpret a sign chart for .   In the interval we can test with :   In the interval we can test with :   In the interval we can test with :   The corresponding sign chart is below.  From the sign chart we can see that:  Kruger's revenue decreased from 2005 ( ) to 2007 ( ) and then again from 2015 ( ) to 2019 ( ).  Kruger's revenue increased from 2007 ( ) to 2015 ( ).  Since , Kruger had a relaive minimum revenue of $42,900,000 in 2007.  Since , Kruger had a relaive maximum revenue of $68,500,000 in 2015.     Graphical exploration: Graph and . Make sure you understand how your work above corresponds to these graphs.  is the green dotted graph. Overserve that the sign chart is also included in the graph below. Notice how that the sign of corresponds to whether the graph is above or below the -axis, how the graph of follows the blue and red arrows in the sign chart, and that the critical values are the intercepts for , as well as the location for the relative extreme values of .       ADTF Distributors begins to manufacture a new smart product, the iOON. Let x give the number of iOONs produced in a given cycle. The total cost in dollars is given by the function   Find both the average cost and marginal cost functions. We start with the average cost function, . Since , the marginal cost function is    Find and interpret the average cost and marginal cost when 2,000 iOONs are produced. Let's first calculate the average cost. Hence, the average cost when ADTF Distributors produces 2,000 iOONs is $2,816.2 per iOON. To find the margincal cost we evaluate the derivative of the cost function at . This means that when iOONs are produced, ADTF Distributors' costs are increasing at an approximate rate of $4,800 per additioanl iOON. That is, the cost of the 2,001 iOON is approximately $4,800 more than the 2,000 iOON.   Use the first derivate test to minimize ADTF Distributors' average cost. We start by finding the critical values for . To do this we must solve . First observe that . So, Since dom( ) , the only cirtical number we find is . Now we make a sign chart for to confirm that minimizes average cost.  In the interval we can test with :   In the interval we can test with :   The sign chart for is below.  From our sign chart we conclude  ADTF Distributors' avaerage cost decreased on the interval .  ADTF Distributors' avaerage cost increased on the interval .  ADTF Distributors has a relative minimum average cost when they produce iOONs. Their minimum average cost is (dollars per iOON) per iOON.       We will return to this type of application after we discuss absolute extreme values .  "
 },
 {
-  "id": "p-115",
+  "id": "p-116",
   "level": "2",
-  "url": "first-deriv-test.html#p-115",
+  "url": "first-deriv-test.html#p-116",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "sign chart "
 },
 {
-  "id": "p-118",
+  "id": "p-119",
   "level": "2",
-  "url": "first-deriv-test.html#p-118",
+  "url": "first-deriv-test.html#p-119",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "the first derivative test "
 },
 {
-  "id": "example-44",
+  "id": "example-45",
   "level": "2",
-  "url": "first-deriv-test.html#example-44",
+  "url": "first-deriv-test.html#example-45",
   "type": "Example",
   "number": "3.7.1",
   "title": "",
@@ -892,9 +901,9 @@ var ptx_lunr_docs = [
   "body": "Kruger Industrial Smoothing supplies hardware stores around the US with sanders, grinders, whetstones, and other smoothing tools. Kruger's revenue function, in hundreds of thousands of dollars, is given by valid for where is the number of years since 2004. Take a moment to identfiy the input and output variables and write a sentence to interpret each.  Write the domain of in interval notaion and determine what years Kruger's revenue function is value. In interval notation, dom( ) , which means Kruger's revenue function is valued from 2005 through 2019.   Determine Kruger's revenue in 2009 and write a sentence to interpret. Since 2009 corresponds to and , we see that Kruger's revenue in 2009 was $46,900,000.   Deternime Kruger's marginal revenue in 2012 and write a sentence to interpret its meaning. Since and 2012 corresponds to , we have that . This means that in 2012 Kruger's revenue was increasing at an approximate rate of $4,500,000 per year. Meaning, Kruger expects to gernerate $4,500,000 more revenue in 2013 than in 2012.   Find the critical numbers of and identify the corresponding years for these values. To find the critical numbers we solve , keeping only those that are in the interval . and find two critical values, and , both of which are in . These critical values correspond to 2007 and 2015.   Make and interpret a sign chart for .   In the interval we can test with :   In the interval we can test with :   In the interval we can test with :   The corresponding sign chart is below.  From the sign chart we can see that:  Kruger's revenue decreased from 2005 ( ) to 2007 ( ) and then again from 2015 ( ) to 2019 ( ).  Kruger's revenue increased from 2007 ( ) to 2015 ( ).  Since , Kruger had a relaive minimum revenue of $42,900,000 in 2007.  Since , Kruger had a relaive maximum revenue of $68,500,000 in 2015.     Graphical exploration: Graph and . Make sure you understand how your work above corresponds to these graphs.  is the green dotted graph. Overserve that the sign chart is also included in the graph below. Notice how that the sign of corresponds to whether the graph is above or below the -axis, how the graph of follows the blue and red arrows in the sign chart, and that the critical values are the intercepts for , as well as the location for the relative extreme values of .      "
 },
 {
-  "id": "example-46",
+  "id": "example-47",
   "level": "2",
-  "url": "first-deriv-test.html#example-46",
+  "url": "first-deriv-test.html#example-47",
   "type": "Example",
   "number": "3.7.3",
   "title": "",
@@ -910,27 +919,27 @@ var ptx_lunr_docs = [
   "body": " The Second Derivative  If a function has a first derivative, , then we may ask if is differentiable. If so, we call the derivative of the second derivative of and denote it by or . Of course, we can continue to check the differentiability of successive derivatives. These successive derivatives are called higher order derivatives of . The notation for these higher order derivatives is given below. Notice that beyond order three, the \"prime\" notation changes and the order of the derivative is indicated by the number in parenthesis.  First derivative:   Second derivative:   Third Derivative:   Fourth Derivative:   Fifth Derivative:     Find all derivatives of . For each derivative, we can use the power rule:              Each successive derivative will also be 0. That is, for all .   One application of the second derivative is that will give the instantaneous rate of change of . This has geometric consequences. Concavity is related to the rate of change of a function's derivative which can be found by looking at the sign of the second derivative. A function is concave up where the first derivative, , is increasing (that is, where ), and concave down where the first derivative, , is decreasing (that is, where ). A point where concavity changes is called an inflection point . Geometrically, a function is concave up on intervals where the graph \"bends up\", or is above its tangent lines. The function is concave down on intervals where the graph \"bends down\", or is below its tangent lines.        Notice that in the picture on the left, the slopes of tangent lines get larger from left to right. In other words, the deriviate increases, which means the second derivative is positive. In the picture on the right, the slopes of tangent lines get smaller from left to right. In other words, the deriviate decreases, which means the second derivative is negative. Again, an inflection point is a point where concavity changes. That is, a point about which changes sign.    xref ref=\"inflection-point\"> If corresponds to an inflection point for the function , then either or is NOT DEFINED at .   We can use a sign chart for the second derivative to find inflection points in a similar way that we used a sign chart for the first derivative to find relative extreme values. We find places where the second derivative is zero, put that value on a number line, and check the sign of the second derivative on either side. If the sign changes (that is, if concavity changes) from one side to the other, then we have an inflection point.  This information is summarized in the Concavity Test : Suppose is such that and exist for all in the interval .  If on , then is concave up on .  If on , then is concave down on   Furthermore, if is an inflection point of , then either or does not exist.  Concavity and inflection points are related to the law of diminishing returns in economics. This law states that in all productive processes, adding more of one factor of production will at some point yield lower incremental per-unit returns. A point of diminishing returns refers to a point at which the optimal level of capacity is reached, where incremental increases in the input result in smaller increases in output. Mathematically, a point of diminishing returns is an inflection point through which the function increases and its derivative changes from increasing to decreasing (or equivalently, where the second derivative changes from positive to netagive).  Pendant Publishing's profit in millions of dollars from publishing and selling textbook in Finance, Economics, and Accounting is given by the model where is the number of years since 1998, valid for . Take a minute to identify the input and output variables and write a sentnece to interpret each.  Write the domain of in iterval notation. Indicate the corresponding years for which the profit model is valid. Since is valid for , in interval notation this is expressed as dom( ) . Also, since is the number of years since 1998, the model is valid from 2000 through 2008.   Find the critical numbers for and indicate the year to which they correspond. First, the marginal profit function is . Now we solve the following for : and we find 2 criical numbers: , which corresponds the year 2001 and , which corresonds the year 2007.   Make and interpret a sign chart for the marginal profit function.   In the interval we can test with :   In the interval we can test with :   In the interval we can test with :   The corresponding sign chart is below.  From the sign chart we can see that:  Pendanct Publishing's profit decreased from 2000 ( ) to 2001 ( ) and then again from 2007 ( ) to 2008 ( ).  Pendanct Publishing's profit increased from 2001 ( ) to 2007 ( ).  Since , Pendant Publishing had relaive minimum profit of $14,200,000 in 2001.  Since , Pendant Publishing had a relaive maximum profit of $25,000,000 in 2007.     Find any inflection ponts for by making and interpreting a sign chart for . If you do find an inflection point, determine if it corresponds to a point of diminishing returns. To find candidates for inflection points, we solve  and we see that may give an inflection point. Let's make a sign chart for the second derivative.  In the interval we can test with :   In the interval we can test with :   The sign chart for is below. Notice that the concavity of is labeled below the intervals.  Since the sign of changes about , we can conclude that the point is an inflection point. Comparing the sign charts for and we see that   is deceasing at an increasing rate from to    is increasing at an increasing rate from to    is increasing at a decreasing rate from to    is decreasing at a decreasing rate from to   From the second and third bullet points above, we can now conclude that (6,19.6) is a point of diminishing returns. That is, Pendant Publusihng had a point of diminishing returns in 2004 during which year their profit was $19,600,000.   Graphical exploration: Graph , , labeling all relative extreme values and inflections points. Make sure you understand how the graphical data is related to your work above.        The second derivative can also be used to help us identify relative extreme values of function. This process is called the The Second Derivative Test and will be our primary application of the second derivative.   The Second Derivative Test   Suppose is a critical number of the function and is in the domain of . Then we can use the second derivative to determine if is a relative maximum or a relative minimum value of as follows:  If then is a relative maximum value of .  If then is a relative minimum value of .  If then no conclusion can be made. In this case, you need to use the first derivative test to determine if is a relative extreme value.  WKRP in Cincinnati is a radio station with annual listernship predicted by the model in millions of listeners, where the number of years since 2008. Use the second derivative test to determine the relative extreme values for and when they occurred. Write sentences to interpret your answers. Round function values to two decimal places. We begin by finding the critical numbers for . We solve and we find two critical numbers: and . Next, notice that Evaluating at each critical value we find   , and     Using the second derivative test, we conclude  WKRP in Cincinnati had a relative maximum annual listernship in 2015 ( ). Since , the relative maximum number of annual listeners was 96,330,000.  WKRP in Cincinnati had a relative minimum annual listernship in 2021 ( ). Since , the relative minimum number of annual listeners was 60,330,000.     "
 },
 {
-  "id": "p-120",
+  "id": "p-121",
   "level": "2",
-  "url": "second-deriv.html#p-120",
+  "url": "second-deriv.html#p-121",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "second derivative higher order derivatives "
 },
 {
-  "id": "example-47",
+  "id": "example-48",
   "level": "2",
-  "url": "second-deriv.html#example-47",
+  "url": "second-deriv.html#example-48",
   "type": "Example",
   "number": "3.8.1",
   "title": "",
   "body": "Find all derivatives of . For each derivative, we can use the power rule:              Each successive derivative will also be 0. That is, for all .  "
 },
 {
-  "id": "p-121",
+  "id": "p-122",
   "level": "2",
-  "url": "second-deriv.html#p-121",
+  "url": "second-deriv.html#p-122",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -946,31 +955,13 @@ var ptx_lunr_docs = [
   "body": "xref ref=\"inflection-point\"> If corresponds to an inflection point for the function , then either or is NOT DEFINED at .  "
 },
 {
-  "id": "p-124",
-  "level": "2",
-  "url": "second-deriv.html#p-124",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Concavity Test "
-},
-{
   "id": "p-125",
   "level": "2",
   "url": "second-deriv.html#p-125",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "law of diminishing returns point of diminishing returns "
-},
-{
-  "id": "example-48",
-  "level": "2",
-  "url": "second-deriv.html#example-48",
-  "type": "Example",
-  "number": "3.8.3",
-  "title": "",
-  "body": "Pendant Publishing's profit in millions of dollars from publishing and selling textbook in Finance, Economics, and Accounting is given by the model where is the number of years since 1998, valid for . Take a minute to identify the input and output variables and write a sentnece to interpret each.  Write the domain of in iterval notation. Indicate the corresponding years for which the profit model is valid. Since is valid for , in interval notation this is expressed as dom( ) . Also, since is the number of years since 1998, the model is valid from 2000 through 2008.   Find the critical numbers for and indicate the year to which they correspond. First, the marginal profit function is . Now we solve the following for : and we find 2 criical numbers: , which corresponds the year 2001 and , which corresonds the year 2007.   Make and interpret a sign chart for the marginal profit function.   In the interval we can test with :   In the interval we can test with :   In the interval we can test with :   The corresponding sign chart is below.  From the sign chart we can see that:  Pendanct Publishing's profit decreased from 2000 ( ) to 2001 ( ) and then again from 2007 ( ) to 2008 ( ).  Pendanct Publishing's profit increased from 2001 ( ) to 2007 ( ).  Since , Pendant Publishing had relaive minimum profit of $14,200,000 in 2001.  Since , Pendant Publishing had a relaive maximum profit of $25,000,000 in 2007.     Find any inflection ponts for by making and interpreting a sign chart for . If you do find an inflection point, determine if it corresponds to a point of diminishing returns. To find candidates for inflection points, we solve  and we see that may give an inflection point. Let's make a sign chart for the second derivative.  In the interval we can test with :   In the interval we can test with :   The sign chart for is below. Notice that the concavity of is labeled below the intervals.  Since the sign of changes about , we can conclude that the point is an inflection point. Comparing the sign charts for and we see that   is deceasing at an increasing rate from to    is increasing at an increasing rate from to    is increasing at a decreasing rate from to    is decreasing at a decreasing rate from to   From the second and third bullet points above, we can now conclude that (6,19.6) is a point of diminishing returns. That is, Pendant Publusihng had a point of diminishing returns in 2004 during which year their profit was $19,600,000.   Graphical exploration: Graph , , labeling all relative extreme values and inflections points. Make sure you understand how the graphical data is related to your work above.       "
+  "body": "Concavity Test "
 },
 {
   "id": "p-126",
@@ -979,7 +970,16 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "The Second Derivative Test "
+  "body": "law of diminishing returns point of diminishing returns "
+},
+{
+  "id": "example-49",
+  "level": "2",
+  "url": "second-deriv.html#example-49",
+  "type": "Example",
+  "number": "3.8.3",
+  "title": "",
+  "body": "Pendant Publishing's profit in millions of dollars from publishing and selling textbook in Finance, Economics, and Accounting is given by the model where is the number of years since 1998, valid for . Take a minute to identify the input and output variables and write a sentnece to interpret each.  Write the domain of in iterval notation. Indicate the corresponding years for which the profit model is valid. Since is valid for , in interval notation this is expressed as dom( ) . Also, since is the number of years since 1998, the model is valid from 2000 through 2008.   Find the critical numbers for and indicate the year to which they correspond. First, the marginal profit function is . Now we solve the following for : and we find 2 criical numbers: , which corresponds the year 2001 and , which corresonds the year 2007.   Make and interpret a sign chart for the marginal profit function.   In the interval we can test with :   In the interval we can test with :   In the interval we can test with :   The corresponding sign chart is below.  From the sign chart we can see that:  Pendanct Publishing's profit decreased from 2000 ( ) to 2001 ( ) and then again from 2007 ( ) to 2008 ( ).  Pendanct Publishing's profit increased from 2001 ( ) to 2007 ( ).  Since , Pendant Publishing had relaive minimum profit of $14,200,000 in 2001.  Since , Pendant Publishing had a relaive maximum profit of $25,000,000 in 2007.     Find any inflection ponts for by making and interpreting a sign chart for . If you do find an inflection point, determine if it corresponds to a point of diminishing returns. To find candidates for inflection points, we solve  and we see that may give an inflection point. Let's make a sign chart for the second derivative.  In the interval we can test with :   In the interval we can test with :   The sign chart for is below. Notice that the concavity of is labeled below the intervals.  Since the sign of changes about , we can conclude that the point is an inflection point. Comparing the sign charts for and we see that   is deceasing at an increasing rate from to    is increasing at an increasing rate from to    is increasing at a decreasing rate from to    is decreasing at a decreasing rate from to   From the second and third bullet points above, we can now conclude that (6,19.6) is a point of diminishing returns. That is, Pendant Publusihng had a point of diminishing returns in 2004 during which year their profit was $19,600,000.   Graphical exploration: Graph , , labeling all relative extreme values and inflections points. Make sure you understand how the graphical data is related to your work above.       "
 },
 {
   "id": "p-127",
@@ -991,9 +991,18 @@ var ptx_lunr_docs = [
   "body": "The Second Derivative Test "
 },
 {
-  "id": "example-49",
+  "id": "p-128",
   "level": "2",
-  "url": "second-deriv.html#example-49",
+  "url": "second-deriv.html#p-128",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The Second Derivative Test "
+},
+{
+  "id": "example-50",
+  "level": "2",
+  "url": "second-deriv.html#example-50",
   "type": "Example",
   "number": "3.8.4",
   "title": "",
@@ -1045,36 +1054,36 @@ var ptx_lunr_docs = [
   "body": " Critical Number Theorem  Let be ANY interval and suppose has exactly one critical number in .  If is a relative maximum, then is an absolute maximum.  If is a relative minimum, then is an absolute minimum.    "
 },
 {
-  "id": "example-50",
+  "id": "example-51",
   "level": "2",
-  "url": "abs-ext.html#example-50",
+  "url": "abs-ext.html#example-51",
   "type": "Example",
   "number": "3.9.5",
   "title": "",
   "body": "Find the absolute extreme values of on .  is a polynomial defined on the closed bounded interval , so must have absolute extreme values by . To find them, we first get the critical numbers of . Since , which gives as the only critical value. By , all we need to do to find the absolute extreme values is evaluate at the critical number, the endpoints of the interval, and compare:           So, is the absolute maximum and is the absolute minimum. Below is the graph.    "
 },
 {
-  "id": "example-51",
+  "id": "example-52",
   "level": "2",
-  "url": "abs-ext.html#example-51",
+  "url": "abs-ext.html#example-52",
   "type": "Example",
   "number": "3.9.6",
   "title": "",
   "body": "VL Consultants is a national organization that contracts with colleges and universities around the US to help them develop open educational resources for specialty courses. Their annual revenue in hundreds of thousands of dollars between the years 2015 and 2023 is given by the model where corresponds to the year 2013. Round all output values to two decimal places.  Write the domain of using interval notation. Since the model is valid between the years 2015 and 2023 and corresponds to the year 2013, dom( )    Find and interpret VL Consultants' marginal revenue in 2017. Since 2017 corresponds to , we need to find and interpret . Taking the derivative of , the marginal revenue function is Evaluating, we have , which means that in 2017, VL Consultants' revenue was increasing at an approximate rate of $3,200,000 per year. That is, VL Consultants expects to genreate an additional $3,200,000 in 2018 as comparted to 2017.   Find the critical values for and identify the years to which they correspond. We solve the following for : which has three solutions, . Since is not in the domain (see part (a)), we find two critical numbers: which correspond the years 2019 and 2021 respectively.   Find the and interpret the relative extreme values of . We use the second derivative test: Evaluating at the critical numbers, we have   which means gives a relative maximum value for .   which means gives a relative minimum value for .  Since and we see that  VL Consultants had a relative maximum revenue in 2019 ( ) of $20,500,000  VL Consultants had a relative minimum revenue in 2021 ( ) of $19,567,000     Find the and interpret the absolute extreme values of . First observe that is a continuous function (it's a polynomial) defined on the closed and bounded interval . So, by  must achieve its absolute extreme values. To find them, we use . That is, we evaluate at the critical numbers (which was done in the previous part) and endpoints of the interval.              Comparing these values, we see that has an absolute minimum value of 87.67 at and an absolute maximum value of 258.33 at . In the context of this model, this means  VL Consultatns had an absolute minimum revenue of $8,767,000 in 2015 ( ).  VL Consultatns had an absolute maximum revenue of 25,833,000 in 2023 ( ).  Notice that both absolute extreme values occured at the endpoints, NOT the critical numbers.   Graphical exploration. Graph and labeling all points that correspond to extreme values and critical numbers. Make sure you understand how the graphs relate to your work above.       "
 },
 {
-  "id": "example-52",
+  "id": "example-53",
   "level": "2",
-  "url": "abs-ext.html#example-52",
+  "url": "abs-ext.html#example-53",
   "type": "Example",
   "number": "3.9.7",
   "title": "",
   "body": "Fawlty Towers is a quaint, 300 unit hotel on the English Riviera located in the seaside town of Torquay. The hotel has full occupancy when they charge $80 a room. Management has discovered that there will be vacant rooms when the hotel increases their charge by dollars. Each occupied room costs $22 to maintain. What price should Fawlty Towers charge to maximize profit? What is the maximuum profit? Write a sentence interpreting your answer. We are asked to find the absolute maximum value of Fawlty Towers' profit function, . We begin by determing the price, , and quantity, , models for room rentals. Using  price increase (in dollars) as the input variable we are given   , and     Recalling that revenue = (price)(quantity), the revenue function, , is Next recall that cost = (cost per unit)(number of units) + (fixed costs). Since we are not given any fixed costs, the cost model, , is With revenue and cost determined, Finally, we determine that absolute maximum value of on the interval . As usual, we need the critical value of . We solve so that is the only critical number of . Since , the second derivative test tells us that gives a relative maximum. Since is the only critical number in , tells us that the relative maximum will also be an absolute maximum. Evaluating at , we find and . Hence Fawlty Towers should charge $201 for a room to obtain a maximum profit of $32,041.  "
 },
 {
-  "id": "example-53",
+  "id": "example-54",
   "level": "2",
-  "url": "abs-ext.html#example-53",
+  "url": "abs-ext.html#example-54",
   "type": "Example",
   "number": "3.9.8",
   "title": "",
@@ -1090,18 +1099,18 @@ var ptx_lunr_docs = [
   "body": " Antiderivatives and Indefinite Integrals  Now we want to, in a sense, reverse the process of differentiation. In other words, given a function , we want to find another function such that . In this case, is called an antiderivative of . Observe that if is an antiderivative of , then so is for every constant . Indeed: .  For example, if then is an antiderivative of since . Notice that , , are also antiderivatives of . So, the most general antiderivative of is where is an arbitrary constant.  The indefinite integral (which looks like this: ) is the notation used for antiderivatives. Let be an arbitrary constant. Then is read \"the antiderivative (or integral) of equals \" and it means . The will indicate the variable we are integrating with respect to ( in this case). The process of finding antiderivatives may be referred to as integration and is called the integrand . We can now express our above example as follows:   We will make repeated use of the following rule find antiderivatives:    The Power Rule For Antiderivatives: For every real number  Indeed:    Find the following antiderivatives using . Identify the value of to start.    With       With       With       With       With       Notice that : So, CANNOT be used.    Antiderivatives behave the same way as derivatives with respect to constant multiples and sums (and differences) of functions. Those properties are given below.   Properties of Antiderivatives: Suppose and have antiderivatives and is a real number. Then:             Find the following antiderivatives using and .                                  The last two parts of illustrate the following:   WARNING: In general,          In cases where the integrand is the quotient or product of functions, you will often need to do some algebraic simplification before you find the antiderivative.  C. Farbman Furniture (CFF) is a small furniture outlet that designs, manufactures, and sells home furnishings. The marginal cost function for their retro seven drawer dresser is is given by dollars per dresser, where is the number of dressers manufactured and sold. Determine Farbman's cost function given that the cost to manufacture 8 retro seven drawer dressers is $1,337.28. Find Farbman's fixed costs. We are given        So, up to an arbitrary constant (which we will have to determine), To find , we have Using the given info (see second bullet point above), so that and we see that Farbman's cost function is from which we conclude Farbman's fixed costs are $597.52.   Sanalac is a progressive company with a small but prestigious group of clients. The annual marginal profit from the sale of their rest stop supplies is given by hundred dollars per year, where corresponds to the year 2001. Find Sanalac's profit function given that their profit in 2011 was $78,300. Use your answer to determine Sanalac's revenue in 2001 if their costs for that year were $15,000. We are given      ( corresonds to 2011 and is in hundreds of dollars)  So, up to an arbitrary constant (which we will have to determine), To find , we have Using the given info (see second bullet point above), so that and we see that Sanalac's annual profit function in hundreds of dollars is Notice that in 2001 Sanalac experienced a loss of $11,700 ( ). Let and represent Sanalac's annual cost and revenue functions respectively. We now want to find given that . We solve Sanalac's revenue in 2001 was $3,300.   "
 },
 {
-  "id": "p-137",
+  "id": "p-138",
   "level": "2",
-  "url": "antiderivs-indef-int.html#p-137",
+  "url": "antiderivs-indef-int.html#p-138",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "antiderivative "
 },
 {
-  "id": "p-139",
+  "id": "p-140",
   "level": "2",
-  "url": "antiderivs-indef-int.html#p-139",
+  "url": "antiderivs-indef-int.html#p-140",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1117,9 +1126,9 @@ var ptx_lunr_docs = [
   "body": "  The Power Rule For Antiderivatives: For every real number  Indeed:   "
 },
 {
-  "id": "example-54",
+  "id": "example-55",
   "level": "2",
-  "url": "antiderivs-indef-int.html#example-54",
+  "url": "antiderivs-indef-int.html#example-55",
   "type": "Example",
   "number": "4.1.2",
   "title": "",
@@ -1153,9 +1162,9 @@ var ptx_lunr_docs = [
   "body": "C. Farbman Furniture (CFF) is a small furniture outlet that designs, manufactures, and sells home furnishings. The marginal cost function for their retro seven drawer dresser is is given by dollars per dresser, where is the number of dressers manufactured and sold. Determine Farbman's cost function given that the cost to manufacture 8 retro seven drawer dressers is $1,337.28. Find Farbman's fixed costs. We are given        So, up to an arbitrary constant (which we will have to determine), To find , we have Using the given info (see second bullet point above), so that and we see that Farbman's cost function is from which we conclude Farbman's fixed costs are $597.52.  "
 },
 {
-  "id": "example-57",
+  "id": "example-58",
   "level": "2",
-  "url": "antiderivs-indef-int.html#example-57",
+  "url": "antiderivs-indef-int.html#example-58",
   "type": "Example",
   "number": "4.1.6",
   "title": "",
@@ -1180,15 +1189,6 @@ var ptx_lunr_docs = [
   "body": "  Total Change In  : Suppose is continuous on the interval , and is the rate of change of (this means , or is antiderivative of ). Then the total change in as goes from to is the area between the graph of and the -axis from to .  "
 },
 {
-  "id": "p-152",
-  "level": "2",
-  "url": "area-def-int.html#p-152",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Riemann Sum "
-},
-{
   "id": "p-153",
   "level": "2",
   "url": "area-def-int.html#p-153",
@@ -1201,6 +1201,15 @@ var ptx_lunr_docs = [
   "id": "p-154",
   "level": "2",
   "url": "area-def-int.html#p-154",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Riemann Sum "
+},
+{
+  "id": "p-155",
+  "level": "2",
+  "url": "area-def-int.html#p-155",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1234,9 +1243,9 @@ var ptx_lunr_docs = [
   "body": "  The vertical bar to the right of in the FTC is called an evaluation bar. By definition,   The statement \"let be any anitderivative of \" in the FTC means that we can choose any antiderivative of we want. Recall that antiderivatives can only be determined up to an arbitrary constant . So, we can CHOOSE the constant for our antiderivative when evaluating a definite integral. Unless indicated otherwise, we will always choose . Note that this means there is no \" \" when you calculate a definite integral. Definite integrals will produce an exact value.   "
 },
 {
-  "id": "example-58",
+  "id": "example-59",
   "level": "2",
-  "url": "sec-ftc.html#example-58",
+  "url": "sec-ftc.html#example-59",
   "type": "Example",
   "number": "4.3.3",
   "title": "",
@@ -1270,58 +1279,49 @@ var ptx_lunr_docs = [
   "body": "The Utility Cycle Research Factory (UCRF) determined that from the time they opened for business, they have been producing bicycles at a rate of bicylces per week, where is in weeks. How many bicylces did UCRF produce from day 8 to day 28? Let be the function that gives the number of bicycles produced by UCRF in weeks (that is, ). Since day 8 starts the second week, and day 28 ends the fourth week, we are asked to find . Using , To answer the question we will round down, since UCRF will not count a fraction of a bike in their total. So, the number of bikes produced by UCRF from day 8 to day 28 was 287 bikes. Below is the graph which illustrates the value of the definite integral as are under .    "
 },
 {
-  "id": "example-61",
+  "id": "example-62",
   "level": "2",
-  "url": "ftc-apps.html#example-61",
+  "url": "ftc-apps.html#example-62",
   "type": "Example",
   "number": "4.4.3",
   "title": "",
   "body": "Kramerica is a car-leasing firm that stipulates early termination fees and annual mileage limits in their monthly lease agreements. In addition to paying a flat rate yearly maintenance fee for their cars, they are trying to decide how much to charge customers for additional maintenance on cars they lease. A study conducted by their Research Division determined that the rate of maintenance costs on a car leased for years will approximate hundred of dollars per year. Find the accumulated maintenance cost Kramerica can expect from a 4 year lease. Use your answer to determine how much Kramerica should add to the monthly lease agreements to cover their maintenance fees for this lease period. Let be the function that gives Kramerica's maintenance cost in hundreds of dollars for a year lease (that is, ). We are asked to find . Using , the accumulated maintenance cost for a 4 year lease is We find that the accumulated maintenance cost Kramerica can expect from a 4 year lease is $2,200. Since there are 48 months in this lease period, rounding up to cover all costs, Kramerica should add about $45.84 a montth to fully cover maintenance fees. Below is the graph which illustrates the value of the definite integral as area under .    "
 },
 {
-  "id": "example-62",
+  "id": "example-63",
   "level": "2",
-  "url": "ftc-apps.html#example-62",
+  "url": "ftc-apps.html#example-63",
   "type": "Example",
   "number": "4.4.4",
   "title": "",
   "body": "DDX, a company specializing in podcasts and other audio content, decided to increase their monthly subscription fee from $3.25 to $6.75 in hopes of increasing their revenue. They expected to lose some customers, but hoped to retain enough of them to make up for that lost revenue. It turned out that the rate of change of the total number of subscribers is modeled by hundreds of subscribers per month, where is the number of months since the fee was increased.  Find the total change in the number of subscribers over the first 7 months after they increased the subscription fee. Let be the function that gives DDX's subscribers (in hundreds) months after the fee was increased (that is, ). We are asked to find . Notice that since a loss of subscribers is expected, we should expect . Using , which is less than 0, indicating a loss of subscribers as expected. As a result of increasing their monthly subscription fee from $3.25 to $6.75, DDX lost 30,800 subscribers in the first 7 months. Below is the graph which relates the value of the definite integral to the area between and .     Suppose DDX had 135,000 subscribers before they increased they their fees. Determine if DDX's strategy succeeded in increasing revenue after these 7 months have passed. Prior to the increase, DDX's revenue from monthly subscriptions was 135,000(3.25) = $438,750. Seven months afte the increae, DDX's revenue was (135,000 - 30,800)(6.75) = $703,350. So, increasing the monthly subscription fee caused a decrease of 30,800 in subscribers, but generated an additional $264,600 in revenue. So, their stragety was successful.    "
 },
 {
-  "id": "p-163",
+  "id": "p-164",
   "level": "2",
-  "url": "ftc-apps.html#p-163",
+  "url": "ftc-apps.html#p-164",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Area Between Curves "
 },
 {
-  "id": "example-63",
+  "id": "example-64",
   "level": "2",
-  "url": "ftc-apps.html#example-63",
+  "url": "ftc-apps.html#example-64",
   "type": "Example",
   "number": "4.4.5",
   "title": "",
   "body": "The rate at which revenue was generated over time by VL Consultants is millions of dollars per year, valid for where corresponds to the start of the year 1990. The rate at which costs were incurred is given by millions of dollars per year. Find VL Consultants' total profit from the start of 1994 to the start of 2004. Let represent VL Consultant's total profit function. Then we are asked to find (note that corresponds to the start of 1994 and corresponds to the start of 2004). Since , by  VL Consultants' total profit from the start of 1994 to the start of 2004 was $364,000,000. You should be able to verify algebraically that for all in . So, the definite integral above is the area between and from to . Below is the graph illustrating the value of the definite integral as the area between these two models.    "
 },
 {
-  "id": "example-64",
+  "id": "example-65",
   "level": "2",
-  "url": "ftc-apps.html#example-64",
+  "url": "ftc-apps.html#example-65",
   "type": "Example",
   "number": "4.4.6",
   "title": "",
   "body": "Puddy's Auto Shop recently purchased a new hydraulic lift, engine crane, and electronic diagnostic equipment. Throughout the first nine years of use, the new equipment has an associated rate of savings given by tens of dollars per year the equipment is used (so, is in years). Also throughout the first nine years of use, the equipment has an operating expense with an associated rate of cost given by tens of dollars per year the equipment is in use.  Determine how long the the new equipment should be used to maximize savings. Obsere that initially the rate of savings is greater than the rate of cost. However, the rate of savings declines with time, while the rate of cost increase with time. We need to determine how long it will take the rate of cost to catch up to the rate of savings. To do this we solve Since represtents years, the only valid solution is and we conclude that to maximize savings, Puddy's Auto Shop should use the equiment for 7 years. The graph below shows that and intersect at .     Determine Puddy's net, maximal savings from using the new equipment. To do this, we subtract the rate of cost of using the new equipment from the rate of savings associated with using the new equipment. This function, , will give the rate of net savings. Using our answer from the previous part, to determine the net, maximal savings, we integrate from to to obtain: where the answer above is rounded to one decimal place. We see that Puddy's net, maximal savings from using the new equipment is $2,659. Geometrically, this is the area between and over , as depicted below.      "
-},
-{
-  "id": "p-168",
-  "level": "2",
-  "url": "ftc-apps.html#p-168",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Consumer and Producer Surplus "
 },
 {
   "id": "p-169",
@@ -1330,21 +1330,30 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
+  "body": "Consumer and Producer Surplus "
+},
+{
+  "id": "p-170",
+  "level": "2",
+  "url": "ftc-apps.html#p-170",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
   "body": "Consumer surplus (CS) "
 },
 {
-  "id": "p-171",
+  "id": "p-172",
   "level": "2",
-  "url": "ftc-apps.html#p-171",
+  "url": "ftc-apps.html#p-172",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Producer surplus (PS) "
 },
 {
-  "id": "example-65",
+  "id": "example-66",
   "level": "2",
-  "url": "ftc-apps.html#example-65",
+  "url": "ftc-apps.html#example-66",
   "type": "Example",
   "number": "4.4.7",
   "title": "",
@@ -1387,9 +1396,9 @@ var ptx_lunr_docs = [
   "body": " Comparison of bases that are between 0 and 1 - exponential decay    "
 },
 {
-  "id": "p-183",
+  "id": "p-184",
   "level": "2",
-  "url": "basic-props.html#p-183",
+  "url": "basic-props.html#p-184",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1405,18 +1414,18 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
-  "id": "p-186",
+  "id": "p-187",
   "level": "2",
-  "url": "basic-props.html#p-186",
+  "url": "basic-props.html#p-187",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "the natural exponential function "
 },
 {
-  "id": "p-187",
+  "id": "p-188",
   "level": "2",
-  "url": "basic-props.html#p-187",
+  "url": "basic-props.html#p-188",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1468,9 +1477,9 @@ var ptx_lunr_docs = [
   "body": "For , , is called a logarithmic function , is called base . "
 },
 {
-  "id": "p-190",
+  "id": "p-191",
   "level": "2",
-  "url": "basic-props.html#p-190",
+  "url": "basic-props.html#p-191",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1513,9 +1522,9 @@ var ptx_lunr_docs = [
   "body": "The Great Escape is a growing online vacation rental home marketplace that permits clients with available rentals to list them on their site. The total number of vacation homes posted in their marketplace is modeled by the exponential function thousand homes, where is the number of years after 2009.  How many vacation rentals did The Great Escape initially have on their site? How many did they have in 2015? To determine the number of rentals in 2009, we evaluate at : so that there were 29,000 rentals initially listed in their marketplace. To determine the number of rentals in 2015, we evaluate at : so that there were 115,272 rentals listed in their marketplace in 2015.   How long did it take The Great Escape have 364,000 vacation rentals posted on their site? We need to solve for . To do this, we use : It took The Great Escape about 11 years (which corresponds to the year 2020) to have 364,000 vacation rentals posted on their site. Note that in the third step above we could have employed to see that . The graph of is below with the corresponding points identified.      "
 },
 {
-  "id": "example-71",
+  "id": "example-72",
   "level": "2",
-  "url": "basic-props.html#example-71",
+  "url": "basic-props.html#example-72",
   "type": "Example",
   "number": "5.1.14",
   "title": "",
@@ -1594,9 +1603,9 @@ var ptx_lunr_docs = [
   "body": " Interest Models   Simple Interest  Exponential functions are commonly used to model the growth and decay of money. But, let's first revisit a topic introduced in for comparison. In particular, recall .   Simple Interest is interest computed only on the principal amount invested or borrowed. For this reason, when money grows (or declines) according to a simple interest model, it does so linearly.  Let   = principal dollar amount invested or borrowed   = yearly interest rate (as a decimal)   = number of years  Then is the amount of (simple) interest earned (or owed) in years. Notice that this is a linear model with vertical intercept and slope . You should be aware that may represent a unit of time other than years, such as days, weeks, months, etc. So, pay attention to the given context for the appropriate units. However, unless otherwise mentioned, we will assume to be in years.  Maggie borrowed $4,000 at 3% simple interest for 9 months. How much interest will she pay? How much will Maggie owe in 9 months? We use the simple interest formula with   and     so that our model for this problem is In years, So, Maggie will pay $90 in simple interest. In 9 months she will owe her principal and interest, which is    The total amount owed in is referred to as a future value . In other words, $4,090 is the future value, , of $4,000 invested at 3% simple interest for 9 nine months. In general, the future value , , of a principal amount dollars in years at a simple interest rate (as a decimal) is   Notice that we can solve this expression above for the principal amount (or present value) if we know the future value :    Summary of Simple Interest Formulas   Future Value:   Interest:   Present Value:   Notice that in this context is the principal amount invested or borrowed, and the present value. The future value is sometimes referred to as the maturity value.  Randy borrows $73,000 at 6% simple interest per year for 90 days. Find the maturity value. We use the future value formula above with      and   .  Substituting these values Randy will owe a total of $74,080 in 90 days. That is, $74,080 is the future value of $73,000 at 6% simple interest for 90 days.   Larry owes $6,500 to Margaret. The loan is payable in one year at 5\\% simple interest. Margaret needs cash immediately, so she decides to sell the loan to a bank 4 months before it is due. The bank wants an 8% return. How much should the bank pay? We first need to determine the amount the bank will get when the loan is paid off. That is, we need the future value of the $6,500 Margaret loaned to Larry. This is what the bank will receive at the end of the year. We use . $6,825 is the amount the bank will get when the year is up in 4 months. To determine what they should pay in order to get an 8% return, we need the present value, , of $6,890 at 8% simple interest for four months. To calculate this, we use . The bank should pay $6,647.73 to get an 8% return on the loan they purchase from Margaret.   Treasury Bills, or T-bills, often involve simple interest calculations. A T-bill is a simple discount loan , meaning the interest is deducted in advance of the loan, but the full value of the loan must be repaid. T-bills are short term discount loans by investors, backed by the U.S. Treasury Department.  An investor bought a 10 month, $400 T-bill that sold at a simple discount rate of 3%. Find the interest earned on the T-bill, the price of the T-bill, and the simple interest rate the Treasury paid. Using with , the interest is calculated as . So the interest the investor earned on the T-bill is $10. Since the interest is deducted in advance of the loan, we calculate The price of the T-bill is $390. To find the interest rate will solve for , using and : Rounding to three decimal places, the simple interest rate paid by the Treasury was 3.077%.     Compound Interest   Compound interest is interest on both the initial principal and the accumulated interest from previous periods. Because of this, compound interest is calculated using exponential models. Under the same interest rate, compound interest will make an amount of money grow faster than simple interest, which is calculated only on the principal amount (recall that simple interest is linear).  Let   = principal dollar amount invested or borrowed   = yearly or annual interest rate (as a decimal)   = number of compounding periods per year   = number of years    Consider principal amount $ accumulating interest for compounding periods per year at an annual interest rate of . Note that in this case, the interest per period is . What will this amount grow to by the end of the year under compound interest?   Amount at end of first period:   This amount now collects interest during the second period. That is, this is the \"new\" principal amount for periond 2.    Amount at end of second period:   This amount now collects interest during the third period. That is, this is the \"new\" principal amount for periond 3.    Amount at end of third period:   This amount now collects interest during the fourth period. That is, this is the \"new\" principal amount for periond 4.   This process continues more times. By the end of the year, this amount will have grown to   Using the notation described above, let be the model that gives the dollar amount after years under compound interest. Then    is the future value of the principal in years. So, we will sometimes write and call the present value. Just like with simple interest, we can write the above model in present and future value form.   Summary of Compund Interest Formulas  For principal amount $ invested or borrowed at an annual interest rate of with compounding periods per year, in years we have   Future Value =   Interest earned =   Present Value =     Sam is planning to open a bar and grill in Boston, MA in 54 months. He invests $28,500 in account that pays 3.5% interest compounded quarterly. How much money will Sam have by the time he is ready to open his bar? How much interest will he have earned? We us with , , and . The compound interest model is then Since 54 months corresponds to years, we evaluate When Sam opens his bar in 54 months, his investment will have grown to $33,338.70. Hence, Sam will have earned $33,338.70 - $28,500 = $4,838.70 in interest.   Coach Pantusso needs $2,500 in 18 months for equipment for his little league baseball teams. He finds an account offering 5.75% interest compounded monthly. How much should Coach invest so that he has enough money to purchase the equipment? How much interest did he earn? To determine now much Coach should invest, we use given a future value in years of with interest and compounding periods per year. Coach needs to invest $2,293.88 so that he has enough money to purchase the equipment. In this case he will earn $2,500 - $2,293.88 = $206.12 interest.   The average annual inflation rate on Echo Island for the years 2020-2022 was 1.95%. How much did an item that sold for \\$1,000 early 2023 cost 3 years prior? Assuming the same rate of inflation, how long will it take this price ($1,000) to double?  We use (with present value corresponding to early 2020) given a future value in years (the year 2023) of with interest and (for inflation, the compounding is 1 time a year). An item that sold for $1,000 at the beginning of 2023 cost $943.71 at the start of 2020.  We now want to determine the doubling time under this inflation rate. To do this, we solve for , using and  Rounding up, it will take about 36 years for this price to double. Observe that this doubling time is independent of cost of the item. An item that cost $1 would also take about 36 years until the price doubled.    Carla and Eddie managed to save $11,559.23 for their wedding. They invested $10,000 at an annual interest rate of 7.25% compounded weekly. For how long did they invest thier money? How many compounding periods were there in this time. We solve for , using and , , and . Carla and Eddie invested their money for 2 years with a total of compounding periods.     Continuous Compounding  Let's look at the effect of increasing the number of yearly compounding periods on an investment. For simplicity, suppose $1 is invested at an annual interest rate of 100% for year, compounded times a year. For our calculations we use with . The future value of $1 at year is then Let's look at how $1 grows as we increase . We round to the nearest cent:   (yearly):    (semiannual):    (quarterly):    (monthly):    (weekly):    (daily):   We can continue to increase the number of compounding periods by letting . Recalling , we have We obtain similar results using any interest rate. Indeed, for any value one can show Using the properties of limits, we can continue to extend the above result. For the compound interest model , we obtain the following by letting the number of compounding perionds increase without bound:   The continuous compounding model is the result of letting the number of yearly compounding periods tend to infinity in the compound interest model. As we observed above, if we let the number of yearly compounding periods, , tend to infinity in the model given in , then we obtain the continuous compounding model where as before, is the principal amount invested or borrowed, is the annual interest rate as a decimal, and is time in years. As with our other interest models, continous compounding has a future and present value form. The present value form is found by rewriting the above model in terms of .   Continuous Compounding Formulas  For principal amount $ invested or borrowed at an annual interest rate of with compounding periods per year, in years we have   Future Value =   Interest earned =   Present Value =     Norm, Cliff, and Woody are saving money to travel cross county on a snipe hunt. They decide to invest their money with Howe's Investment Firm, which is the only finanacial establishment they could only find that offered accounts with continuous compounding.  How much will Norm, Cliff, and Woody have if they invest $750 in an account with interest rate 3.86% compounded continuously for 15 months? How much did they earn in interest? Using with the given information, the continous compouding model is Evaluating at years gives In 15 months, Norm, Cliff, and Woody will have $787.07. This means they earned $787.07 - $750 = $37.07 in interest.   If the desired amount in 15 months is $977, how much should Norm, Cliff, and Woody invest? If they let this investment grow for an additional 6 months, how much interest would they earn.  Using with , and , If Norm, Cliff, and Woody want $977 in 15 months, they should invest $930.98 in the account.  In this case their their continuous compounding model is If they let their investment grow for an additional 6 months, then evaluating at gives In this case, Norm, Cliff, and Woody would earn $996.04 - $930.98 = $65.06 in interest.      Jaco wants to buy a new bass guitar which costs $1,799.99 plus an additional 8.7396% in tax and surcharge. He invested $1,835 in an account with continuous compounding and was able to use this money to purchase his bass 19 months after his deposit. What was Jaco's interest rate? First, including tax and surcharge, Jaco's bass cost $1,799.99(1+.087396) = $1,957.30 (rounded to the nearest cent). To determine the account's interest rate, we can use with , , and to solve for the interest rate, : Jaco's account had an interest rate of 4.075%.   Suppose $P is invested.  If the money is earning 6.21% compounded continuously, how long will it take the investment to increase by 50%. We use with and to solve for . It will take approximately 6.5 years (or about 6 years and 6 months) for the investment to increase by 50%.   Under the same conditions, how long will it take the investment to double? We use with and to solve for . It will take approximately 11.16 years (or about 11 years and 2 months) for the investment to double.   If the value of the investment decreases (or decays) continuously at rate 5.53%, how long will it take for the investment to decrease to half its value? We use with to solve for . Because the value of the investemet is decaying, however, we must use . It will take approximately 12.5 years (or about 12 years and 6 months) for the investment to decay to half its value.       APR and APY   APR (the annual percentage rate) , also called the nominal rate , represents the stated yearly interest rate. While we will also use this term for investments, it is often used as the rate charged for borrowing money, including fees. APR does not take into consideration the number of compounding periods per year. For our purposes, it would be like the rate used in all our interest models above.   APY (the annual percentage yield) , also called the effective rate , describes the interest rate under the effect of compounding periods. Because APY includes a calculation of how compounded interest impacts the rate over the course of one year, the APY will usually be larger than the APR. Also, the greater the number of yearly compounding periods, the bigger the difference between the APR and APY.  Suppose we are given an APR (annual interest rate) of compounded times a year. Then in years $P will grow according to the compound interest model The associated APY is the (actual) growth rate of this exponential model. Rewriting the above model, and we see that is a base exponential growth model. Recall . The (actual) growth rate, or APY, associated with is , or This value is the associated APY and for a fixed APR, will incease as increases.  With an APR (or annual interest rate) of compounded times a year, the APY (annual percentage yield, or effective rate) , denoted , is In the case of continuous compounding, the APY is   For example, suppose $ is invested at an annual rate (APR) of 2.5%. The APY is the (actual) growth rate of this investment, which increase with the compounding periods:  Quarlterly compounding:   Montly compounding:   Daily compounding:   Continuous compounding:     Because the APY gives the (actual) growth rate of an investment, it can be used to determine which account provides a better investment option.  Chambers and Crane Investment Bank is offering Account 1 with an APR of 3.245% compounded semiannually and Account 2 with an APR 3.223% compounded weekly. Which is the better investment option. While Account 1 has a higher APR, Account 2 offers more compounding periods. To compare, we find the APY (or (actual) growth rate) for each account.  Account 1   Account 2   Since the APY for Account 2 (3.274%) is highter than the APY for Account 1 (3.271%), Account 2 is the better investment option. In other words, Account 2 is the better investment option since it offers a higher growth rate.    "
 },
 {
-  "id": "p-217",
+  "id": "p-218",
   "level": "2",
-  "url": "interest-models.html#p-217",
+  "url": "interest-models.html#p-218",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1630,9 +1639,9 @@ var ptx_lunr_docs = [
   "body": "Randy borrows $73,000 at 6% simple interest per year for 90 days. Find the maturity value. We use the future value formula above with      and   .  Substituting these values Randy will owe a total of $74,080 in 90 days. That is, $74,080 is the future value of $73,000 at 6% simple interest for 90 days.  "
 },
 {
-  "id": "example-79",
+  "id": "example-80",
   "level": "2",
-  "url": "interest-models.html#example-79",
+  "url": "interest-models.html#example-80",
   "type": "Example",
   "number": "5.3.4",
   "title": "",
@@ -1648,9 +1657,9 @@ var ptx_lunr_docs = [
   "body": "An investor bought a 10 month, $400 T-bill that sold at a simple discount rate of 3%. Find the interest earned on the T-bill, the price of the T-bill, and the simple interest rate the Treasury paid. Using with , the interest is calculated as . So the interest the investor earned on the T-bill is $10. Since the interest is deducted in advance of the loan, we calculate The price of the T-bill is $390. To find the interest rate will solve for , using and : Rounding to three decimal places, the simple interest rate paid by the Treasury was 3.077%.  "
 },
 {
-  "id": "p-222",
+  "id": "p-223",
   "level": "2",
-  "url": "interest-models.html#p-222",
+  "url": "interest-models.html#p-223",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1666,45 +1675,45 @@ var ptx_lunr_docs = [
   "body": " Summary of Compund Interest Formulas  For principal amount $ invested or borrowed at an annual interest rate of with compounding periods per year, in years we have   Future Value =   Interest earned =   Present Value =    "
 },
 {
-  "id": "example-81",
+  "id": "example-82",
   "level": "2",
-  "url": "interest-models.html#example-81",
+  "url": "interest-models.html#example-82",
   "type": "Example",
   "number": "5.3.7",
   "title": "",
   "body": "Sam is planning to open a bar and grill in Boston, MA in 54 months. He invests $28,500 in account that pays 3.5% interest compounded quarterly. How much money will Sam have by the time he is ready to open his bar? How much interest will he have earned? We us with , , and . The compound interest model is then Since 54 months corresponds to years, we evaluate When Sam opens his bar in 54 months, his investment will have grown to $33,338.70. Hence, Sam will have earned $33,338.70 - $28,500 = $4,838.70 in interest.  "
 },
 {
-  "id": "example-82",
+  "id": "example-83",
   "level": "2",
-  "url": "interest-models.html#example-82",
+  "url": "interest-models.html#example-83",
   "type": "Example",
   "number": "5.3.8",
   "title": "",
   "body": "Coach Pantusso needs $2,500 in 18 months for equipment for his little league baseball teams. He finds an account offering 5.75% interest compounded monthly. How much should Coach invest so that he has enough money to purchase the equipment? How much interest did he earn? To determine now much Coach should invest, we use given a future value in years of with interest and compounding periods per year. Coach needs to invest $2,293.88 so that he has enough money to purchase the equipment. In this case he will earn $2,500 - $2,293.88 = $206.12 interest.  "
 },
 {
-  "id": "example-83",
+  "id": "example-84",
   "level": "2",
-  "url": "interest-models.html#example-83",
+  "url": "interest-models.html#example-84",
   "type": "Example",
   "number": "5.3.9",
   "title": "",
   "body": "The average annual inflation rate on Echo Island for the years 2020-2022 was 1.95%. How much did an item that sold for \\$1,000 early 2023 cost 3 years prior? Assuming the same rate of inflation, how long will it take this price ($1,000) to double?  We use (with present value corresponding to early 2020) given a future value in years (the year 2023) of with interest and (for inflation, the compounding is 1 time a year). An item that sold for $1,000 at the beginning of 2023 cost $943.71 at the start of 2020.  We now want to determine the doubling time under this inflation rate. To do this, we solve for , using and  Rounding up, it will take about 36 years for this price to double. Observe that this doubling time is independent of cost of the item. An item that cost $1 would also take about 36 years until the price doubled.   "
 },
 {
-  "id": "example-84",
+  "id": "example-85",
   "level": "2",
-  "url": "interest-models.html#example-84",
+  "url": "interest-models.html#example-85",
   "type": "Example",
   "number": "5.3.10",
   "title": "",
   "body": "Carla and Eddie managed to save $11,559.23 for their wedding. They invested $10,000 at an annual interest rate of 7.25% compounded weekly. For how long did they invest thier money? How many compounding periods were there in this time. We solve for , using and , , and . Carla and Eddie invested their money for 2 years with a total of compounding periods.  "
 },
 {
-  "id": "p-237",
+  "id": "p-238",
   "level": "2",
-  "url": "interest-models.html#p-237",
+  "url": "interest-models.html#p-238",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1720,45 +1729,45 @@ var ptx_lunr_docs = [
   "body": " Continuous Compounding Formulas  For principal amount $ invested or borrowed at an annual interest rate of with compounding periods per year, in years we have   Future Value =   Interest earned =   Present Value =    "
 },
 {
-  "id": "example-85",
+  "id": "example-86",
   "level": "2",
-  "url": "interest-models.html#example-85",
+  "url": "interest-models.html#example-86",
   "type": "Example",
   "number": "5.3.12",
   "title": "",
   "body": "Norm, Cliff, and Woody are saving money to travel cross county on a snipe hunt. They decide to invest their money with Howe's Investment Firm, which is the only finanacial establishment they could only find that offered accounts with continuous compounding.  How much will Norm, Cliff, and Woody have if they invest $750 in an account with interest rate 3.86% compounded continuously for 15 months? How much did they earn in interest? Using with the given information, the continous compouding model is Evaluating at years gives In 15 months, Norm, Cliff, and Woody will have $787.07. This means they earned $787.07 - $750 = $37.07 in interest.   If the desired amount in 15 months is $977, how much should Norm, Cliff, and Woody invest? If they let this investment grow for an additional 6 months, how much interest would they earn.  Using with , and , If Norm, Cliff, and Woody want $977 in 15 months, they should invest $930.98 in the account.  In this case their their continuous compounding model is If they let their investment grow for an additional 6 months, then evaluating at gives In this case, Norm, Cliff, and Woody would earn $996.04 - $930.98 = $65.06 in interest.     "
 },
 {
-  "id": "example-86",
+  "id": "example-87",
   "level": "2",
-  "url": "interest-models.html#example-86",
+  "url": "interest-models.html#example-87",
   "type": "Example",
   "number": "5.3.13",
   "title": "",
   "body": "Jaco wants to buy a new bass guitar which costs $1,799.99 plus an additional 8.7396% in tax and surcharge. He invested $1,835 in an account with continuous compounding and was able to use this money to purchase his bass 19 months after his deposit. What was Jaco's interest rate? First, including tax and surcharge, Jaco's bass cost $1,799.99(1+.087396) = $1,957.30 (rounded to the nearest cent). To determine the account's interest rate, we can use with , , and to solve for the interest rate, : Jaco's account had an interest rate of 4.075%.  "
 },
 {
-  "id": "example-87",
+  "id": "example-88",
   "level": "2",
-  "url": "interest-models.html#example-87",
+  "url": "interest-models.html#example-88",
   "type": "Example",
   "number": "5.3.14",
   "title": "",
   "body": "Suppose $P is invested.  If the money is earning 6.21% compounded continuously, how long will it take the investment to increase by 50%. We use with and to solve for . It will take approximately 6.5 years (or about 6 years and 6 months) for the investment to increase by 50%.   Under the same conditions, how long will it take the investment to double? We use with and to solve for . It will take approximately 11.16 years (or about 11 years and 2 months) for the investment to double.   If the value of the investment decreases (or decays) continuously at rate 5.53%, how long will it take for the investment to decrease to half its value? We use with to solve for . Because the value of the investemet is decaying, however, we must use . It will take approximately 12.5 years (or about 12 years and 6 months) for the investment to decay to half its value.    "
 },
 {
-  "id": "p-241",
+  "id": "p-242",
   "level": "2",
-  "url": "interest-models.html#p-241",
+  "url": "interest-models.html#p-242",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "APR (the annual percentage rate) "
 },
 {
-  "id": "p-242",
+  "id": "p-243",
   "level": "2",
-  "url": "interest-models.html#p-242",
+  "url": "interest-models.html#p-243",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1774,9 +1783,9 @@ var ptx_lunr_docs = [
   "body": "With an APR (or annual interest rate) of compounded times a year, the APY (annual percentage yield, or effective rate) , denoted , is In the case of continuous compounding, the APY is  "
 },
 {
-  "id": "example-88",
+  "id": "example-89",
   "level": "2",
-  "url": "interest-models.html#example-88",
+  "url": "interest-models.html#example-89",
   "type": "Example",
   "number": "5.3.16",
   "title": "",
@@ -1792,9 +1801,9 @@ var ptx_lunr_docs = [
   "body": " Ordinary Annuities  An annuity is a sequence of equal payments made at equal time periods (unlike one-time deposits or payments like we previously considered). An ordinary annuity is an annuity in which the payments are made to the account at the end of each period .  Because annuities involve a sequence of payments, determining the future value of an annuity can involve adding a large number of terms together, which can be extremely tedious. Fortunately, using some algebra, we can find a nice formula to make our work much easier. So we begin with some albegra.  As a an example, consider the following equality. For any real number , we have, When this is equivalent to Similarly  and so on. What will be useful to us here, is that the sum on the left can be computed using division. In general, the following is true:   For any natural number and real number ,    Now, suppose we deposit $ at the end of each period for total compounding periods at an interest rate of each period. Note that is NOT necessarily the annual rate. To compare with our previous work, if were the annual interest rate and there were compounding periods per year, then we would use as the interest rate per period. In other words, using our new notation, we can rewrite our compound interest model as follows. For principal , compounded times a year for years at an annual interest rate  Now, using our compound interest model, with $ deposited at the end of each period,  Accumulated amount from deposit 1 =   Accumulated amount from deposit 2 =   Accumulated amount from deposit 3 =      Accumulated amount from deposit m-3 =   Accumulated amount from deposit m-2 =   Accumulated amount from deposit m-1 =   Accumulated amount from deposit m =     Let represent the future value of this ordinary annuity. Then will equal the sum of all these accumulated amounts. Therefore, if we let and use  Substituting back into this expression gives the following ordinary annuity formula.   Suppose $ is deposited (or paid) at the end of each of total periods at an interest rate of per period. Then the future value, , of this ordinary annuity is     Under these same conditions, we can rewrite the above formula in terms of to determine the periodic payments needed to reach a future value, . The payments would be determined by     This expression is often referred to as a sinking fund formula.   Suppose $200 is deposited into an account at the end of each year at 4% compounded annually. How much will be in the account in 5 years? We use the future value formula for an ordinary annuity ( ) given in with , , and . In 5 years the account will grow to $1,083.26   ADTF Distributors needs $250,000 to purchase equipemnt for their new distribution center which will be open in 3 and half years. If ADTF Distributors earns 6% compounded monthly, how much does ADTF Distributors need to deposit at the end of each month to have $250,000 in the account at the end of 3 and a half years? We use the sinking fund formula ( ) given in with , , and . ADTF Distributors need to deposit $5,364.05 at the end of each month for 42 months to have $250,000 for equipment at the end of 3 and a half years.   To build their new distribution center, ADTF Distributors had to borrow $5 million. They recently issued bonds to raise money to help pay back the $5 million they borrowed. The bonds have a face value of $5 million and are due and payable in 12 years. Assuming they earn 7.4% quarterly on their deposits, how much should ADTF Distributors deposit at the end of each quarter in order to retire the bond issue at the end of year 12. We use the sinking fund formula ( ) given in with , , and . ADTF Distributors needs to deposit $65,573.78 at the end of each quarter for 48 quarters to retire the bond issue at the end of year 12.   Cindy opens a money market at her bank that offers an annual rate of 1.11% compounded monthly. She contributes $950 a month.  How much will Cindy have in the money market at the end of year 10 years? We use the future value formula for an ordinary annuity ( ) given in with , , and . By the end of year 10, Cindy will have $120,508.87.   After the 10 years is up, Cindy decides to invest the amount from her money market annuity into another account with annual interest rate 1.24% compounded monthly. If she continues to make her monthly deposits of $950, how much will she have in her account in another 5 years? We need to do this in two steps:  First, we use the compound interest formula to determine the future value of $120,508.87. With , , and , the model we use is Evaluating at gives The amount from Cindy's previous account will grow to $128,212.80 in another 5 years.    Next we calculate the amount that will be generated by Cindy's continued deposits using the ordinary annuity formula ( given in ) with , , and . The amount generated from Cindy's continued deposits is $58,772.78    Finally, we add the two dollar amounts above to find the final value in Cindy's account:      Let's now look at the present value of an ordinary annuity . The question is, how much should be invested presently at a periodic interest rate of to ensure a payment of $ can be made from the account at the end of each of periods. To ensure $ is in the account for the first payment (here, we are viewing as the future value; in other words is playing the role of in ), must be depsoited presently. To ensure the second payment of $ (again, is the future value) is in the account by the end of the second period must be depsoited presently. To ensure the third payment of $ (again, is the future value) is in the account by the end of the third period must be depsoited presently. This pattern continues up to and including the final payment, for which must be depsoited presently to ensure the last payment can be made from the account. What we need to deposit, then, to ensure periodic payments of (at the end of each period), is Lertting and factoring a from each term, the present value, , of this ordinary annuity has the form where is the periodic pay-out amount. Using this can be rewritten as Substituting back in for gives the following:   Suppose $ is paid (or deposited) at the end of each of total periods at an interest rate of per period. Then the present value, , of this ordinary annuity is     Under these same conditions, we can rewrite the above formula in terms of to determine the periodic payments associated with an ordinary annuity with present value, . The payments would be determined by         Loan amortization is the process of paying off the interest and principal balance on a loan with regular payments over time. If the payments are made at the end of the period, then the payment formula, , for above will provide the payment amount needed to pay off a loan of $ at periodic interest rate over periods. Also observe that if both sides of the expression for above ( ) are multiplied by to find the future value of the loan under compound interest, we arrive back at the future value formula, , for an oridinary annuity.  In general, equity is defined to be total assets minus total liabilities . For a homeowner or property owener, equity would be the (market) value of the home or property less the amount still owed. To calculate the amount still owed (the outstanding debt), we view the remaining payments left on the laon as an ordinary annuity, and find its present value. This amount would be the amount still owed on the loan. Consider the following example.  H.E. Pennypacker, a wealthy American industrialist, is looking to purchase a sliver mine in the mountains of Peru. In need of loan, Pennypacker finances the entire value of the mine and borrows $500,000,000 from Varnsen Savings and Loan. The terms of the loan stipulate that Pennypacker pay an annual interest rate of 2.25% compounded monthly for 10 years.  Let's determine Pennypacker's monthly payments to Varnsen Savings and Loan. We can think of this two ways:  We can view $500,000,000 as the present value of an ordinary annuity formed by Pennypacker's sequence of payments.. In this case, using to find the amortization payments, so that Pennypacker's monthly payments are $4,656,868.59.  Using the compound interest model we find the future value of the loan to be or $626,029,455.95. Viewing this as the future value of an ordinary annuity and using to find the payments, and again we find Pennypacker's payments are $4,656,868.59.  So, if Pennypacker pays the loan in 120 monthly payments of $4,656,868.59, he will end up paying or $58,824,230.92 in interest.  Suppose that Pennypacker wants to pay off his loan halfway through the term, with 60 payments remaining. How much does Pennypacker owe Varnsen Savings and Loan? To determine the amount owed, we find the present value of the annuity defined by these 60 remaining payments using : If Pennypacker wants to pay off the laon at the end of the fifth year (after 60 payments), he owes Varnsen Savings and Loan $264,034,561.60. In this case, Pennypacker paid or $43,446,677.06 in interest.  We can also use the present value, , above to calculate Pennypacker's equity after the fifth year of the laon. Assuming that the value of the silver mine remained constant, Pennypacker's equity after his 60th payment is Pennypacker's equity after the fifth year of the laon is $235,965,438.40 or about 47%.  "
 },
 {
-  "id": "p-246",
+  "id": "p-247",
   "level": "2",
-  "url": "section-ordinary-annuities.html#p-246",
+  "url": "section-ordinary-annuities.html#p-247",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1819,36 +1828,36 @@ var ptx_lunr_docs = [
   "body": " Suppose $ is deposited (or paid) at the end of each of total periods at an interest rate of per period. Then the future value, , of this ordinary annuity is     Under these same conditions, we can rewrite the above formula in terms of to determine the periodic payments needed to reach a future value, . The payments would be determined by     This expression is often referred to as a sinking fund formula.  "
 },
 {
-  "id": "example-89",
+  "id": "example-90",
   "level": "2",
-  "url": "section-ordinary-annuities.html#example-89",
+  "url": "section-ordinary-annuities.html#example-90",
   "type": "Example",
   "number": "5.4.3",
   "title": "",
   "body": "Suppose $200 is deposited into an account at the end of each year at 4% compounded annually. How much will be in the account in 5 years? We use the future value formula for an ordinary annuity ( ) given in with , , and . In 5 years the account will grow to $1,083.26  "
 },
 {
-  "id": "example-90",
+  "id": "example-91",
   "level": "2",
-  "url": "section-ordinary-annuities.html#example-90",
+  "url": "section-ordinary-annuities.html#example-91",
   "type": "Example",
   "number": "5.4.4",
   "title": "",
   "body": "ADTF Distributors needs $250,000 to purchase equipemnt for their new distribution center which will be open in 3 and half years. If ADTF Distributors earns 6% compounded monthly, how much does ADTF Distributors need to deposit at the end of each month to have $250,000 in the account at the end of 3 and a half years? We use the sinking fund formula ( ) given in with , , and . ADTF Distributors need to deposit $5,364.05 at the end of each month for 42 months to have $250,000 for equipment at the end of 3 and a half years.  "
 },
 {
-  "id": "example-91",
+  "id": "example-92",
   "level": "2",
-  "url": "section-ordinary-annuities.html#example-91",
+  "url": "section-ordinary-annuities.html#example-92",
   "type": "Example",
   "number": "5.4.5",
   "title": "",
   "body": "To build their new distribution center, ADTF Distributors had to borrow $5 million. They recently issued bonds to raise money to help pay back the $5 million they borrowed. The bonds have a face value of $5 million and are due and payable in 12 years. Assuming they earn 7.4% quarterly on their deposits, how much should ADTF Distributors deposit at the end of each quarter in order to retire the bond issue at the end of year 12. We use the sinking fund formula ( ) given in with , , and . ADTF Distributors needs to deposit $65,573.78 at the end of each quarter for 48 quarters to retire the bond issue at the end of year 12.  "
 },
 {
-  "id": "example-92",
+  "id": "example-93",
   "level": "2",
-  "url": "section-ordinary-annuities.html#example-92",
+  "url": "section-ordinary-annuities.html#example-93",
   "type": "Example",
   "number": "5.4.6",
   "title": "",
@@ -1864,18 +1873,18 @@ var ptx_lunr_docs = [
   "body": " Suppose $ is paid (or deposited) at the end of each of total periods at an interest rate of per period. Then the present value, , of this ordinary annuity is     Under these same conditions, we can rewrite the above formula in terms of to determine the periodic payments associated with an ordinary annuity with present value, . The payments would be determined by       "
 },
 {
-  "id": "p-254",
+  "id": "p-255",
   "level": "2",
-  "url": "section-ordinary-annuities.html#p-254",
+  "url": "section-ordinary-annuities.html#p-255",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Loan amortization "
 },
 {
-  "id": "p-255",
+  "id": "p-256",
   "level": "2",
-  "url": "section-ordinary-annuities.html#p-255",
+  "url": "section-ordinary-annuities.html#p-256",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",

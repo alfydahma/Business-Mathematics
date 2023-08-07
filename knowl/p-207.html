@@ -13,14 +13,29 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We first determine the intial amount, <span class="process-math">\(y_0\text{,}\)</span> at time <span class="process-math">\(t=0\)</span> (recall <a href="" class="xref" data-knowl="./knowl/initial-amount.html" title="Item 2">Item 2</a>). We are given that Mingy purchased the truck (at <span class="process-math">\(t=0\)</span>) for $52,000 which means the point <span class="process-math">\((0,52000)\)</span> is on the the graph of <span class="process-math">\(G(t)\text{.}\)</span> In other words</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/initial-amount.html">
+<div class="para">Now we find <span class="process-math">\(k\)</span> using the remaining information. We are given that the number of site visits is up to 5,800 four days after the ad campaign began. This means <span class="process-math">\((4,58)\)</span> is a point on the graph. In function notation, this translates to <span class="process-math">\(G(4) = 58\text{.}\)</span> We solve the following for <span class="process-math">\(k\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/obs-apply-log.html">
+\begin{align*}
+G(4) \amp = 58\\
+\\
+38e^{4k} \amp = 58\\
+\\
+e^{4k} \amp = \frac{58}{38} \quad \textrm{(apply the natural log to both sides)}\\
+\\
+4k \amp = \ln\left(\frac{58}{38}\right) \quad (\textrm{recall} \knowl{./knowl/obs-apply-log.html}{\text{Item 5}}; \: 
+\textrm{here,} \: x=4k) \\
+\\
+k \amp = \frac{\ln\left(\frac{58}{38}\right)}{4}
+\end{align*}
+</div>
+<div class="para">Rounding to five decimal places, <span class="process-math">\(k = .10571\)</span> so that the continuous growth rate is 10.571% and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/obs-apply-log.html">
 \begin{equation*}
-M(0) = y_0 b^{0} =  y_0 = 52,000
+G(t) = 38e^{.10571t}.
 \end{equation*}
 </div>
-<div class="para">so that <span class="process-math">\(M(t) = 52,000 b^{t}\text{.}\)</span>
-</div>
+<div class="para">Evaluating at <span class="process-math">\(t=12\)</span> and rounding to two decimal places gives <span class="process-math">\(G(12) = 38e^{.10571(12)} = 135.11\)</span> which means MLD had 13,511 site visits 12 days after the start of the ad campaign.</div>
 </div>
 <span class="incontext"><a href="exponential-applications.html#p-207" class="internal">in-context</a></span>
 </body>

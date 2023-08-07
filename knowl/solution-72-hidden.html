@@ -10,12 +10,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">Observe that we don't have to graph <span class="process-math">\(f(x)\)</span> to do this.  We want to know the points on the graph at which the tangent line has slope 0.  Since the derivative gives us the slope of the tangent line, all we have to do is solve <span class="process-math">\(f'(x) = 0\text{.}\)</span>  Since <span class="process-math">\(f'(x) = -3x^2 + 12x\)</span> we solve<div class="displaymath process-math">
-\begin{align*}
-f'(x) \amp = 0 \\
--3x^2 + 12x \amp = 0 \\
--3x(x-4) \amp = 0 
-\end{align*}
-</div>to get <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=4\text{.}\)</span>  There are two points:  <span class="process-math">\((0,f(0)) = (0,0)\)</span> and <span class="process-math">\((4,f(4)) = (4,32)\text{.}\)</span>  See the graph below: <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c14.png" class="contained"></div>
+<body class="ignore-math"><div class="solution solution-like">Let's first rewrite this function as <span class="process-math">\(q(t) = -4t^{1/2} + \dfrac{2}{3}t^{-1/4} + 6\text{.}\)</span>  Now<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{dq}{dt} = -4\left(\dfrac{1}{2}t^{1/2 -1}\right) +\dfrac{2}{3}\left(-\dfrac{1}{4}t^{-1/4 - 1}\right) + 0
+\end{equation*}
+</div>which simplifies to<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{dq}{dt} = -2t^{-1/2} - \dfrac{1}{6}t^{-5/4} = -\dfrac{2}{\sqrt{t}} - \dfrac{1}{6\sqrt[4]{t^5}}
+\end{equation*}
+</div>
 </div></body>
 </html>

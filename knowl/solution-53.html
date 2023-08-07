@@ -13,12 +13,14 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h3 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">c.1</span><span class="period">.</span>
-</h3>The years 2010 and 2015 correspond to input values 10 and 15 resprectively. Using our work from part (a) with <span class="process-math">\(x=10 \)</span> and <span class="process-math">\(h=15-10 = 5\)</span> we have<div class="displaymath process-math">
-\begin{equation*}
-\textrm{AROC} = \dfrac{1}{100}(20(10) + 10(5) -104) = 1.46 \: \dfrac{\textrm{million records}}{\textrm{year}}
-\end{equation*}
-</div>This means: From 2010 to 2015, vinyl record sales increased an average of 1,460,000 vinyl records sold per year. That is, 1,460,000 is the average yearly INCREASE in vinyl records sold for this five year span. Below is the graph of <span class="process-math">\(s(x)\)</span> and the secant lines corresponding to the AROCs calculed in parts (b) and (c). <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c10.png" class="contained"></div>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">a.1</span><span class="period">.</span>
+</h3>With <span class="process-math">\(\dfrac{1}{100}\)</span> factored out of each term in the numerator, we have<div class="displaymath process-math">
+\begin{align*}
+\dfrac{s(x+h)-s(x)}{h} \amp = \dfrac{1}{100} \dfrac{10(x+h)^2 -104(x+h) +344 - (10x^2-104x+344)}{h} \\
+\amp = \dfrac{1}{100} \dfrac{10x^2 + 20xh +10h^2 -104x -104h + 344 -10x^2 +104x -344}{h} \\
+\amp = \dfrac{1}{100} \dfrac{h(20x + 10h - 104)}{h} = \dfrac{1}{100} (20x + 10h -104) 
+\end{align*}
+</div>
 </div>
 <span class="incontext"><a href="aroc.html#solution-53" class="internal">in-context</a></span>
 </body>

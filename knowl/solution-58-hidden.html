@@ -10,7 +10,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">
-<span class="process-math">\(M\)</span> is in months and <span class="process-math">\(p\)</span> is dollars per month.  So, the units for <span class="process-math">\(M'(p)\)</span> are <span class="process-math">\(\dfrac{\textrm{months}}{\textrm{dollars per month}}\text{.}\)</span>
+<body class="ignore-math"><div class="solution solution-like">Let's first simplify the difference quotient.  Again, we will work until we can cancel the <span class="process-math">\(h\)</span> in the denominator of the difference quotient.<div class="displaymath process-math">
+\begin{align*}
+\dfrac{g(t+h) - g(t)}{h} \amp = \dfrac{\dfrac{1}{t+h} - \dfrac{1}{t}}{h} = \dfrac{\dfrac{t}{t(t+h)} - \dfrac{t+h}{t(t+h)}}{h}   \\
+\\
+\amp  = \dfrac{\dfrac{t-(t+h)}{t(t+h)}}{h} = \dfrac{-h}{th(t+h)} = -\dfrac{1}{t(t+h)}   
+\end{align*}
+</div>Now, when we take the limit as <span class="process-math">\(h\)</span> goes to 0, we can just substitute 0 in for <span class="process-math">\(h\)</span> (since we can view the simplified difference quotient as a rational function in <span class="process-math">\(h\)</span> for which <span class="process-math">\(h=0\)</span> is defined).  So,<div class="displaymath process-math">
+\begin{align*}
+g'(t) \amp = \dfrac{dg}{dt} = \lim_{h \rightarrow 0}\dfrac{g(t+h) - g(t)}{h} = \lim_{h \rightarrow 0} \left(-\dfrac{1}{t(t+h)}\right) \\
+\\
+\amp  = -\dfrac{1}{t(t+0)} = -\dfrac{1}{t^2}   
+\end{align*}
+</div>That is, the derivative of <span class="process-math">\(g(t) = \dfrac{1}{t}\)</span> is <span class="process-math">\(g'(t) = \dfrac{dg}{dt} = -\dfrac{1}{t^2}\text{.}\)</span>
 </div></body>
 </html>

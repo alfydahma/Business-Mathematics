@@ -13,11 +13,22 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">So, if <span class="process-math">\(f\)</span> has a derivative at a fixed value <span class="process-math">\(x_0\text{,}\)</span> then</div>
+<div class="para">Each one of these secant lines has slope</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f'(x_0) = \lim_{h  \rightarrow 0} \dfrac{f(x_0+h)-f(x_0)}{h} = \textrm{slope of tangent line at} \: (x_0,f(x_0)) = 
-\textrm{IROC of} \: f \: \textrm{at} \: x_0
+m_L = \dfrac{f(x+h) - f(x)}{h}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(h\)</span> gets closer and closer and closer and closer (you get the idea) to 0. So, the slope of the tangent line, <span class="process-math">\(m_T\text{,}\)</span> is found by taking a limit:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+m_T = \lim_{h \rightarrow 0} \dfrac{f(x+h)-f(x)}{h}
+\end{equation*}
+</div>
+<div class="para">Remember this is also the IROC of <span class="process-math">\(f\)</span> at <span class="process-math">\(x\text{.}\)</span>  That is,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+m_T = \lim_{h \rightarrow 0} \dfrac{f(x+h)-f(x)}{h} = \: \textrm{IROC of} \: f \: \textrm{at} \: x. 
 \end{equation*}
 </div>
 </div>

@@ -10,5 +10,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">Prior to the increase, DDX's revenue from monthly subscriptions was 135,000(3.25) = $438,750. Seven months afte the increae, DDX's revenue was (135,000 - 30,800)(6.75) = $703,350. So, increasing the monthly subscription fee caused a decrease of 30,800 in subscribers, but generated an additional $264,600 in revenue. So, their stragety was successful.</div></body>
+<body class="ignore-math"><div class="solution solution-like">Let <span class="process-math">\(M(t)\)</span> be the function that gives Kramerica's maintenance cost in hundreds of dollars for a <span class="process-math">\(t\)</span> year lease (that is, <span class="process-math">\(M'(t)=m(t)\)</span>). We are asked to find <span class="process-math">\(M(4) - M(0)\text{.}\)</span> Using <a href="" class="xref" data-knowl="./knowl/thm-ftc.html" title="Theorem 4.3.1: The Fundamental Theorem of Calculus (FTC)">Theorem 4.3.1</a>, the accumulated maintenance cost for a 4 year lease is<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm-ftc.html">
+\begin{align*}
+M(4) - M(0) \amp =  \int_{t=0}^{4} m(t) \, dt\\
+\\
+\amp = \int_{t=0}^{4} (3t^{1/2} + 1.5) \, dw\\
+\\
+\amp = \left(2\sqrt{t^3}  + 1.5t\right)\Biggr|_{t=0}^{4} \\
+\\
+\amp = 22 
+\end{align*}
+</div>We find that the accumulated maintenance cost Kramerica can expect from a 4 year lease is $2,200. Since there are 48 months in this lease period, rounding up to cover all costs, Kramerica should add about $45.84 a montth to fully cover maintenance fees. Below is the graph which illustrates the value of the definite integral as area under <span class="process-math">\(m(t)\text{.}\)</span> <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-4/c57.png" class="contained"></div>
+</div></body>
 </html>

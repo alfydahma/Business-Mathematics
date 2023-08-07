@@ -13,47 +13,21 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h3 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.7.1.1</span><span class="period">.</span>
-</h3>We will use the first derivative test by making a sign chart for <span class="process-math">\(f'(x)\text{.}\)</span>  First we need the critical numbers of <span class="process-math">\(f\text{.}\)</span>  These numbers must be in the domain of <span class="process-math">\(f\text{,}\)</span> so first note that dom(<span class="process-math">\(f\)</span>) <span class="process-math">\(= (-\infty, \infty)\text{.}\)</span>  Next, we solve <span class="process-math">\(f'(x) = 0\text{.}\)</span> Note that <span class="process-math">\(f'(x) = x^3 - 4x^2+4x\text{.}\)</span>  So,<div class="displaymath process-math">
-\begin{align*}
-f'(x) \amp = 0 \\
-x^3 - 4x^2+4 \amp =0 \\
-x(x^2 -4x +4) \amp = 0 \\
-x(x-2)^2  \amp = 0 
-\end{align*}
-</div>We find two critical numbers: <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=2\text{.}\)</span> We can algebraically check the sign of the derivative, <span class="process-math">\(f'\text{,}\)</span> by picking test values in the appropriate intervals determined by the critical numbers: <ul class="disc">
-<li><div class="para">In the interval <span class="process-math">\((-\infty, 0)\)</span> we can test with <span class="process-math">\(x = -1\text{:}\)</span><div class="displaymath process-math">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.5.4.1</span><span class="period">.</span>
+</h3>Let <span class="process-math">\(R(x)\)</span> be the revenue function.  We are asked to find and interpret <span class="process-math">\(MR(10,000)\text{.}\)</span> First we need the revenue function.  Recall that<div class="displaymath process-math">
 \begin{equation*}
-f'(-1) = (-1)(-1-2)^2 &lt; 0
+R(x) = \textrm{(number of units)(price per unit)}
 \end{equation*}
-</div>
-</div></li>
-<li><div class="para">In the interval <span class="process-math">\((0,2)\)</span> we can test with <span class="process-math">\(x = 1\text{:}\)</span><div class="displaymath process-math">
+</div>which means<div class="displaymath process-math">
 \begin{equation*}
-f'(1) = (1)(1-2)^2 &gt; 0
+R(x) = (x)\left(  \dfrac{50,000-x}{25,000} \right) = \dfrac{50,000x}{25,000} - \dfrac{x^2}{25,000} 
+= 2x -\dfrac{x^2}{25,000}
 \end{equation*}
-</div>
-</div></li>
-<li><div class="para">In the interval <span class="process-math">\((2, \infty)\)</span> we can test with <span class="process-math">\(x = 3\text{:}\)</span><div class="displaymath process-math">
+</div>so that after differentiating<div class="displaymath process-math">
 \begin{equation*}
-f'(3) = (3)(3-2)^2 &gt; 0
+MR(x) = 2 - \dfrac{x}{12,500}.
 \end{equation*}
-</div>
-</div></li>
-</ul> The signs of the derivative, <span class="process-math">\(f'\text{,}\)</span> tell us whether the function <span class="process-math">\(f\)</span> is increasing or decreasing, which we will indicate with up and down arrows respectively. The sign chart for <span class="process-math">\(f'\)</span> is below. <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c24.png" class="contained"></div> Using our sign chart, we can now answer the questions. <ul class="disc">
-<li><div class="para">
-<span class="process-math">\(f(x)\)</span> is increasing on the intervals <span class="process-math">\((0, 2)\)</span> and <span class="process-math">\((2,\infty)\text{.}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(f(x)\)</span> is decreasing on the interval <span class="process-math">\((-\infty, 0)\text{.}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(f(x)\)</span> has no relative maximum value.</div></li>
-<li><div class="para">
-<span class="process-math">\(f(x)\)</span> has a relative minimum at <span class="process-math">\(x=0\text{.}\)</span>  The relative minimum value is <span class="process-math">\(f(0) = 1\text{.}\)</span>
-</div></li>
-</ul> Notice that even though there is no relative extreme value at <span class="process-math">\(x=2\text{,}\)</span> there is a "flat spot" there where <span class="process-math">\(f\)</span> has a horizontal tangent line. Following is the graph of <span class="process-math">\(f(x) = \dfrac{1}{4}x^4 - \dfrac{4}{3}x^3 +2x^2 + 1\)</span> <div class="image-box" style="width: %; margin-left: NaN%; margin-right: NaN%;"><img src="external/ch-3/c25.png" class="contained"></div>
-</div>
-<span class="incontext"><a href="first-deriv-test.html#solution-73" class="internal">in-context</a></span>
+</div>Finally, <span class="process-math">\(MR(10,000) = \$1.20 \: \dfrac{\textrm{dollars}}{\textrm{unit}} \)</span> which means: When <span class="process-math">\(x=10,000\)</span> units are produced, revenue is increasing at an approximate rate of $1.20 per additional unit produced. In other words, the revenue generated from the 10,001<span class="process-math">\(^{\textrm{st}}\)</span> unit is approximately $1.20.</div>
+<span class="incontext"><a href="sect-power-rule.html#solution-73" class="internal">in-context</a></span>
 </body>
 </html>

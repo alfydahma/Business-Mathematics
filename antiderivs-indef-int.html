@@ -273,10 +273,10 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="antiderivs-indef-int"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">Antiderivatives and Indefinite Integrals</span>
 </h2>
-<div class="para" id="p-137">Now we want to, in a sense, reverse the process of differentiation. In other words, given a function <span class="process-math">\(f(x)\text{,}\)</span> we want to find another function <span class="process-math">\(g(x)\)</span> such that <span class="process-math">\(g'(x) = f(x)\text{.}\)</span>  In this case, <span class="process-math">\(g(x)\)</span> is called an <dfn class="terminology">antiderivative</dfn> of <span class="process-math">\(f(x)\text{.}\)</span>  Observe that if <span class="process-math">\(g(x)\)</span> is an antiderivative of <span class="process-math">\(f(x)\text{,}\)</span> then so is <span class="process-math">\(g(x) + c\)</span> for every constant <span class="process-math">\(c\text{.}\)</span>  Indeed:  <span class="process-math">\(\dfrac{d}{dx}\left(g(x) + c \right) = g'(x) + 0 = g'(x) = f(x)\text{.}\)</span>
+<div class="para" id="p-138">Now we want to, in a sense, reverse the process of differentiation. In other words, given a function <span class="process-math">\(f(x)\text{,}\)</span> we want to find another function <span class="process-math">\(g(x)\)</span> such that <span class="process-math">\(g'(x) = f(x)\text{.}\)</span>  In this case, <span class="process-math">\(g(x)\)</span> is called an <dfn class="terminology">antiderivative</dfn> of <span class="process-math">\(f(x)\text{.}\)</span>  Observe that if <span class="process-math">\(g(x)\)</span> is an antiderivative of <span class="process-math">\(f(x)\text{,}\)</span> then so is <span class="process-math">\(g(x) + c\)</span> for every constant <span class="process-math">\(c\text{.}\)</span>  Indeed:  <span class="process-math">\(\dfrac{d}{dx}\left(g(x) + c \right) = g'(x) + 0 = g'(x) = f(x)\text{.}\)</span>
 </div>
-<div class="para" id="p-138">For example, if <span class="process-math">\(f(x) = 2x\)</span> then <span class="process-math">\(g(x) = x^2\)</span> is an antiderivative of <span class="process-math">\(f(x)\)</span> since <span class="process-math">\(g'(x) = 2x = f(x)\text{.}\)</span> Notice that <span class="process-math">\(x^2 + 1\text{,}\)</span> <span class="process-math">\(x^2 - 6\text{,}\)</span> <span class="process-math">\(x^2 + \dfrac{2}{3}\)</span> are also antiderivatives of <span class="process-math">\(f(x) = 2x\text{.}\)</span> So, the most general antiderivative of <span class="process-math">\(f(x) = 2x\)</span> is <span class="process-math">\(g(x) = x^2 + c\)</span> where <span class="process-math">\(c\)</span> is an arbitrary constant.</div>
-<div class="para logical" id="p-139">
+<div class="para" id="p-139">For example, if <span class="process-math">\(f(x) = 2x\)</span> then <span class="process-math">\(g(x) = x^2\)</span> is an antiderivative of <span class="process-math">\(f(x)\)</span> since <span class="process-math">\(g'(x) = 2x = f(x)\text{.}\)</span> Notice that <span class="process-math">\(x^2 + 1\text{,}\)</span> <span class="process-math">\(x^2 - 6\text{,}\)</span> <span class="process-math">\(x^2 + \dfrac{2}{3}\)</span> are also antiderivatives of <span class="process-math">\(f(x) = 2x\text{.}\)</span> So, the most general antiderivative of <span class="process-math">\(f(x) = 2x\)</span> is <span class="process-math">\(g(x) = x^2 + c\)</span> where <span class="process-math">\(c\)</span> is an arbitrary constant.</div>
+<div class="para logical" id="p-140">
 <div class="para">The <dfn class="terminology">indefinite integral</dfn> (which looks like this:  <span class="process-math">\(\int\)</span>) is the notation used for antiderivatives. Let <span class="process-math">\(\)</span> be an arbitrary constant.  Then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -290,7 +290,7 @@ window.MathJax = {
 \int 2x \: dx = x^2 + c.
 \end{equation*}
 </div>
-<div class="para" id="p-140">We will make repeated use of the following rule find antiderivatives:</div>
+<div class="para" id="p-141">We will make repeated use of the following rule find antiderivatives:</div>
 <article class="fact theorem-like" id="power-rule"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span>
 </h3>
@@ -298,27 +298,27 @@ window.MathJax = {
 \begin{equation*}
 \int x^n \: dx = \dfrac{1}{n+1}x^{n+1} + c
 \end{equation*}
-</div>Indeed:  <span class="process-math">\(\dfrac{d}{dx}\left[\dfrac{1}{n+1}x^{n+1}\right] = \dfrac{n+1}{n+1}x^{(n+1) - 1} = x^n.\)</span></article><article class="example example-like" id="example-54"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-54"><h3 class="heading">
+</div>Indeed:  <span class="process-math">\(\dfrac{d}{dx}\left[\dfrac{1}{n+1}x^{n+1}\right] = \dfrac{n+1}{n+1}x^{(n+1) - 1} = x^n.\)</span></article><article class="example example-like" id="example-55"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-55"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-54"><article class="example example-like">Find the following antiderivatives using <a href="" class="xref" data-knowl="./knowl/power-rule.html" title="Fact 4.1.1">Fact 4.1.1</a>. Identify the value of <span class="process-math">\(n\)</span> to start. <ol class="lower-alpha">
-<li id="li-225"><div class="para" id="p-derived-li-225">
-<span class="process-math">\(\displaystyle \int x \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-99" id="solution-99"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-99"><div class="solution solution-like">With <span class="process-math">\(n = 1 \)</span><div class="displaymath process-math">
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-55"><article class="example example-like">Find the following antiderivatives using <a href="" class="xref" data-knowl="./knowl/power-rule.html" title="Fact 4.1.1">Fact 4.1.1</a>. Identify the value of <span class="process-math">\(n\)</span> to start. <ol class="lower-alpha">
+<li id="li-227"><div class="para" id="p-derived-li-227">
+<span class="process-math">\(\displaystyle \int x \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-101" id="solution-101"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-101"><div class="solution solution-like">With <span class="process-math">\(n = 1 \)</span><div class="displaymath process-math">
 \begin{equation*}
 \displaystyle \int x \: dx = \dfrac{1}{1+1}x^{1+1} + c = \dfrac{1}{2}x^{2} + c
 \end{equation*}
 </div>
 </div></div>
 </div></li>
-<li id="li-226"><div class="para" id="p-derived-li-226">
-<span class="process-math">\(\displaystyle \int x^3 \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-100" id="solution-100"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-100"><div class="solution solution-like">With <span class="process-math">\(n = 3 \)</span><div class="displaymath process-math">
+<li id="li-228"><div class="para" id="p-derived-li-228">
+<span class="process-math">\(\displaystyle \int x^3 \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-102" id="solution-102"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-102"><div class="solution solution-like">With <span class="process-math">\(n = 3 \)</span><div class="displaymath process-math">
 \begin{equation*}
 \displaystyle \int x^3 \: dx = \dfrac{1}{3+1}x^{3+1} + c = \dfrac{1}{4}x^{4} + c
 \end{equation*}
 </div>
 </div></div>
 </div></li>
-<li id="li-227"><div class="para" id="p-derived-li-227">
-<span class="process-math">\(\displaystyle \int \dfrac{1}{x^5} \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-101" id="solution-101"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-101"><div class="solution solution-like">With <span class="process-math">\(n = -5 \)</span><div class="displaymath process-math" id="md-43">
+<li id="li-229"><div class="para" id="p-derived-li-229">
+<span class="process-math">\(\displaystyle \int \dfrac{1}{x^5} \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-103" id="solution-103"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-103"><div class="solution solution-like">With <span class="process-math">\(n = -5 \)</span><div class="displaymath process-math" id="md-43">
 \begin{align*}
 \displaystyle \int \dfrac{1}{x^5} \: dx \amp = \int x^{-5} \: dx = \dfrac{1}{-5+1}x^{-5+1} + c \\
 \amp = -\dfrac{1}{4}x^{-4} + c = -\dfrac{1}{4x^4} + c  
@@ -326,8 +326,8 @@ window.MathJax = {
 </div>
 </div></div>
 </div></li>
-<li id="li-228"><div class="para" id="p-derived-li-228">
-<span class="process-math">\(\displaystyle \int \sqrt[3]{x} \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-102" id="solution-102"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-102"><div class="solution solution-like">With <span class="process-math">\(n = \dfrac{1}{3} \)</span><div class="displaymath process-math" id="md-44">
+<li id="li-230"><div class="para" id="p-derived-li-230">
+<span class="process-math">\(\displaystyle \int \sqrt[3]{x} \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-104" id="solution-104"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-104"><div class="solution solution-like">With <span class="process-math">\(n = \dfrac{1}{3} \)</span><div class="displaymath process-math" id="md-44">
 \begin{align*}
 \displaystyle \int \sqrt[3]{x} \: dx \amp = \int x^{1/3} \: dx = \dfrac{1}{1/3+1}x^{1/3+1} + c  \\
 \amp = \dfrac{3}{4}x^{4/3} + c = \dfrac{3}{4}\sqrt[3]{x^4} + c  
@@ -335,16 +335,16 @@ window.MathJax = {
 </div>
 </div></div>
 </div></li>
-<li id="li-229"><div class="para" id="p-derived-li-229">
-<span class="process-math">\(\displaystyle \int \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-103" id="solution-103"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-103"><div class="solution solution-like">With <span class="process-math">\(n = 0 \)</span><div class="displaymath process-math">
+<li id="li-231"><div class="para" id="p-derived-li-231">
+<span class="process-math">\(\displaystyle \int \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-105" id="solution-105"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-105"><div class="solution solution-like">With <span class="process-math">\(n = 0 \)</span><div class="displaymath process-math">
 \begin{equation*}
 \displaystyle \int \: dx = \int 1 \: dx = \int x^0 \: dx = \dfrac{1}{0+1}x^{0+1} + c = x+c 
 \end{equation*}
 </div>
 </div></div>
 </div></li>
-<li id="li-230"><div class="para" id="p-derived-li-230">
-<span class="process-math">\(\displaystyle \int \dfrac{1}{x} \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-104" id="solution-104"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-104"><div class="solution solution-like">Notice that <span class="process-math">\(n= -1 \text{:}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/power-rule.html">
+<li id="li-232"><div class="para" id="p-derived-li-232">
+<span class="process-math">\(\displaystyle \int \dfrac{1}{x} \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-106" id="solution-106"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-106"><div class="solution solution-like">Notice that <span class="process-math">\(n= -1 \text{:}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/power-rule.html">
 \begin{equation*}
 \displaystyle \int \dfrac{1}{x} \: dx = \int x^{-1} \: dx
 \end{equation*}
@@ -354,18 +354,18 @@ window.MathJax = {
 <article class="fact theorem-like" id="antideriv-props"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span>
 </h3>
-<em class="emphasis">Properties of Antiderivatives:</em> Suppose <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> have antiderivatives and <span class="process-math">\(k\)</span> is a real number.  Then: <ul class="disc"><li id="li-231"><div class="para" id="p-derived-li-231"><span class="process-math">\(\displaystyle \displaystyle \int k f(x) \: dx = k \int  f(x) \: dx \)</span></div></li></ul> <ul class="disc"><li id="li-232"><div class="para" id="p-derived-li-232"><span class="process-math">\(\displaystyle \displaystyle \int ( f(x) \pm g(x) ) \: dx =  \int  f(x) \: dx \pm   \int  g(x) \: dx  \)</span></div></li></ul></article><article class="example example-like" id="ex-antideriv-props"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-antideriv-props"><h3 class="heading">
+<em class="emphasis">Properties of Antiderivatives:</em> Suppose <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> have antiderivatives and <span class="process-math">\(k\)</span> is a real number.  Then: <ul class="disc"><li id="li-233"><div class="para" id="p-derived-li-233"><span class="process-math">\(\displaystyle \displaystyle \int k f(x) \: dx = k \int  f(x) \: dx \)</span></div></li></ul> <ul class="disc"><li id="li-234"><div class="para" id="p-derived-li-234"><span class="process-math">\(\displaystyle \displaystyle \int ( f(x) \pm g(x) ) \: dx =  \int  f(x) \: dx \pm   \int  g(x) \: dx  \)</span></div></li></ul></article><article class="example example-like" id="ex-antideriv-props"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-antideriv-props"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span>
 </h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-antideriv-props"><article class="example example-like">Find the following antiderivatives using <a href="" class="xref" data-knowl="./knowl/power-rule.html" title="Fact 4.1.1">Fact 4.1.1</a> and <a href="" class="xref" data-knowl="./knowl/antideriv-props.html" title="Fact 4.1.3">Fact 4.1.3</a>. <ol class="lower-alpha">
-<li id="li-233"><div class="para" id="p-derived-li-233">
-<span class="process-math">\(\displaystyle \int 3 \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-105" id="solution-105"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-105"><div class="solution solution-like"><div class="displaymath process-math">
+<li id="li-235"><div class="para" id="p-derived-li-235">
+<span class="process-math">\(\displaystyle \int 3 \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-107" id="solution-107"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-107"><div class="solution solution-like"><div class="displaymath process-math">
 \begin{equation*}
 \displaystyle \int 3 \: dx = 3 \int \: dx = 3x + c
 \end{equation*}
 </div></div></div>
 </div></li>
-<li id="li-234"><div class="para" id="p-derived-li-234">
-<span class="process-math">\(\displaystyle \int (x^2 + x + 1) \: dx  \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-106" id="solution-106"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-106"><div class="solution solution-like"><div class="displaymath process-math" id="md-45">
+<li id="li-236"><div class="para" id="p-derived-li-236">
+<span class="process-math">\(\displaystyle \int (x^2 + x + 1) \: dx  \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-108" id="solution-108"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-108"><div class="solution solution-like"><div class="displaymath process-math" id="md-45">
 \begin{align*}
 \displaystyle \int (x^2 + x + 1) \: dx  \amp = \int x^2 \: dx + \int x \: dx + \int 1 \: dx  \\
 \\
@@ -373,8 +373,8 @@ window.MathJax = {
 \end{align*}
 </div></div></div>
 </div></li>
-<li id="li-235"><div class="para" id="p-derived-li-235">
-<span class="process-math">\(\displaystyle \int \left( \dfrac{4\sqrt{x}}{5} - \dfrac{5}{4\sqrt{x}} \right) \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-107" id="solution-107"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-107"><div class="solution solution-like"><div class="displaymath process-math" id="md-46">
+<li id="li-237"><div class="para" id="p-derived-li-237">
+<span class="process-math">\(\displaystyle \int \left( \dfrac{4\sqrt{x}}{5} - \dfrac{5}{4\sqrt{x}} \right) \: dx \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-109" id="solution-109"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-109"><div class="solution solution-like"><div class="displaymath process-math" id="md-46">
 \begin{align*}
 \displaystyle \int \left( \dfrac{4\sqrt{x}}{5} - \dfrac{5}{4\sqrt{x}} \right) \: dx \amp =  \int \left( \dfrac{4}{5}x^{1/2} - \dfrac{5}{4}x^{-1/2} \right) \: dx  \\
 \\
@@ -386,8 +386,8 @@ window.MathJax = {
 \end{align*}
 </div></div></div>
 </div></li>
-<li id="li-236"><div class="para" id="p-derived-li-236">
-<span class="process-math">\(\displaystyle \int \dfrac{x^2 - 4x}{2x} \: dx  \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-108" id="solution-108"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-108"><div class="solution solution-like"><div class="displaymath process-math" id="md-47">
+<li id="li-238"><div class="para" id="p-derived-li-238">
+<span class="process-math">\(\displaystyle \int \dfrac{x^2 - 4x}{2x} \: dx  \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-110" id="solution-110"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-110"><div class="solution solution-like"><div class="displaymath process-math" id="md-47">
 \begin{align*}
 \displaystyle \int \dfrac{x^2 - 4x}{2x} \: dx  \amp =  \int \left( \dfrac{x^2}{2x} - \dfrac{4x}{2x} \right) \: dx = \int \left( \dfrac{1}{2}x - 2 \right) \: dx   \\
 \\
@@ -397,8 +397,8 @@ window.MathJax = {
 \end{align*}
 </div></div></div>
 </div></li>
-<li id="li-237"><div class="para" id="p-derived-li-237">
-<span class="process-math">\(\displaystyle \int 2x(x+1)^2  \: dx  \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-109" id="solution-109"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-109"><div class="solution solution-like"><div class="displaymath process-math" id="md-48">
+<li id="li-239"><div class="para" id="p-derived-li-239">
+<span class="process-math">\(\displaystyle \int 2x(x+1)^2  \: dx  \)</span> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-111" id="solution-111"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-111"><div class="solution solution-like"><div class="displaymath process-math" id="md-48">
 \begin{align*}
 \displaystyle \int 2x(x+1)^2  \: dx  \amp =   \int 2x(x^2 + 2x + 1) \: dx = \int \left( 2x^3 + 4x^2 + 2x \right) \: dx   \\
 \\
@@ -411,25 +411,25 @@ window.MathJax = {
 </div></div></div>
 </div></li>
 </ol></article></div>
-<div class="para" id="p-141">The last two parts of <a href="" class="xref" data-knowl="./knowl/ex-antideriv-props.html" title="Example 4.1.4">Example 4.1.4</a> illustrate the following:</div>
-<div class="para logical" id="p-142">
+<div class="para" id="p-142">The last two parts of <a href="" class="xref" data-knowl="./knowl/ex-antideriv-props.html" title="Example 4.1.4">Example 4.1.4</a> illustrate the following:</div>
+<div class="para logical" id="p-143">
 <div class="para">
 <em class="emphasis">WARNING:</em>  In general,</div>
 <ul class="disc">
-<li id="li-238"><div class="para" id="p-derived-li-238"><span class="process-math">\(\displaystyle \displaystyle \int \dfrac{f(x)}{g(x)} \: dx \neq \dfrac{\int f(x) \: dx}{\int g(x) \: dx } \)</span></div></li>
-<li id="li-239"><div class="para" id="p-derived-li-239"><span class="process-math">\(\displaystyle \displaystyle \int f(x) \cdot g(x) \: dx  \neq \left( \int f(x) \: dx \right) \left( \int g(x) \: dx \right) \)</span></div></li>
+<li id="li-240"><div class="para" id="p-derived-li-240"><span class="process-math">\(\displaystyle \displaystyle \int \dfrac{f(x)}{g(x)} \: dx \neq \dfrac{\int f(x) \: dx}{\int g(x) \: dx } \)</span></div></li>
+<li id="li-241"><div class="para" id="p-derived-li-241"><span class="process-math">\(\displaystyle \displaystyle \int f(x) \cdot g(x) \: dx  \neq \left( \int f(x) \: dx \right) \left( \int g(x) \: dx \right) \)</span></div></li>
 </ul>
 </div>
-<div class="para" id="p-143">In cases where the integrand is the quotient or product of functions, you will often need to do some algebraic simplification before you find the antiderivative.</div>
+<div class="para" id="p-144">In cases where the integrand is the quotient or product of functions, you will often need to do some algebraic simplification before you find the antiderivative.</div>
 <article class="example example-like" id="farbman"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-farbman"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.5</span><span class="period">.</span>
 </h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-farbman"><article class="example example-like">C. Farbman Furniture (CFF) is a small furniture outlet that designs, manufactures, and sells home furnishings.  The marginal cost function for their retro seven drawer dresser is is given by<div class="displaymath process-math">
 \begin{equation*}
 MC(x) = 92.47
 \end{equation*}
-</div>dollars per dresser,  where <span class="process-math">\(x\)</span> is the number of dressers manufactured and sold. Determine Farbman's cost function given that the cost to manufacture 8 retro seven drawer dressers is $1,337.28. Find Farbman's fixed costs. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-110" id="solution-110"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-110"><div class="solution solution-like">We are given <ul class="disc">
-<li id="li-240"><div class="para" id="p-derived-li-240"><span class="process-math">\(\displaystyle MC(x) = C'(x) = 92.47 \)</span></div></li>
-<li id="li-241"><div class="para" id="p-derived-li-241"><span class="process-math">\(\displaystyle C(8) = 1337.28\)</span></div></li>
+</div>dollars per dresser,  where <span class="process-math">\(x\)</span> is the number of dressers manufactured and sold. Determine Farbman's cost function given that the cost to manufacture 8 retro seven drawer dressers is $1,337.28. Find Farbman's fixed costs. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-112" id="solution-112"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-112"><div class="solution solution-like">We are given <ul class="disc">
+<li id="li-242"><div class="para" id="p-derived-li-242"><span class="process-math">\(\displaystyle MC(x) = C'(x) = 92.47 \)</span></div></li>
+<li id="li-243"><div class="para" id="p-derived-li-243"><span class="process-math">\(\displaystyle C(8) = 1337.28\)</span></div></li>
 </ul> So, up to an arbitrary constant <span class="process-math">\(c\)</span> (which we will have to determine),<div class="displaymath process-math">
 \begin{equation*}
 C(x) = \int MC(x) \: dx = \int 92.47  \: dx = 92.47x + c
@@ -448,15 +448,15 @@ C(8) \amp = 92.47(8) + c \\
 C(x) = 92.47x + 597.52
 \end{equation*}
 </div>from which we conclude Farbman's fixed costs are $597.52.</div></div></article></div>
-<article class="example example-like" id="example-57"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-57"><h3 class="heading">
+<article class="example example-like" id="example-58"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-58"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.6</span><span class="period">.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-57"><article class="example example-like">Sanalac is a progressive company with a small but prestigious group of clients. The annual marginal profit from the sale of their rest stop supplies is given by<div class="displaymath process-math">
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-58"><article class="example example-like">Sanalac is a progressive company with a small but prestigious group of clients. The annual marginal profit from the sale of their rest stop supplies is given by<div class="displaymath process-math">
 \begin{equation*}
 MP(t) = -.75t^2 +12t + 55
 \end{equation*}
-</div>hundred dollars per year, where <span class="process-math">\(t = 0\)</span> corresponds to the year 2001. Find Sanalac's profit function given that their profit in 2011 was $78,300. Use your answer to determine Sanalac's revenue in 2001 if their costs for that year were $15,000. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-111" id="solution-111"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-111"><div class="solution solution-like">We are given <ul class="disc">
-<li id="li-242"><div class="para" id="p-derived-li-242"><span class="process-math">\(\displaystyle MP(t) = P'(t) = -.75t^2 +12t + 55 \)</span></div></li>
-<li id="li-243"><div class="para" id="p-derived-li-243">
+</div>hundred dollars per year, where <span class="process-math">\(t = 0\)</span> corresponds to the year 2001. Find Sanalac's profit function given that their profit in 2011 was $78,300. Use your answer to determine Sanalac's revenue in 2001 if their costs for that year were $15,000. <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-113" id="solution-113"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-113"><div class="solution solution-like">We are given <ul class="disc">
+<li id="li-244"><div class="para" id="p-derived-li-244"><span class="process-math">\(\displaystyle MP(t) = P'(t) = -.75t^2 +12t + 55 \)</span></div></li>
+<li id="li-245"><div class="para" id="p-derived-li-245">
 <span class="process-math">\(P(10) = 783\)</span> (<span class="process-math">\(t=10\)</span> corresonds to 2011 and <span class="process-math">\(P\)</span> is in hundreds of dollars)</div></li>
 </ul> So, up to an arbitrary constant <span class="process-math">\(c\)</span> (which we will have to determine),<div class="displaymath process-math">
 \begin{equation*}
