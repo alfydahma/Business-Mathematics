@@ -92,7 +92,7 @@
             <m>C = (6,0)</m>, so that <m>t=6</m> and <m>P=0</m>. Since <m>t</m> is the number of years since 1999, <m>t=6</m> corresponds 
             to the year 2005. Since <m>P</m> is ADTF Distributors' profit in millions <m>P=0</m> corresponds to a profit of $0. Another way 
             to say a company's profit is $0 (no profit, no loss) is to say that the company broke even. So, point 
-            <m>C = (6,0)</m> in interpreted as: In 2005, ADTF Distributors broke even. Note that negaive profit will be interpreted as a 
+            <m>C = (6,0)</m> in interpreted as: In 2005, ADTF Distributors broke even. Note that negative profit will be interpreted as a 
             <em>loss</em>.
            </solution>
          </li>
@@ -103,7 +103,7 @@
 
         <p>
          When we have an equation with two variables, usually <m>x</m> and <m>y</m>, we can ask if a given point is a solution to 
-         that equation.  By the <em>graph of an equation</em>, we mean the c pretext build webollection of all the points <m>(x,y)</m>, 
+         that equation.  By the <em>graph of an equation</em>, we mean the collection of all the points <m>(x,y)</m>, 
          that satisfy the equation. As an example, consider the graph labeled <m>L</m> below.
         </p>
          
@@ -323,7 +323,6 @@
          </subsection>
        </section>
 
-
        <section xml:id="linear-models-applications">
          <title> Linear Models and Applicaitions  </title>
 
@@ -341,7 +340,7 @@
               
               <li> Write a formula to model the total cost, <m>C</m>, for <m>n</m> nights in the hotel. 
                <solution>
-                Each night you stay you get charged $159 plus an 11% tax.  For <m>n</m> nights this means you'll pay 
+                 Each night you stay you get charged $159 plus an 11% tax.  For <m>n</m> nights this means you'll pay 
                 <m>(159 + .11(159))n = 176.49n</m>.  With the $5 tip the total cost for <m>n</m> nights is
                  <me>
                   C=176.49n+5
@@ -359,7 +358,8 @@
                   C=176.49(4)+5=\$710.96
                  </me>
                  You will pay $710.96 to stay at the hotel for 4 nights.
-               </solution>   </li>   
+               </solution>   
+              </li>   
              </ol>          
           </example>
 
@@ -1458,7 +1458,7 @@
      <p>
       Let Identify the smallest possible degree of the polynomials in the graphs below.
       <sidebyside>
-        <image source="ch-1/18.png" width="40">  
+        <image source="ch-1/18.png" width="40%">  
         </image>
         <image source="ch-1/19.png" width="40%">  
         </image>
