@@ -560,7 +560,7 @@
             Identify two data points given in this problems. 
             <solution>
              Since the linear model is given as <m>d = mt + b</m>, points on this line would have the form <m>(t,d)</m>. That is, the time <m>t</m> 
-             in years since Quick Copy purchased the office machine represents the <em>input variable</em>, giving the horizontal location of a point. The value <m>d</m> of 
+             in years since Quick Copy purchased the office machine represents the <em>input variable</em>, giving the horizontal location of a point. The value <m>d</m>  
              of the office machine represents the <em>output variable</em> giving the vertical location of a point. Therefore, the given data can be expressed as 
              the ordered pairs
               <me>
@@ -696,8 +696,8 @@
        <p>
        We will use the following notation. For a funciton <m>f(x)</m>, 
         <ul>
-         <li> dom(<m>f</m>) = the domain of the funciton <m>f</m> </li>
-         <li> rng(<m>f</m>) = the range of the funciton <m>f</m></li>
+         <li> dom(<m>f</m>) = the domain of the function <m>f</m> </li>
+         <li> rng(<m>f</m>) = the range of the function <m>f</m></li>
         </ul>
        Typcially, we will express these sets using <em>interval notation</em>. Note that the set of all real numbers can expressed using
        the notation <m> \mathbb{R} = (-\infty, \infty)</m>. 
