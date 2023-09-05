@@ -881,7 +881,7 @@
         m = \dfrac{-3}{1} \: \dfrac{\textrm{units of g}}{\textrm{units of t}}.
        </me>
      So, if <m>g(t)</m> gives the value of an asset in hundreds of dollars, and <m>t</m> represents time in years, then we 
-     interpret <m>m=-3</m> as: The value of asset decreases by 3 hunderd dollars (the change in <m>g</m> ) per each additional year 
+     interpret <m>m=-3</m> as: The value of asset decreases by 3 hundred dollars (the change in <m>g</m> ) per each additional year 
      (the change in <m>t</m>).
      </p>
      
