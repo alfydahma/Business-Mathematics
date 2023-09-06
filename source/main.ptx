@@ -664,7 +664,7 @@
       </p>
 
        <example>
-       Let <m>f(x) = x^2 -x +1</m>.  For homework find the following. The last two parts will involve 
+       Let <m>f(x) = x^2 -x +5</m>.  For homework find the following. The last two parts will involve 
        <m>a</m>'s and <m>h</m>'s.  In other words, your answers will be symbolic and not numbers. 
         <ol marker="(a)">
          <li> <m>f(0)</m> 
