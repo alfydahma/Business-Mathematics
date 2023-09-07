@@ -843,8 +843,8 @@
         <li> Graph given below.
           <image source="ch-1/8.png" width="100%">
           </image>
-           Because a vertical line can drawn that intersects this graph more than once (for instance <m>x=4</m>), this graph DOES NOT
-           rerpresent a function.
+           Because a vertical line can be drawn that intersects this graph more than once (for instance <m>x=4</m>), this graph DOES NOT
+           represent a function.
         </li>
 
        </ul>
