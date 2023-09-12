@@ -1093,7 +1093,7 @@
             From 2016 to 2021, ADTF Distributors determined that their profit increased at rate of $4,974 per year until their profit reached
             $60,234 in 2021. Find ADTF Distributors' linear profit model between 2016 and 2021 
              <solution>
-              We are given the slope to be <m>m=49.74 \: \dfrac{\textrm{dollars}}{\textrm{year}}</m> and data point <m>(11,602.34)</m>. Finding
+              We are given the slope to be <m>m=49.74 \: \dfrac{\textrm{hundred dollars}}{\textrm{year}}</m> and data point <m>(11,602.34)</m>. Finding
               the line with these conditions we see that ADTF Distributors' profit model from 2016 to 2021 is
                <me>
                  P(t) = 49.74t + 55.2
