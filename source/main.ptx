@@ -1348,7 +1348,7 @@
      </example>   
 
      <example> 
-      An average of 40,000 people visit Kennyland Park park each day in the summer. The park chareges $25.00 for admission. Consultants predict
+      An average of 40,000 people visit Kennyland Park park each day in the summer. The park charges $25.00 for admission. Consultants predict
       that for each $1.00 price increase in admission price, the park would lose 1,000 customers per day. Find the function <m>R(x)</m> that will give 
       Kennyland's daily revenue, where <m>x</m> represents the number of $1.00 price increases. What ticket price will maximize Kennyland's daily revenue?
        <solution>
@@ -1358,7 +1358,7 @@
           <mrow> R(x) \amp = (25+x))(40,000 - 1,000x) </mrow>
           <mrow> R(x) \amp = -1,000x^2 + 15,000x + 1,000,000 </mrow>
          </md>
-        The vertex of <m>R(x)</m> is <m>(7.5,1056250)</m>. Since <m>p(7.5) = 25 + 7.5 = 32.5</m> Kennyland should charge $32.50 for admission
+        The vertex of <m>R(x)</m> is <m> (7.5,1056250) </m>. Since <m>p(7.5) = 25 + 7.5 = 32.5</m> Kennyland should charge $32.50 for admission
         in order to maximize daily revenue.            
        </solution>
 
