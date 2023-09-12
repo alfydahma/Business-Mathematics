@@ -1229,7 +1229,7 @@
 
       <p>
        Consider the quadratic <m>f(x)= x^2 + 4x +3</m>. This parabola opens up since <m>a=1 &gt; 0</m>. Beacuse the parabola opens up
-       <m>f(x)</m> has a minimum ouptut value given by the <m>y-</m>coordinate of the vertex. Let's find the vertex. Using the formula given
+       <m>f(x)</m> has a minimum output value given by the <m>y-</m>coordinate of the vertex. Let's find the vertex. Using the formula given
        above for the <m>x-</m>coordinate (with <m>a=1</m> and  <m>b=4</m>) gives
         <me>
          x = -\dfrac{4}{2 \cdot 1} = - 2
