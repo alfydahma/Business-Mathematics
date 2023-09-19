@@ -1355,7 +1355,7 @@
         As a function of <m>x</m>, Kennyland's ticket price is <m>p(x) = 25 + x</m> and quantity is given by <m>q(x) = 40,000 - 1,000x</m>. This means
         <md>
           <mrow> R(x) \amp = p(x)q(x) </mrow>
-          <mrow> R(x) \amp = (25+x))(40,000 - 1,000x) </mrow>
+          <mrow> R(x) \amp = (25+x)(40,000 - 1,000x) </mrow>
           <mrow> R(x) \amp = -1,000x^2 + 15,000x + 1,000,000 </mrow>
          </md>
         The vertex of <m>R(x)</m> is <m> (7.5,1056250) </m>. Since <m>p(7.5) = 25 + 7.5 = 32.5</m> Kennyland should charge $32.50 for admission
