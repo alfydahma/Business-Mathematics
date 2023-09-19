@@ -1352,7 +1352,7 @@
       that for each $1.00 price increase in admission price, the park would lose 1,000 customers per day. Find the function <m>R(x)</m> that will give 
       Kennyland's daily revenue, where <m>x</m> represents the number of $1.00 price increases. What ticket price will maximize Kennyland's daily revenue?
        <solution>
-        As a function of <m>x</m>, Kennyland's ticket price is <m>p(x) = 25 + x</m> and quantity is givne by <m>q(x) = 40,000 - 1,000x</m>. This means
+        As a function of <m>x</m>, Kennyland's ticket price is <m>p(x) = 25 + x</m> and quantity is given by <m>q(x) = 40,000 - 1,000x</m>. This means
         <md>
           <mrow> R(x) \amp = p(x)q(x) </mrow>
           <mrow> R(x) \amp = (25+x))(40,000 - 1,000x) </mrow>
