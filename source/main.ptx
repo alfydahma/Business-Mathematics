@@ -1392,7 +1392,7 @@
      </p>
 
      <p>
-      Some examples of functins that are NOT polynomials:
+      Some examples of functions that are NOT polynomials:
        <ul>
         <li> <m> f(x) = \dfrac{2}{x}+4 </m> </li>
         <li> <m> h(t) = t^3 + \sqrt{t} </m> </li>
