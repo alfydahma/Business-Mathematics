@@ -1403,7 +1403,7 @@
 
      <p>
       For the polynomial <m>p(x)</m>, as <m>x</m> approaches <m>\infty</m> or <m>-\infty</m>, <m>p(x)</m> becomes forever 
-      increasing or decreasing. This is referred to as the "end behavior" of the polynoial and is entirely determined by the leading term, <m>a_nx^n</m>.
+      increasing or decreasing. This is referred to as the "end behavior" of the polynomial and is entirely determined by the leading term, <m>a_nx^n</m>.
      </p> 
 
      <p>
