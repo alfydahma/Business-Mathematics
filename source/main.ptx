@@ -1332,17 +1332,19 @@
 
 
      <example> 
-      Sofa King has determined that when <m>s</m> hundred sofas are produced their average cost per sofa in hundreds of dollars is 
+      Sofa King has determined that when <m>s</m> hundred sofas are produced their average cost in thousands of dollars per hundred sofas is 
       determined by the function 
        
        <me>
-         \overline{C}(s) = .1s^2 - .9s + 2.915.
+         \overline{C}(s) = s^2 - 9s + 29.15.
        </me>  
       How many sofas should Sofa King produce in order to minimize average cost? Write a sentence or two interpreting your answer. Find the 
       cost funtion, <m>C(s)</m>.
        <answer>
-        To minimize average cost, Sofa King should produce 450 sofas. At this production level, their (minimum) average cost is $89 per sofa.
-        Sofa King's cost function is <m>C(s) = .1s^3 -.9s^2 + 2.915s</m> (in hundreds of dollars).          
+        You should check that the vertex of parabloa is <m>(4.5, 8.9)</m>. Since the parabola opens up, note that the vetex corresponds to 
+        to a minimum for <m>\overline{C}(s)</m>. Therefore, to minimize average cost, Sofa King should produce 4.5(100) = 450 sofas. 
+        At this production level, Sofa King's (minimum) average cost is 8.9 thousand dollars per hundred sofas, or $89 per sofa. 
+        Sofa King's cost function is <m>C(s) = s \cdot  \overline{C}(s) = s^3 -9s^2 + 29.15s</m> (in thousands of dollars).          
        </answer>
 
      </example>   
