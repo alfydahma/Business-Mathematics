@@ -1506,14 +1506,14 @@
 
      <p>
       Notation:  <m>\longrightarrow</m> is read <q>approaches (NOT equals).</q>  For instance <m>x \longrightarrow 1</m> is read 
-      <q><m>x</m> approaches 1, <m>x \neq 1</m>.</q>  There are two directions to approach 1 on the number line (from the left aned from 
+      <q><m>x</m> approaches 1, <m>x \neq 1</m>.</q>  There are two directions to approach 1 on the number line (from the left and from 
       the right), and the notation <m>x \longrightarrow 1</m> indicates that the <em>two-sided approach</em> is being considered.  
       However, there is also notation to use if you only want to consider a <em>one-sided approach</em>.  
        <ul>
         <li> approach from the left; <m>x \rightarrow 1, x \lt 1 </m>, which is denoted <m>x \rightarrow 1^{-}</m> </li> 
         <li> approach from the right; <m>x \rightarrow 1, x \gt 1</m>, which is denoted <m>x \rightarrow 1^{+}</m> </li>
        </ul>
-      The plus and minus symbols, - and +, in the superscript DO NOT indicate the sign of the <m>x-</m>values.  They simply indicate the 
+      The minus and plus symbols, - and +, in the superscript DO NOT indicate the sign of the <m>x-</m>values.  They simply indicate the 
       direction of the approach.  See the picture below.
 
        <image source="ch-3/c1.png" width="100%">  
