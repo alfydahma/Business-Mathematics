@@ -2004,7 +2004,7 @@
         Let's first assign units to this value.  Since <m>C</m> is cost given in dollars, and <m>b</m> is bookends produced and sold, the units for the 
         derivative are:  
          <me>
-          $P'(123) = -7.30 \: \dfrac{\textrm{dollars}}{\textrm{bookend}}.  
+          C'(123) = -7.30 \: \dfrac{\textrm{dollars}}{\textrm{bookend}}.  
          </me>  
         Since the value of the derivative is negative, the interpretation is: 
         <p>
