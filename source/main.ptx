@@ -2481,7 +2481,7 @@
      </p>
 
      <definition xml:id="def-crit-numb"> 
-      The number <m>x=c</m> is a <term>critical number</term> of <m>(x)</m> if
+      The number <m>x=c</m> is a <term>critical number</term> of <m>f(x)</m> if
        <ul>
         <li>  <m>c</m> is in the domain of <m>f(x)</m>, AND </li>
         <li>  <m>f'(c) = 0</m> OR <m>f'</m> is not defined at <m>c</m></li>
