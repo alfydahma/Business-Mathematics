@@ -2798,13 +2798,13 @@
            <ul>
             <li> In the interval <m>(0, 180)</m> we can test with <m>x = 1</m>:  
              <me>
-              \overline{C}'(1) = (1-180)(1+180) &lt; 0
+              \overline{C}'(1) = \frac{(1-180)(1+180)}{1^2} &lt; 0
              </me>
             </li>
 
            <li> In the interval <m>(180, \infty)</m> we can test with <m>x = 181</m>:  
              <me>
-              \overline{C}'(181) = (181-180)(181+180) &gt; 0
+              \overline{C}'(181) = \frac{(181-180)(181+180)}{180^2} &gt; 0
              </me>
            </li>
           </ul>
@@ -2962,7 +2962,7 @@
       lower incremental per-unit returns. A <term>point of diminishing returns</term> refers to a point at which the optimal level
       of capacity is reached, where incremental increases in the input result in smaller increases in output. Mathematically, a point of
       diminishing returns is an inflection point through which the function increases and its derivative changes from increasing to 
-      decreasing (or equivalently, where the second derivative changes from  positive to netagive).
+      decreasing (or equivalently, where the second derivative changes from  positive to negative).
      </p>
 
      <example>
