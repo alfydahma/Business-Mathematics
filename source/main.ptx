@@ -3126,7 +3126,7 @@
         </li>
 
         <li>
-          If <m>f''(c) &lt; 0</m> then <m>f(c)</m> is a relative minimum value of <m>f</m>.
+          If <m>f''(c) &gt; 0</m> then <m>f(c)</m> is a relative minimum value of <m>f</m>.
         </li>
        </ul>
       If <m>f''(c) = 0</m> then no conclusion can be made.  In this case, you need to use the first derivative test to determine 
