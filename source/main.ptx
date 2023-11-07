@@ -3910,19 +3910,19 @@
        of the 4 smaller intervals.  If <m>A_i</m> denotes the area of <m>R_i</m> for <m>1 \leq i \leq 4</m>, then
         <ul>
          <li>
-          <m> A_1 = 1 \cdot MC(3)  = MC(3) = 95</m>
+          <m> A_1 = 1 \cdot MC(3) = 95</m>
          </li>
 
          <li>
-          <m> A_2 = 1 \cdot MP(4) = MC(4) = 50</m>
+          <m> A_2 = 1 \cdot  MC(4) = 50</m>
          </li>
 
          <li>
-          <m> A_3 = 1 \cdot MP(5) = MC(5) = 71</m>
+          <m> A_3 = 1 \cdot MC(5) = 71</m>
          </li>
 
          <li>
-          <m> A_4 = 1 \cdot MP(6) = MC(6) = 98 </m>
+          <m> A_4 = 1 \cdot MC(6) = 98 </m>
          </li>
         </ul>
        Now, the area under <m>MC(x)</m>, or in other words, the total change in 
