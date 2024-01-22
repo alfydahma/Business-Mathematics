@@ -65,7 +65,7 @@
           </image>
 
        <p>
-        The labeling of the horizontal and vertical axes are arbitrary. We can use whatever letters or symbols we want to name or identify 
+        The labeling of the horizontal and vertical axes is arbitrary. We can use whatever letters or symbols we want to name or identify 
         each axis. However they are labled, ordered pairs will always have the form (horizontal position, vertical position). In the graph above 
         each ordered pair has the form <m>(x,y)</m>. In the example below, they have the form <m>(t,P)</m>. 
        </p>      
@@ -158,7 +158,7 @@
          <title>Slope of Line</title>
           <p>
            <term>Slope</term> is a measure of the steepness of a line and is constant per unit change in the horizontal direction.  
-           We denot the slope with the letter <m> m </m>. That is, if you move 1 unit to the right in the horizontal direction, then moving <m>m</m> units in the vertical 
+           We denote the slope with the letter <m> m </m>. That is, if you move 1 unit to the right in the horizontal direction, then moving <m>m</m> units in the vertical 
            direction will get you to another point on the line.  In the figure below notice that <m> m &gt; 0 </m> since we have to 
            move up in the vertical direction as we move to the right in the horizontal direction.
           </p>
