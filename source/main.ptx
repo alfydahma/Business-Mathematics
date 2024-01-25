@@ -837,7 +837,7 @@
           <image source="ch-1/7.png" width="100%">
           </image>
             Because any vertical line will intersect this graph at most once, this graph represents a function. Note that there are open circles 
-           at the points <m>(-10,10)</m> and <m>(0,20)</m>. For homeowork find the domain and range of this function. 
+           at the points <m>(-10,10)</m> and <m>(20,0)</m>. For homeowork find the domain and range of this function. 
         </li>
 
         <li> Graph given below.
