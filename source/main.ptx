@@ -740,7 +740,7 @@
 
          <li> <m>r(x) = \sqrt{x+1} + 2 </m>
          <solution>
-           Here, again, it easier to think about values of <m>x</m> are NOT allowed. Since we cannot take the sqaure root of a negative 
+           Here, again, it easier to think about values of <m>x</m> that are NOT allowed. Since we cannot take the sqaure root of a negative 
            number (and get another real number), we must solve
             <md>
              <mrow> x+1 \amp \geq 0 </mrow>, or
