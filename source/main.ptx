@@ -1122,7 +1122,7 @@
       Recall that every rate of change is the slope of line and vice versa. In particular, if <m>f(x) = mx+b</m> then the rate of
       change of <m>f(x)</m> is its slope, <m>m</m> (that is, if the input <m>x</m> increases by 1 unit, then the output <m>f(x)</m>
       changes <m>m</m> units). In business, <term>marginal analysis</term> compares the additional benefits (revenue and profit) derived 
-      from an activity and the extra cost incurred by the same activity. These additaional benefits/costs are referred to as 
+      from an activity and the extra cost incurred by the same activity. These additional benefits/costs are referred to as 
       <term>marginal revenue</term>, <term>marginal profit</term>, and <term>marginal cost</term>.
      </p>
      
@@ -1341,7 +1341,7 @@
       How many sofas should Sofa King produce in order to minimize average cost? Write a sentence or two interpreting your answer. Find the 
       cost funtion, <m>C(s)</m>.
        <answer>
-        You should check that the vertex of parabloa is <m>(4.5, 8.9)</m>. Since the parabola opens up, note that the vetex corresponds to 
+        You should check that the vertex of the parabloa is <m>(4.5, 8.9)</m>. Since the parabola opens up, the vetex corresponds 
         to a minimum for <m>\overline{C}(s)</m>. Therefore, to minimize average cost, Sofa King should produce 4.5(100) = 450 sofas. 
         At this production level, Sofa King's (minimum) average cost is 8.9 thousand dollars per hundred sofas, or $89 per sofa. 
         Sofa King's cost function is <m>C(s) = s \cdot  \overline{C}(s) = s^3 -9s^2 + 29.15s</m> (in thousands of dollars).          
@@ -3839,7 +3839,7 @@
           </me> 
          so that <m>c = -117</m> and we see that Sanalac's annual profit function in hundreds of dollars is
           <me>
-           P(t) = .25t^3 + 6t^2 + 55t - 117.
+           P(t) = -.25t^3 + 6t^2 + 55t - 117.
           </me>
          Notice that in 2001 Sanalac experienced a loss of $11,700 (<m>P(0) = -117</m>). Let <m>C(t)</m> 
          and <m>R(t)</m> represent Sanalac's annual cost and revenue functions respectively. We 
